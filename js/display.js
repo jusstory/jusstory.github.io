@@ -81,10 +81,10 @@ $(document).ready(function(){
     }
   });
   /* 섹션1  */
-  $(".skillDT_list li").click(function(){
+  $(".skillDT_list li a").click(function(){
     $(".skillDT_list li").removeClass("active");
-    $(this).addClass("active");
-    var dtNum=$(this).attr("class").substring(2,4);
+    $(this).parent().addClass("active");
+    var dtNum=$(this).parent().attr("class").substring(2,4);
     var ddNum=$(".skillDD_list li").attr("class").substring(2,4);
     $(".skillDD_list li").removeClass("active");
     $(".skillDD_list li.dd"+dtNum).addClass("active");

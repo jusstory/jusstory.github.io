@@ -46,7 +46,7 @@ Version : "2019.03"
   .section01 .tit { width:961px; height:80px;  background: url("../images/content/sec01Tit.png") 0 0 no-repeat; background-size:cover; }
   .sec01.box01 { width: 87%; height:1024px;  }
   .sec01.box02 { width:50%; }
-  .sec01.box03 { left: none; right: 0; width: 75%; }
+  .sec01.box03 { left: 0; right: 0; width: 75%; }
 
   .skillDT_list { float: none; width: calc(100% - 50px); height: 125px; padding:8px 0; margin: 25px 4.8%; }
   .skillDT_list li:first-child { margin-top:0; }
@@ -154,10 +154,10 @@ Version : "2019.03"
   .mb_nav { top: 70px; }
 
   /* 비주얼배너 */
-  .visualWrap { height:560px; }
-  .visualWrap .tunnel { height:560px; }
-  .visualWrap .train { height:560px; }
-  .visualWrap .train > li { height:560px; }
+  .visualWrap { height:568px; }
+  .visualWrap .tunnel { height:568px; }
+  .visualWrap .train { height:568px; }
+  .visualWrap .train > li { height:568px; }
   .visualWrap .container { width:100%; }
   .visualWrap .tit { left:0; display:block; width:100%; padding-top: 45px; padding-bottom: 45px; font-size:20px; text-align:center; color:#fff;  background:url("../images/btn/bg_visualTit.png") 0 0 repeat; }
   .visualWrap .tit .br { font-size:20px; text-align:center; color:#fff; text-indent:0; }

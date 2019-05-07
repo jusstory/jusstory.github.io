@@ -274,6 +274,7 @@ Version : "2019.03"
 
   /* 푸터 */
   address { font-size:12px; }
+  .address { padding-top: 60px; }
   .copyright { font-size:12px; }
 
 }

@@ -1,0 +1,5 @@
+
+  /*base css */
+	body {/*   overflow-x:hidden; overflow-y:scroll; */ font-family:'Noto Sans', 'Malgun Gothic', dotum, gulim, verdana, sans-serif;}
+	a:link, a:visited{color:#333;  text-decoration:none; }
+	a:hover, a:focus{ color:#333; text-decoration:none; }

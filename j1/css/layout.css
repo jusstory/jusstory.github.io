@@ -1,0 +1,52 @@
+  /*layout css*/
+
+	#wrapper { font-size:17px; background-color:white; color:#333;}
+	#header {width:100%; height:130px; background-color:#333;}
+	#visual {width:100%; height:740px;  position:relative; }
+	#main {width:100%; height:3150px;  }
+	#footer {width:100%; height:320px; background-color:#dcdcdc;}
+	.container {width:1280px; height:100%; margin:0 auto; position:relative;  }
+
+	.headertop {width:100%; height:50px; background-color:#333;}
+	.headerbottom {width:100%; height:80px; background-color:white;}
+
+	.visualimg { width:100%; height:740px; background-color:#ddd;  }
+
+	.content1 {width:100%; height:1340px; }
+	.content2 {width:100%; height:1060px; background:url('../images/review_bg.jpg') no-repeat center; }
+	.content3 {width:100%; height:750px; }
+
+	.footertop {width:100%; height:60px;}
+	.footerbottom {width:100%; height:260px; }
+
+	.content1 .rowarray {width:1280px; position:absolute; top:-140px; }
+	.row{ width:100%; height:320px;  }
+	.a4 {  width:320px; height:320px; float:left;}
+	.a4.a41_50 {  width:640px; height:100%; }
+	.a4.a42_50 {  width:640px; height:100%; }
+
+	.row.r1  .a4.a42 {background-color:#df2121; }
+	.row.r2  .a4.a41 {  z-index: 1000;}
+	.row.r2  .a4.a42 {  background-color:#339900; }
+
+	.row.r2  .a4.a44 { background-color:#ff0000; }
+
+	.row.r3  .a4.a43 {  background-color:#ff6600; }
+
+	.row.r4 { height:520px; }
+
+	.review { width:100%; height:820px;}
+	.review .a4 { width:320px; height:600px; float:left;}
+	.review .a1 {  height: 200px;    margin-left: 25%; padding-top: 23px; position: relative;}
+
+	.review .rcontent {  height: 490px; background-color:white; overflow:hidden;  }
+	.review .blank { height:170px; opacity:0; }
+
+	.content3 .rowarray { width:100%; height:750px; position:absolute; top:-100px; }
+
+	.content3  .row.r1 { width:1280px; height:280px; background-color:#ccff00;  overflow:hidden; }
+	.content3  .row.r2 {  width:640px; height:290px;  float:left; }
+	.content3  .row.r3 {width:33.3333%; height:180px; float:left; }
+	
+	.a2 { width:50%; height:100%; float:left; }
+	.a3 { width:33.3333%; height:180px; float:left; }

@@ -1,0 +1,91 @@
+/*
+메인 css
+Site : "Juyeon Kim's portfolio"
+Author : "김주연"
+Version : "2019.03"
+*/
+
+/* 비주얼 배너 */
+.visualWrap { position:relative; width:100%; height:990px; }
+.visualWrap .container { position:relative; }
+.visualWrap .tunnel { overflow:hidden; width:100%; height:990px; }
+.visualWrap .tunnel > li { width:100%; }
+.visualWrap .train { width:300%; height:990px; }
+.visualWrap .train > li { position: relative; width:33.333%; height:990px; float:left;  }
+.visualWrap .train > .li01 { background:url("../images/content/img_visual01.jpg") 50% 50% no-repeat; background-size:cover; }
+.visualWrap .train > .li02 { background:url("../images/content/img_visual02.jpg") 50% 50% no-repeat; background-size:cover; }
+.visualWrap .train > .li03 { background:url("../images/content/img_visual03.jpg") 50% 50% no-repeat; background-size:cover; }
+.visualWrap .tit { position:absolute; top:30%; left:6%; font-family:"Noto Sans KR", sans-serif ; font-weight:900; font-size:2.8vw; color:#6e4450; }
+.visualWrap .tit .br { display:block;  font-weight:900; font-family:"Noto Sans KR", sans-serif; font-size:2.8vw; color:#6e4450; text-indent:15px; }
+.visualWrap .train > .li02 .tit {  top: 46%; left: 30%; text-align: center; }
+
+/* 비주얼 배너의 컨트롤러 */
+.controller { position:absolute; right:-1px; bottom:0; display:table; width:230px; height:115px; background-color:#fff; }
+.controller li { display:table-cell; }
+.controller .prev { width:10px; padding-left:10px;  }
+.controller .prev a { display:block; width:100%; height:100%; text-indent:-999999px; background:url("../images/btn/bg_prev.png") 0 50% no-repeat; }
+.controller .next { width:10px; padding-right:10px; }
+.controller .next a {  display:block; width:100%; height:100%; text-indent:-999999px; text-indent:-999999px; background:url("../images/btn/bg_next.png") 0 50% no-repeat; }
+.controller .vs_num { vertical-align: middle; text-align:center; font-weight:600; font-size:20px; color:#a9a9a9; }
+.controller .vs_num .num { color:#000; font-size:20px; font-weight:600; }
+
+/* 섹션 1  */
+.section01 { position:relative; overflow:hidden; width:95%; height:1080px; margin:0 auto; }
+.section01 .tit { position:absolute; top:21.5%; left:80%; transform:translateX(-438px); width:1453px; height:121px; font-size:0; text-indent:-9999px; background:url("../images/content/sec01Tit.png") 0 0 no-repeat; z-index: 93; }
+/* .section01 .tit_mb { display:none;  position:absolute; top:60px; width:100%; height:40px; color:#fff; font-size:46px; font-weight:600; font-size:0; text-indent:-9999px; z-index: 93; background:url("../images/content/sec01Tit.png") 50% 0 no-repeat; background-size: 90%; } */
+.section01 .tit_mb { display:none;  position:absolute; top:50px; width:100%;  color:#fff; font-size:8vw; font-weight:600; text-align:center; z-index: 93;  }
+.sec01.box01 { position:absolute; top:0; right:0; width:66%; max-width:1187px; height:1080px; background:url("../images/content/img_sec01_box01.jpg") 0 0 no-repeat; z-index: 90; }
+.sec01.box02 { position:absolute; top:16.2%; left:0;  width:50%; max-width:912px; height:500px; background:url("../images/content/img_sec01_box02.jpg") 0 0 no-repeat; z-index: 91;}
+.sec01.box03 {position:absolute; top:38.1%; left:19.8%; width:50%; max-width:960px; height:550px; background:url("../images/content/img_sec01_box03.png") 0 0 no-repeat; z-index: 92; background-size:100% 100%; }
+/* 오른쪽영역 */
+.skillList { height:480px;  }
+.skillDT_list { float:right; width:35%; height:480px; margin-top:35px; margin-right:4%;  text-align:right;  line-height:42px; background-color:#fff; }
+.skillDT_list li {padding-right:6%; }
+.skillDT_list li a { font-size:18px; font-weight:600; }
+.skillDT_list li a span { font-size:18px; font-weight:600; }
+.skillDT_list li a:hover, .skillDT_list li a:focus, .skillDT_list li a:active, .skillDT_list li.active a, .skillDT_list li a:hover span, .skillDT_list li a:focus span, .skillDT_list li a:active span, .skillDT_list li.active a span {color:#cb1b1b; }
+.skillDT_list li:first-child { margin-top:12%;  }
+.skillDT_list li .arrow { width: 23px; padding-right: 1px; padding-bottom: 4px;  }
+/*.skillDT_list li.active .arrow{ display:inline; }*/
+/* 왼쪽영역 */
+.skillDD_list{  float:left; width:53%; height:480px; margin-top:35px; margin-left:4%;  background:url("../images/content/bg_sec01_dd.png ") 0 0 repeat; }
+
+/*
+.skillDD_list li { display:none;  width:100%; height:100%; ext-align:center; }
+.skillDD_list li.active { display:block;  }
+.skillDD_list li img { max-width:90%;  margin-top:55px; margin-bottom:30px;  }
+.skillDD_list li .txt { display:block; font-size:20px; font-weight:600; }
+*/
+.skillDD_list li { display:none;  width:100%; height:100%; /* margin-left:35px;*/ text-align:center; }
+.skillDD_list li.active { display:block;  }
+.skillDD_list li a {  }
+.skillDD_list li .img { display:block; max-width:80%;  margin:55px auto 30px;  }
+.skillDD_list li .img img { width: 100%; }
+.skillDD_list li .txt { display:block; font-size:18px; font-weight:600; }
+
+.skillDD_list .dd01 .img, .skillDD_list .dd02 .img, .skillDD_list .dd06 .img, .skillDD_list .dd07 .img, .skillDD_list .dd08 .img, .skillDD_list .dd09 .img, .skillDD_list .dd10 .img { max-width: 40%;}
+
+/* 섹션 2  */
+.section02 { overflow:hidden; width:100%; height:650px; background:url("../images/content/bg_sec03.jpg") 50% 50% no-repeat; background-size:100%; background-attachment: fixed; }
+.sec02.box01 { width:90%; max-width:1744px; height:450px; margin:0 auto; margin-top:100px;  background-color:#fff;  }
+.section02 .sec02 > .tit { width:100%; padding:25px 0; font-weight:600; font-size:22px; text-align:center;  }
+.sec02 .boxList { overflow:hidden; width:100%;  }
+.sec02 .boxList li { float:left; width:33.333%; text-align:center; }
+.sec02 .boxList .tit {width:100%; text-align:center; font-weight:600; font-size:18px; }
+.sec02 .boxList .txt {margin-bottom:10px; font-weight:600; font-size:16px; }
+.sec02Img { display:block; margin:0 auto; width:90%; max-width:410px; }
+
+/* 섹션 3  */
+.section03 { overflow:hidden; width:100%; padding-bottom:100px; }
+.section03 .tit { width:100%; margin-top:135px; margin-bottom:50px; font-weight:600; font-size:24px; text-align:center; }
+.sec03.boxList { overflow:hidden; width:90%; margin:0 auto; }
+.sec03.boxList > li{ float:left; width:49%; }
+.sec03.boxList > li:first-child { margin-right:2%; }
+.sec03.boxList .liBig { overflow:hidden; margin-bottom:60px; }
+.sec03.boxList .liBig .train { overflow: hidden;  width:400%; }
+.sec03.boxList .liBig .train li { float:left; width: 25%; position: relative; }
+.sec03.boxList .liBig .train li img { width:100%; }
+.sec03.boxList .liSmall { float:none; clear:both; height:180px; margin:0 auto; box-sizing:border-box; border:3px solid #7d7d7d; text-align:center; }
+.sec03.boxList .liSmall a { display:block; width:100%; height:100%; font-size:20px;line-height:180px; font-weight:600; }
+.sec03.boxList .liSmall a:hover, .sec03.boxList .liSmall a:focus, .sec03.boxList .liSmall a:active {  background-color:#eee; }
+.sec03.boxList .liBig .subTit { position:absolute; top:6%; left:5%; font-size:18px; font-weight:600; }

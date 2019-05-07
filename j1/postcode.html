@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8" />
+  <title> jquery - TMPT </title>
+  <style>
+   *{margin:0; padding:0;}
+	li {list-style-type:none;}	
+	img {border:0 none;}
+
+	body{ background-color:#eee; font-family:'NB Gothic', "Open Sans", "Helvetica Neue", Helvetica, Arial, "Malgun Gothic", sans-serif; color:#000;}
+	a:link, a:visited { color:#000; text-decoration:none;}
+	a:hover, a:focus { color:#f00; text-decoration:none;}
+	
+	h2,h3,h4{ border-left:10px solid red;  text-indent:1em;  margin:10px 0; }
+	h3{ border-color:gold}
+	h4{ border-color:crimson}
+	ul li{  list-style-type:none;  }
+	.basic{  width:900px;  margin:50px auto; border-top:5px solid #ddd; background-color:#fff;  padding:50px;}
+	
+	p { margin:5px 0;  }
+	label { color:crimson; font-weight:bold; }
+	label, input { vertical-align:middle; }
+	input{ padding:2px; border:1px solid #ccc;  }
+	#address, #address2 { width:30%;  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- 2)  http://postcode.map.daum.net/guide -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+
+ </head>
+
+ <body>
+	<div class="basic">
+		<h3></h3>
+		<p>
+			<label for="postcode1">우편번호</label>
+			<input type="text" id="postcode1" name="postcode1"/>-<input type="text" id="postcode1" name="postcode2" title="우편번호두번째"/>
+			<input type="button" value="우편번호검색" onclick="searchpost()"/>
+			<!--1) 우편번호 검색버튼을 클릭하면 searchpost() 함수부르기: 우편번호 검색을 실행합니다 .알림창 -->
+		</p>
+		<script>
+			function searchpost()
+			{
+				//가) alert("우편번호 검색을 실행합니다");	가.함수연결확인
+				//나) http://postcode.map.daum.net/guide 가서 기본사용법에 써있는 스크립트 복사해오기 
+				new daum.Postcode({ //new : 공간마련해서  daum.Postcode쓸수 있게 기본값 셋팅해라. 
+					oncomplete: function(data) {
+						$("#postcode1").val(data.postcode1 );
+						$("#postcode2").val(data.postcode2 );
+						$("#address").val(data.address );
+						$("#address2").focus();
+						// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
+						// 예제를 참고하여 다양한 활용법을 확인해 보세요.
+					}
+				}).open();//셋팅한것을 열어서 실행해라. 
+			}
+		</script>
+		<p>
+			<label for="address">상세주소</label>
+			<input type="text" id="address" name="address"/>
+			<input type="text" id="address2" name="address2" title="나머지 상세주소를 적어주세요"/>
+		</p>
+	</div>
+ </body>
+</html>

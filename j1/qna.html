@@ -1,0 +1,346 @@
+<!DOCTYPE html >
+<html   lang="ko"  >
+ <head>
+  <meta  charset="utf-8" /> 
+  <title>PORTFOLIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="css/base.css"/>
+  <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <style>
+	#main {    height: 1100px;}
+
+	.container.cform { width:1280px; position:relative; 	  }
+	h3 { color:#333; font-size:220%; letter-spacing:0.2em; padding:50px 0 25px; text-align:center; text-shadow: 1px 1px 2px rgba(255,255,255,0.9);  }
+	h4 { color:#333; font-size:200%; letter-spacing:0.2em; padding:50px 0 25px; text-align:left;  }
+
+	.container.cform .h3-sub { border-bottom:1px solid #dcdcdc;  letter-spacing:7px; padding-bottom:30px; text-align:center; font-weight:normal; }
+	.container.cform .h3-sub span { display:inline; }
+	.container.cform p {text-align:center; margin:8px auto; padding:10px; font-size:13px; line-height:22px;  font-weight:bold;  }
+
+	.c2 {  float:left; }
+	.c2.c21 {  width:20%;  height:890px;  }
+	.c2.c22 {  width: 76%;    height: 890px;    padding-left: 30px; }
+	.c2.c21 > ul {  width: 200px; height: 150px;  border: 1px solid #afafaf; margin-left: 22px; margin-top: 25px; }
+	.c2.c21 > ul > li {    padding: 10px 15px; }
+	.c2.c21 ul li ul {  margin-top: 10px; padding-top: 10px;  border-top: 1px solid #afafaf; }
+
+	.qnatb {     width: 90%; background-color: #fff; border-collapse: collapse;  }
+	.qnatb caption { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;  }
+
+	.qnatb td, .qnatb th {   padding:10px; border-left:none; border-right:none;  }
+	.qnatb th { border-bottom: 1px solid #afafaf;  border-top: 3px solid #838383;  }
+	.qnatb td { text-align:center; border-bottom:1px solid #eee;  color:#afafaf;  }
+	.qnatb td a:link , .qnatb td a:visited  {  color:#bb8e7d;  }
+	.qnatb td a:focus , .qnatb td a:hover {color:#E43F3F; }
+	.qnatb td span { display:block; width:60px ; height:30px; background-color:#bb8e7d; color:white; line-height:30px ; margin:0 auto;  }
+	.container.cform .paging span { color: #afafaf;  padding: 0 18px;  font-size: 18px;   font-weight: normal;   float: left; line-height: 35px; }
+	.container.cform .paging img {  float: left;     margin: 0 6px; }
+	.container.cform .paging {    margin-left: 35%;  height: 35px;     width: 234px;}
+ 	/*미디어쿼리*/
+		/* pc2 [1600~]*/
+	@media all and (min-width:1600px) { 
+		.container.cform {     width: 1280px;}
+	}
+	/* pc1 [1024~1599] 980, 960, 940*/
+	@media all and (min-width:1024px) and (max-width:1599px) {
+		.container.cform {     width: 980px;}
+		.c2.c21 > ul {  width: 80%; }
+		.container.cform .paging {    margin-left: 29%; }
+		
+	}
+	/* tablet2 [768~1023]
+	@media all and (min-width:768px) and (max-width:1023px) {
+		#header {     height: 123px; }
+		.container.cform { width: 740px; }
+	}
+	/* tablet1 [481~767]
+	@media all and (min-width:481px) and (max-width:767px) {
+		.container.cform { width: 460px; }
+		.container.cform input {  width: 32%; }
+		.container.cform.join form p { margin-left: 10px;  font-size: 80%; }
+	}
+	/* mobile [~480
+	@media all and (max-width:480px) {
+		.container.cform {    width: 280px; }
+		#main {     }
+		.container.cform input {  width: 69%; }
+		.container.cform label {  width: 100%; }
+		.container.cform .formdesc {    line-height: 16px; }
+		.container.cform .post .newline {   margin-left: 0; }
+		.usermobile input[type="text"] {  width: 45px; }
+		.container.cform .post input[type="text"] {   width: 23%; }
+		.container.cform .addinfo strong { width: 37%; }
+		.container.cform .job { width:35px; }
+		.container.cform .slabel { width:35px;  }
+		.container.cform.join form p {  margin-left: 0;      margin: 10px auto;}
+		.container.cform fieldset { padding: 0;  }
+	}*/
+  </style>
+	<!--[if lte IE  8]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+		<style type="text/css">
+			.row.r1 .a4.a41_50 { background:url('images/ie/movie.jpg') no-repeat top left;  }
+			.row.r2 .a4.a42 { background:url('images/ie/product_bg02.jpg') no-repeat top right ; }
+			.row.r4 .a4.a42_50 {background:url('images/ie/product_bg04.jpg') no-repeat top left ; z-index:999; }
+
+			.row.r1 .a4.a43 .child1 { width:100%; height:50%; background:#555555 url('images/ie/product_even01.jpg') no-repeat center ; }
+			.row.r1 .a4.a43 .child2 { width:50%; height:50%; background:url('images/ie/product_even02.jpg') no-repeat center ; }
+			.row.r1 .a4.a43 .child3 { width:50%; height:50%; background:url('images/ie/product_even03.jpg') no-repeat center ; }		
+		</style>
+
+	<![endif]-->
+	<!--[if lte IE  7]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+		<style type="text/css">
+
+		</style>
+
+	<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script>
+
+		$(document).ready(function(){
+				//메인버튼
+				$("body").append('<div class="menubg"></div>'); 
+				$(".menubar, .menubg").hide(); 
+				$(".menubutton").click(function(){
+					$(".menubg").show(); 
+					$(".menubar").slideDown().append('<img src="images/close.png" alt="" class="close"/>');
+					$(".close").click(function(){$(".menubar, .menubg").fadeOut();	});
+				});
+			//gnb_navi 열리기
+			$(".gnb, .gnb_navi").mouseover(function(){
+				$(".gnb_navi, .s5").stop().slideDown();
+			}).mouseout(function(){
+				$(".gnb_navi, .s5").stop().slideUp(); 
+			});
+		});
+		</script>
+	
+
+ </head>
+
+ <body>
+ 	<ul class="skip_nav">
+		<li><a href="#mainmenu" title="주메뉴바로가기">주메뉴</a></li>
+		<li><a href="#main_first" title="본문바로가기">본문바로가기</a></li>
+	</ul>
+	<div id="wrapper">
+		<header id="header">
+			<div class="headertop">
+				<div class="container">
+					<ul class="section">
+						<li><h1 class="hidden">FINDEN BRAND</h1><a href="index.html" title="FINDEN BRAND"><img src="images/top_section01_on.gif" alt="핀덴메인"/></a></li>
+						<li><p class="hidden">FINDEN SHOWPPINGMALL</p><a href="#" title="FINDEN SHOP"><img src="images/top_section02_off.gif" alt="핀덴쇼핑몰"/></a></li>
+					</ul><!--.section END-->
+					<ul class="sns">
+						<li><a href="https://www.facebook.com/findenkr/" title="facebook"><img src="images/utill_sns_facebook.png" alt="facebook"/></a></li>
+						<li><a href="https://story.kakao.com/ch/finden" title="kakaostory"><img src="images/utill_sns_kakaostory.png" alt="kakaostory"/></a></li>
+						<li><a href="https://www.instagram.com/p/BFyK6Fdlioh/" title="instagram"><img src="images/utill_sns_instagram.png" alt="instagram"/></a></li>
+					</ul><!--sns END-->
+					<ul class="top-utill">
+						<li><a href="login.html" title="로그인 바로가기">로그인</a></li>
+						<li><a href="join.html" title="회원가입 바로가기">회원가입</a></li>
+						<li><a href="findid.html" title="ID찾기 바로가기">ID찾기</a></li>
+						<li><a href="findpass.html" title="PW찾기 바로가기">PW찾기</a></li>
+						<li><a href="qna.html" title="고객센터 바로가기">고객센터</a></li>
+					</ul><!--top-utill END-->
+				</div><!--container END-->
+			</div><!--headertop END-->
+			<div class="headerbottom">
+				<div class="container">
+					<h2 class="logo"><a href="index.html" title="FINDEN LOGO"><img src="images/logo.png" alt=""/>FINDEN BRAND</a></h2>
+					<h3 class="hidden">메인메뉴</h3>
+					<p class="menubutton"><a href="#" title="메뉴옵션열기"><img src="images/menubutton.png" alt="메뉴옵션버튼"/></a></p>
+					<nav class="gnb">
+						<h2 class="hidden">주메뉴</h2>
+						<ul>
+							<li><a href="brandintro.html" title="브랜드소개 바로가기" id="mainmenu">브랜드 소개</a>
+								<ul class="s5">
+									<li><a href="brandintro.html" title="핀덴이야기 바로가기">핀덴이야기</a></li>
+								</ul>
+							</li>
+							<li><a href="submain.html" title="제품소개 바로가기">제품소개</a>
+								<ul class="s5">
+									<li><a href="submain.html" title="제품소개 바로가기">교재/교구</a></li>
+									<li><a href="submain.html" title="제품소개 바로가기">생활환경</a></li>
+									<li><a href="submain.html" title="제품소개 바로가기">스킨베베</a></li>
+									<li><a href="submain.html" title="제품소개 바로가기">체험단리뷰</a></li>
+								</ul>							
+							</li>
+							<li><a href="event.html" title="이벤트 바로가기">이벤트</a>
+								<ul class="s5">
+									<li><a href="event.html" title="이벤트 바로가기">무료샘플</a></li>
+									<li><a href="event.html" title="이벤트 바로가기">체험단</a></li>
+									<li><a href="event.html" title="이벤트 바로가기">캠페인</a></li>
+								</ul>								
+							</li>
+							<li><a href="gallery.html" title="홍보소식 바로가기">홍보&amp;소식</a>
+								<ul class="s5">
+									<li><a href="gallery.html" title="홍보소식 바로가기">공지사항</a></li>
+									<li><a href="gallery.html" title="홍보소식 바로가기">보도자료</a></li>
+									<li><a href="gallery.html" title="홍보소식 바로가기">광고 갤러리</a></li>
+								</ul>	
+							</li>
+							<li><a href="qna.html" title="고객서비스 바로가기">고객서비스</a>
+								<ul class="s5">
+									<li><a href="qna.html" title="고객서비스 바로가기">핀덴사용법</a></li>
+									<li><a href="qna.html" title="고객서비스 바로가기">음원다운로드</a></li>
+									<li><a href="qna.html" title="고객서비스 바로가기">교육상담신청</a></li>
+								</ul>								
+							</li>
+						</ul>
+					</nav><!-- gnb END-->
+				</div><!--container END-->
+				<nav class="gnb_navi">
+					<h3 class="hidden">상세메뉴</h3>
+					<div class="bg1"></div>
+					<div class="bg2"></div>
+					<div class="container cform navi">
+						<div class="a1"><a href="#" title=""><img src="images/gnb_banner.jpg" alt=""></a></div><!-- END-->
+					</div><!--container cform gnb-navi END-->
+				</nav><!--gnb_navi END-->
+				<nav class="menubar">
+					<h3 class="hidden">보조메뉴</h3>
+					<ul class="mb_header">
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="qna.html">고객센터</a></li>
+					</ul>
+					<ul class="mb_main">
+						<li><a href="brandintro.html">브랜드소개</a></li>
+						<li><a href="submain.html">제품소개</a></li>
+						<li><a href="event.html">이벤트</a></li>
+						<li><a href="gallery.html">홍보&amp;소식</a></li>
+						<li><a href="qna.html">고객서비스</a></li>
+					</ul><!-- menubar END-->
+				</nav>
+			</div><!--headerbottom END-->
+		</header><!--header END-->
+		<div id="main">
+			<div class="container cform">
+				<h3>고객센터</h3>
+				<p class="h3-sub"><span>H</span>>브랜드 소개>브랜드 소개</p>
+				<div class="c2 c21">
+					<ul>
+						<li>
+							고객센터
+							<ul>
+								<li>- <a href="#">공지사항</a></li>
+								<li>- <a href="#">1:1 문의</a></li>
+								<li>- <a href="#">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--c2 c21 END-->
+				<div class="c2 c22">
+					<h4>공지사항</h4>
+					<table class="qnatb">
+						<caption>핀덴 고객센터</caption>
+						<colgroup>
+						<col style="width:20%"/>
+						<col style="width:60%"/>	
+						<col style="width:20%"/>	
+						</colgroup>
+						<thead>
+							<tr><th scope="col">번호</th><th scope="col">제목</th><th scope="col">등록일</th></tr>
+						</thead>
+						<tbody>
+							<tr><td><span>공지</span></td><td><a href="#">핀덴스킨베베 무료샘플신청 9월4주차 당첨안내</a></td><td>2016.10.04</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">핀덴스킨베베 마데카식애씨드크림 체험단 당첨자 안내</a></td><td>2016.09.30</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">핀덴스킨베베 무료샘플신청 9월3주차 당첨안내</a></td><td>2016.09.26</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">핀덴스킨베베 무료샘플신청 9월2주차 당첨안내</a></td><td>2016.09.19</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">핀덴스킨베베 무료샘플신청 9월1주차 당첨안내</a></td><td>2016.09.06</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">:::핀덴 추석 연휴 배송 공지:::</a></td><td>2016.09.05</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">[공지사항] 2016년 7월 무이자 할부 EVENT~</a></td><td>2016.07.08</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">[공지사항] 핀덴 에어매트 이벤트 당첨자 공지</a></td><td>2016.06.29</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">[공지사항] 핀덴 포토 후기 이벤트 당첨자 발표</a>!</td><td>2016.05.31</td></tr>
+							<tr><td><span>공지</span></td><td><a href="#">[공지사항] 핀덴카 음원 다운로드 매뉴얼</a></td><td>2016.05.24</td></tr>
+						</tbody>
+					</table>
+					<p class="paging"><img src="images/paging_first.gif" alt=""/><img src="images/paging_prev.gif" alt=""/><span>1</span><img src="images/paging_next.gif" alt=""/><img src="images/paging_end.gif" alt=""/>
+				</div><!--c2 c22 END-->
+			</div><!--container cform END-->
+		</div><!--main END-->
+		<div id="footer">
+			<div class="footertop">
+				<div class="container">
+					<div class="footer-navi">
+						<ul>
+							<li><a href="#" title="">회사소개</a></li>
+							<li><a href="#" title="">이용약관</a></li>
+							<li><a href="#" title="">개인정보취급방침</a></li>
+							<li><a href="#" title="">이메일무단수집거부</a></li>
+							<li><a href="#" title="">교사채용</a></li>
+							<li><a href="#" title="">고객센터</a></li>
+						</ul>
+					</div><!-- footer-navi END-->
+					<div class="footer-sns">
+						<ul>
+							<li><a href="#" title=""><img src="images/utill_sns_facebook.png" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/utill_sns_instagram.png" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/utill_sns_kakaostory.png" alt=""/></a></li>
+						</ul>
+					</div><!-- sns END-->
+					<div class="familysite">
+					<form action="#" class="f-site-form" >
+						<select name="familysite" size="1" >
+							<option value="hsfamily" selected="selected">핀덴 패밀리 사이트</option>
+							<option value="hsedu" >한솔교육 사이트</option>
+							<option value="hscompany" >한솔교육기업소개</option>
+							<option value="hsjunier" >한솔주니어디킨스</option>
+							<option value="mendel" >멘델스쿨</option>
+							<option value="koreart" >한국RT센터</option>
+							<option value="hscmusium" >한솔어린이뮤지움</option>
+							<option value="jaminara" >재미나라</option>
+							<option value="finger" >핑거스터디</option>
+							<option value="brain" >브레인스쿨</option>
+							<option value="hsplus" >한솔 플러스</option>
+							<option value="windersp" >원더 스페이스</option>
+							<option value="chinaro" >차이나로</option>
+							<option value="hs" >한솔미래영재교육</option>
+							<option value="" >해피너스</option>
+							<option value="" >한솔수북</option>
+							<option value="" >한솔교육 희망재단</option>
+							<option value="" >브레인스쿨 중국법인</option>
+							<option value="" >브레인스쿨 태국법인</option>
+						</select>
+					</form>
+					</div><!--familysite END-->
+				</div><!--container END-->
+			</div><!--footertop END-->
+			<div class="footerbottom">
+				<div class="container">
+					<h2 class="hidden">FINDEN 주소 및 고객센터</h2>
+					<p class="footerlogo"><img src="images/foot_logo.png" alt=""/></p>
+					<ul class="adress">
+						<li>㈜한솔교육</li>
+						<li>03908 서울특별시 마포구 월드컵북로 361</li>
+						<li>대표이사:변재용</li>
+						<li>사업자등록번호:105-81-48593</li>
+						<li>통신판매신고:제2008-서울마포-0281호</li>
+						<li>개인정보보호책임자:송명식</li>
+						<li>고객센터:1588-1185 / findencc@eduhansol.co.kr</li>
+						<li>COPYRIGHT@HANSOL EDUCATION CORP. ALL RIGHT RESERVED</li>
+					</ul><!--adress END-->
+					<p class="qna">고객센터<strong>1588-1185</strong></p>
+					<div class="footerlink">
+						<ul>
+							<li><a href="#" title=""><img src="images/foot_link01.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link02.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link03.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link04.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link05.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link06.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link07.jpg" alt=""/></a></li>
+						</ul>
+					</div><!--footerlink END-->
+				</div><!--container END-->
+			</div><!--footerbottom END-->
+		</div><!--footer END-->
+	</div><!--wrapper END-->
+ </body>
+</html>

@@ -1,0 +1,120 @@
+#main {    height: 6075px;}
+
+	 h3 { color:#333; font-size:220%; letter-spacing:0.2em; padding:50px 0 25px; text-align:center; text-shadow: 1px 1px 2px rgba(255,255,255,0.9);  }
+	.brandintro .h3-sub { border-bottom:1px solid #dcdcdc;  letter-spacing:7px; padding-bottom:30px; text-align:center; font-weight:normal; }
+	.h3-sub span { display:inline; }
+
+	.brandintro p {text-align:center; margin:8px auto; padding:10px; font-size:13px; line-height:22px;  font-weight:bold;  }
+	.intro span { display:block;  }
+	.intro h4 span {  color:#333; text-decoration:underline; font-size:120%;} 
+	.intro h4 {  width:600px; height:90px; color: #e43f3f; }
+	/* layout*/
+	.intro { margin-left:auto; margin-right:auto; position:relative; }
+	.intro.c1 { width:1280px; height:1300px; }
+	.intro.c2 { width:100%; height:1000px; background-color:#fffbe6; }
+	.intro.c3 { width:1280px; height:500px; }
+	.intro.c4 { width:100%; height:1500px; background:url("../images/intro_bg04_01.jpg") no-repeat center;  }
+	.intro.c5 { width:1280px; height:900px; }
+
+	.intro.c1 h4  { position:absolute;  top: 160px; left: 80px; }
+	.intro.c1 .pimg_1 { width:490px; height:80px; margin-top:100px;  }
+	.intro.c1 .p1 span { color:  #e43f3f; display:inline;  }
+	.intro.c1 .p2 {height:200px; color:#939393; background:url("../images/intro_bg01_01.png") no-repeat center;  }
+	.intro.c1 .p2 .padding { padding-top:65px;  }
+	.intro.c1 .pimg_2 { margin-top:40px; }
+	.intro.c1 ul { height: 300px; width: 1020px; margin: 0 auto;  }
+	.intro.c1 ul li { width:270px; height:270px; float:left;  color:white; margin: 0 35px; text-align: center; }
+	.intro.c1 ul li strong { font-size:110%; display: block; margin-top: 125px; }
+	.intro.c1 ul li span { display:block; }
+	.intro.c1 ul li:nth-child(1) { background:url("../images/intro_img01_02_01.png") no-repeat center;  }
+	.intro.c1 ul li:nth-child(2) { background:url("../images/intro_img01_02_02.png") no-repeat center;  }
+	.intro.c1 ul li:nth-child(3) { background:url("../images/intro_img01_02_03.png") no-repeat center;  }
+	.intro.c1 img {    width: 100%; }
+
+	.intro.c2 h4 {  position:absolute; top:-40px; left: 80px; }
+	.intro.c2 p { padding-top: 90px; width: 1020px; height: 80px; }
+	.intro.c2 ul { width:1280px; height:500px;  background:url("../images/intro_bg02_01.png") no-repeat center;  position:relative; }
+	.intro.c2 ul li { width:158px; height: 88px; position:absolute; top:10px ; left:10px; padding-top:70px;    text-align: center; }
+	.intro.c2 ul li:nth-child(1) {  top: 60px; left: 460px; color:#0fc2bc; }
+	.intro.c2 ul li:nth-child(2) {  top:56px; left:660px; color:#ff6600;  }
+	.intro.c2 ul li:nth-child(3) {  top: 230px; left: 560px; color:#df2121; }
+	.intro.c2 .container.cform {  background-color: transparent; }
+	.intro.c2 ul li p { position:absolute;  top:0; left:0; width: 300px; }
+	.intro.c2 ul li:nth-child(1) p { top: -40px; left:-350px;color:#0fc2bc; }
+	.intro.c2 ul li:nth-child(2) p {  top:-40px; left:200px; color:#ff6600; }
+	.intro.c2 ul li:nth-child(3) p {   top: 170px; left:-70px; color:#df2121; }
+
+	.intro.c3 h4 { position:absolute;  top:-88px; left: 80px;  }
+	.intro.c3 ul { width:1020px; height:400px; margin:50px auto;  }
+	.intro.c3 ul li { width:500px; height:400px; float:left;  }
+	.intro.c3 ul li:nth-child(1) { margin-right:20px;  }
+	.intro.c3 ul li strong { color:#333;  display:block; }
+	.intro.c3 ul li p { color:#939393; font-weight:normal; text-align:left;  }
+
+	.intro.c4 h4 { position:absolute;  top:-40px; left: 80px;  }
+	.intro.c4 .p3 {  color:#939393; font-size:90%;   }
+	.intro.c4 .p3.p31  { position:absolute; top:340px; left:720px;  }
+	.intro.c4 .p3.p32  { position:absolute;  top:710px; left:16%;}
+	.intro.c4 .p3.p33  { position:absolute;  top:1090px; left:720px;}
+	.intro.c4 .p3.p31 strong { color:#df2121;  }
+	.intro.c4 .p3.p32 strong { color:#0fc2bc; }
+	.intro.c4 .p3.p33 strong { color:#ff6600; }
+	.intro.c4 .container.cform {  background-color: transparent; }
+
+	.intro.c5 h4 { position:absolute;  top:-40px; left: 80px;  }
+	.intro.c5 p span { color:#df2121; }
+	.intro.c5 .c5p span { color: #939393;  font-weight: normal;     padding-top: 10px; }
+	.intro.c5 p img {   }
+	.intro.c5 ul  { width:900px; margin:0 auto;  }
+	.intro.c5 ul li   { border: 1px solid #333;  width: 45%;  float: left;
+    height: 135px;     padding-left: 20px;     font-size: 90%;  padding-top: 10px; font-weight:bold;  }
+	.intro.c5 ul li:nth-child(1) { margin-right:5%; }
+	.intro.c5 .c5p { text-align:left; font-weight:normal; padding:0;     width: 1020px;  }
+	.intro.c5 ul li p {   text-align:left; font-weight:normal;  }
+	.top {width:60px; height:60px; position:fixed; right:10%; bottom:100px;}
+
+	.intro.c6 {height:500px; }
+	.intro.c6 h4 { position:absolute;  top:-70px; left: 80px;  }
+	#map {   display: block;   width: 65%;   height: 350px;    margin-top: 20px;   margin: 0 auto;   -moz-box-shadow: 0px 5px 20px #ccc;    -webkit-box-shadow: 0px 5px 20px #ccc;  box-shadow: 0px 5px 20px #ccc; }
+		
+	
+	
+	/*�̵������*/
+	@media all and (min-width:1600px) { 
+		.container {     width: 1280px;}
+	}
+	/* pc1 [1024~1599] 980, 960, 940*/
+	@media all and (min-width:1024px) and (max-width:1599px) {
+		#visual  .control {  margin-left: -490px;    top: 492px;   left: 50%; }
+		#visual, .visualimg, .sliding .train { height:632px; }
+		.container.cform { width:980px;  }
+		.container {     width: 980px;}
+		.sns {  margin-left: 10px; padding-top: 15px;}
+		.top-utill {  width: 46%;}
+		.top-utill li    {width: 19.5%;}
+		.top-utill li a { font-size:70%; }
+		.logo { width: 30%; }
+		.gnb li { width: 130px; }
+		.footer-navi {   width: 72%; }
+		.footer-navi li a {     font-size: 80%; }
+		.footerlink  { display:none;   }
+		.qna { top:27px;  }
+		#footer { height:261px; }
+		.footerbottom { height:200px;  }
+		.familysite select {   font-size: 65%;   height: 23px; width: 132px;}
+		.intro.c1 img {    width: 100%; }
+		.intro.c1 ul { width:980px;  }
+		.intro.c1, .intro.c3 , .intro.c5 { width:980px; }
+		.intro.c1 ul li { margin: 0 27px; }
+		.intro.c2 ul { width: 980px; }
+		.intro.c2 ul li:nth-child(1) { left: 310px; }
+		.intro.c2 ul li:nth-child(2) { left: 510px; }
+		.intro.c2 ul li:nth-child(3) { left: 410px; }
+		.intro.c4 .p3.p31 { left: 570px; }
+		.intro.c4 .p3.p32 { left: 6%; }
+		.intro.c4 .p3.p33 { left: 570px; }
+		.intro.c5 p img { width: 100%; }
+		.intro.c5 .c5p { font-size: 16px; font-weight:bold;  }
+		.intro.c5 .c5p span { font-weight:normal; font-size:13px;  }
+
+	}

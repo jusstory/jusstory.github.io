@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*
+공통 css
+Site : "Juyeon Kim's portfolio"
+Author : "김주연"
+Version : "2019.03"
+*/
+
+
+/*reset css*/
+* {margin:0; padding:0;}
+html, body {width:100%; height:100%; }
+li { list-style-type:none;}
+img { border:none; }
+/*html::-webkit-scrollbar {width:0;}*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, font, img, ins, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, textarea, input, select, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; color:#000; font-size:18px; font-family:"Nanum Gothic", "나눔고딕", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", "Baekmuk Dotum", "sans-serif"; font-weight:400; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+table {width:100%; border-collapse:collapse; border-spacing:0; border:0;}
+ol, ul {list-style:none;}
+img, fieldset, input {border:none; vertical-align:middle;}
+img {-ms-interpolation-mode: bicubic;}
+hr, caption {display:none;}
+legend, caption {width:0; height:0; line-height:0; position:absolute; top:-9999px; left:-9999px; overflow:hidden; visibility:hidden;}
+object {outline:none;}
+
+button, input, select, textarea {padding:0; margin:0; border-radius:0; color:#343434; vertical-align:middle; font-size:18px; background:transparent;}
+input[type="text"], button, html input[type="button"] {border:0 none; vertical-align:middle; /*outline:none;*/}
+input[type="reset"], button, input[type="submit"] {-webkit-appearance:button; outline:none; cursor:pointer;}
+button[disabled], html input[disabled] {cursor:default;}
+input[type="checkbox"], input[type="radio"] {-webkit-box-sizing:border-box; box-sizing:border-box; padding:0;}
+button::-moz-focus-inner, input::-moz-focus-inner {border:0;}
+textarea {border:0 none; overflow:auto; vertical-align:top; overflow-x:hidden; overflow-y:auto; resize:none;}
+table.ui-datepicker-calendar { display:none; }
+
+/* Form Controls */
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+/* @font-face {font-family:"Nanum Gothic"; font-style:normal; font-weight:400; src:url("../font/NanumGothic.eot"); src:url("../font/NanumGothic.eot?#iefix") format('embedded-opentype'), local("☺"), url("../font/NanumGothic.woff") format("woff"), url("../font/NanumGothic.svg#NanumGothic") format("svg");}
+@font-face {font-family:"Nanum Gothic"; font-style:normal; font-weight:700; src:url("../font/NanumGothicBold.eot"); src:url("../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), local("☺"), url("../font/NanumGothicBold.woff") format("woff"), url("../font/NanumGothicBold.svg#NanumGothicBold") format("svg");}
+@font-face { font-family: 'Noto Sans KR'; font-weight: normal; font-style: normal; src: url('../font/NotoSansCJKkr-Bold.eot'); src: url('../font/NotoSansCJKkr-Bold.eot?#iefix') format('embedded-opentype'), local("☺"),  url('../font/NotoSansCJKkr-Bold.woff') format('woff') , url('../font/NotoSansCJKkr-Bold.svg#NotoSansCJKkr-Bold') format('svg'); } */
+
+/*base css */
+body {font-family:"Nanum Gothic", "나눔고딕", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", "Baekmuk Dotum", "sans-serif" background:transparent;}
+a:link, a:visited{text-decoration:none; }
+a:hover, a:focus{text-decoration:none; }
+
+/* common */
+.blind { position:absolute; left:-999999px;  width:1px; height:1px;  text-indent:-999999px; font-size:0; }
+.hide { display:none; }
+.ellipsis{white-space:nowrap; overflow:hidden; text-overflow: ellipsis;}
+.bgNo { background:none !important; }
+.dpBlock { display:block; }
+
+/* skip */
+.skip_nav { }
+.skip_nav li a { display:block; position:absolute; top:-100px; width:100%; text-align:center; font-weight:600;   }
+.skip_nav li a:focus { top:0px;  }
+
+/* font 폰트 */
+.ft_nm { font-weight:normal !important;  }
+.ft_B { font-weight:600 !important;  }
+
+/* 정렬 */
+.txtCt { text-align:center !important; }
+
+/* 버튼모음 */
+  /* 사이즈 100*41 */
+.btn01 { padding:10px; color:#fff; font-size:16px; font-weight:600; background-color: #bebebe; }
+.btn01:hover, .btn01:focus, .btn01:active { background-color:#4b14a6; }
+
+.btn02 { display:inline-block; width:180px; height:35px; line-height:35px; }
+.btn02 a { display:block; width:100%; height:100%; color:#fff; text-indent:0; font-size:15px; text-align: center; background-color: #868686; }
+.btn02 a:hover, .btn02 a:focus, .btn02 a:active { background-color:#4b14a6; }
+
+/* 여백 */
+.mr10 { margin-right:10px !important; }
+
+.mb10 { margin-bottom:10px !important; }
+.mb20 { margin-bottom:20px !important; }
+
+/* border 보더  */
+.bdNo { border:0 none !important;  }
+.btNo { border-top:0 none !important; }
+.brNo { border-right:0 none !important;  }
+
+/* layout css */
+#wrap {overflow:hidden; position:relative; width:100%; min-height:100%; margin:0 auto;}
+#header { position:fixed; top:0; left:0 ;  width:100%; z-index: 999; }
+#footer { width: 100%; height:250px;  background-color:#dddddd; }
+.container {overflow:hidden;  width:95%; margin:0 auto;  }
+
+/* 헤더 */
+.logo {position:absolute; top:0; left:0;  width:134px; padding:5px 0; }
+.logo img { width:100%; }
+/* 네비게이션 */
+#header .container { overflow:inherit; position: relative; z-index: 999;}
+.header01 {  width:100%; height:90px; box-sizing:border-box; border-bottom:1px solid #ddd; background-color: #fff; }
+.nav { width:100%; z-index: 998; }
+.gnb { width:100%; text-align:right; }
+.gnb > li { position:relative; display:inline-block; padding:0 30px;}
+.gnb > li:first-child { padding-left:0;  }
+.gnb > li:last-child { padding-right:0; }
+.gnb > li > a { display:block; width:100%; line-height:90px; color:#000; font-weight:600; font-size:22px; }
+.gnb > li > a:hover, .gnb > li > a:focus, .gnb > li > a:active { color:#4b14a6; }
+.gnb .depth02 { display:none; position: absolute; top: 90px; margin-top: 5px; z-index: 999; }
+.gnb .depth02 li { width:100%; margin-bottom:3px; line-height: 25px; text-align:left;}
+.gnb .depth02 li a { font-size:16px; font-weight:600;  }
+.gnb .depth02 li a:hover, .gnb .depth02 li a:focus, .gnb .depth02 li a:active { color:#4b14a6; }
+.navWrap { display:none; position: absolute; top: 90px; left: 0; width:100%; height: 95px; background:url("../images/btn/bg_navW.png") 0 0 repeat; z-index: 998; }
+/* 모바일 네비게이션 */
+.mb_naviBar { display:none; float:right; width:40px; height:40px; margin-top:25px; font-size:0; text-indent:-9999999px; background:url("../images/btn/mb_naviBar.png") 0 0 no-repeat; }
+.mb_nav { display:none; position:absolute; top:90px; left:0; width:100%; height:100%; z-index: 999;}
+.mb_nav:before { content:" "; position:absolute; top:0; left:0;  display:block; width:100%; height:100%; background:url("../images/btn/bg_navB.png") 0 0 repeat;}
+.mb_gnb { position: absolute; top: 0; right: -100%; width:60%;  height:100%; }
+.mb_gnb > li {   }
+.mb_gnb > li.last:after { position: absolute; left: 0; content:" "; display:block; width:100%;  height:100%; background:url("../images/btn/bg_navB.png") 0 0 repeat; }
+.mb_gnb > li > a { display:block; width:100%; height:45px; box-sizing:border-box; border-bottom:1px solid #ddd; text-indent:20px; line-height:45px; font-weight:600; background-color:#fff;  }
+.mb_gnb > li.on > a { background-color:#dccafa; }
+.mb_gnb .depth02 { display:none; }
+.mb_gnb .depth02 > li { height:40px; }
+.mb_gnb .depth02 > li > a { display:block; width:100%; height:100%; box-sizing:border-box; border-bottom:1px solid #ddd; line-height:40px; color:#fff; font-size:16px ; text-indent:20px; background:url("../images/btn/bg_navB.png") 0 0 repeat;}
+.mb_gnb .depth02 > li > a:hover, .mb_gnb .depth02 > li > a:active, .mb_gnb .depth02 > li > a:focus { background:none;  background-color:#4b14a6; }
+.btn_close { position: absolute; top: 0; right: -100%; }
+/* 푸터 */
+#footer { height:150px; }
+.address { text-align:center;  }
+address { font-style:normal; font-size:14px; color:#707070; }
+.copyright { display:block; width:100%; font-size:14px; color:#707070; }

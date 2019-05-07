@@ -1,0 +1,615 @@
+<!DOCTYPE html >
+<html   lang="ko"  >
+ <head>
+  <meta  charset="utf-8" /> 
+  <title>PORTFOLIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="css/base.css"/>
+  <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <style>
+
+  </style>
+	<!--[if lte IE  9]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+		<style type="text/css"> 
+		.a3 { width:32.33%;  }
+		.a3 a { border:0.5px solid #666 ; }
+		.a32.a3 { margin-left:1px;  }
+		</style>
+	<![endif]-->
+	<!--[if lte IE  8]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<style type="text/css">
+			.row.r1 .a4.a41_50 { background:url('images/ie/movie.jpg') no-repeat top left;  }
+			.row.r2 .a4.a42 { background:url('images/ie/product_bg02.jpg') no-repeat top right ; }
+			.row.r4 .a4.a42_50 {background:url('images/ie/product_bg04.jpg') no-repeat top left ; z-index:999; }
+
+			.row.r1 .a4.a43 .child1 { width:100%; height:50%; background:#555555 url('images/ie/product_even01.jpg') no-repeat center ; }
+			.row.r1 .a4.a43 .child2 { width:50%; height:50%; background:url('images/ie/product_even02.jpg') no-repeat center ; }
+			.row.r1 .a4.a43 .child3 { width:50%; height:50%; background:url('images/ie/product_even03.jpg') no-repeat center ; }	
+		</style>
+	<![endif]-->
+	<!--[if lte IE  7]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+		<style type="text/css">
+			.row.r3 .a3 { width:32.33%;  }
+			.footer-sns ul { margin-top:16px;  }
+			.qna { top:15px; }
+		</style>
+	<![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/cookies.js"></script>
+	  <script>
+		
+		function mainSlide(){  
+			var controlNumber = $(".control.big li").length;
+			if($(".widthon").index() < controlNumber-1){ //0~3 < 3
+				$(".widthon").next().children().click(); 
+			} else{
+				$(".control li:eq(0) a").click();
+			}
+		}
+
+		$(document).ready(function(){
+			var timer = window.setInterval(mainSlide, 3000 );
+				var timer_state = true;
+					$(".control .stop a").click(function(){ 
+						if( timer_state ){
+							$(this).find("img").attr("src","images/play.png");
+							timer_state = false;
+							window.clearInterval(timer);
+						}else{
+							$(this).find("img").attr("src","images/stop.png");
+							//$(".control .one a").click();
+							timer_state = true;
+							timer = window.setInterval(mainSlide ,3000 );
+						}
+						return false;
+					});
+			//메인버튼
+			$("body").append('<div class="menubg"></div>'); 
+			//$(".menubar, .menubg").hide(); 
+			$(".menubutton").click(function(){
+				$(".menubg").show(); 
+				$(".menubar").slideDown().append('<img src="images/close.png" alt="" class="close"/>');
+				$(".close").click(function(){$(".menubar, .menubg").slideUp();	});
+				return false; 
+			});
+			//gnb_navi 열리기
+			$(".gnb, .gnb_navi").mouseover(function(){
+				$(".gnb_navi, .s5").stop().slideDown();
+			}).mouseout(function(){
+				$(".gnb_navi, .s5").stop().slideUp(); 
+			});
+			//slidebanner open_close 
+			$(".sm").hide(); 
+			var width =
+			$(window).width();
+			if ( width >=1600 ){ // pc 1
+				$(".open_close").click(function(){
+				 if ( 	$("#visual").css("height") == "740px" )
+				 {	$("#visual, #visual  .tunnel").css({"height":"180px"});
+					$(this).css({"backgroundPosition":"0 -0"});
+					$("#visual").css({"height":"180px"});
+					$(".content1 .rowarray").css({"top":"0"});
+					$(".visualimg").css({"height":"180px"});
+					$(".big").hide();
+					$(".visualimg .control, .open_close").css({"top":"150px"});
+					$(".sm").show(); }else{ 
+
+					$("#visual, #visual  .tunnel").css({"height":"100%"});
+					$(this).css({"backgroundPosition":"0 -30px"});
+					$("#visual").css({"height":"740px"});
+					$(".content1 .rowarray").css({"top":"-140px"});
+					$(".visualimg").css({"height":"740px"});
+					$(".sm").hide();
+					$(".big").show();		
+					$(".visualimg .control, .open_close").css({"top":"570px"});
+					}
+					return false; 
+				});
+			}else if ( width >=1024  ){ //pc2 
+				$(".open_close").click(function(){
+					 if ( 	$("#visual").css("height") == "632px" )
+					 {	$("#visual, #visual .tunnel, .train.sm").css({"height":"180px"});
+						$(this).css({"backgroundPosition":"0 -0"});
+						$("#visual").css({"height":"180px"});
+						$(".content1 .rowarray").css({"top":"0"});
+						$(".visualimg").css({"height":"180px"});
+						$(".sliding .train.sm li img").css({"height":"180px"});
+						$(".big").hide();
+						$(".visualimg .control, .open_close").css({"top":"150px"});
+						$(".sm").show(); }else{ 
+
+						$("#visual, #visual .tunnel, .train.sm").css({"height":"100%"});
+						$(this).css({"backgroundPosition":"0 -30px"});
+						$("#visual").css({"height":"632px"});
+						$(".content1 .rowarray").css({"top":"-110px"});
+						$(".visualimg").css({"height":"632px"});
+						$(".sliding .train li img").css({"height":"100%"});
+						$(".sm").hide();
+						$(".big").show();		
+						$(".visualimg .control, .open_close").css({"top":"492px"});
+						}
+						return false; 
+					});
+			} else{
+				$(".open_close").click(function(){
+					 if ( 	$("#visual").css("height") == "500px" )
+					 {	$("#visual, #visual .tunnel, .train.sm").css({"height":"180px"});
+						$(this).css({"backgroundPosition":"0 -0"});
+						$("#visual").css({"height":"180px"});
+						$(".content1 .rowarray").css({"top":"0"});
+						$(".visualimg").css({"height":"180px"});
+						$(".sliding .train li img").css({"height":"180px"});
+						$(".big").hide();
+						$(".visualimg .control, .open_close").css({"top":"150px"});
+						$(".sm").show(); }else{ 
+
+						$("#visual, #visual .tunnel, .train.sm").css({"height":"100%"});
+						$(this).css({"backgroundPosition":"0 -30px"});
+						$("#visual").css({"height":"500px"});
+						$(".content1 .rowarray").css({"top":"-85px"});
+						$(".visualimg").css({"height":"500px"});
+						$(".sliding .train li img").css({"height":"100%"});
+						$(".sm").hide();
+						$(".big").show();		
+						$(".visualimg .control, .open_close").css({"top":"385px"});
+						}
+						return false; 
+					});
+			}
+			
+					
+			//visual silde부분
+			$(".control .one a").parent().addClass("widthon");
+			$(".control .one a").addClass("on");
+
+			$("#visual .control li a").click(function(){ 
+				$("#visual .control li").removeClass("widthon");
+				$("#visual .control li a").removeClass("on");
+				/* widthon, on 클래스 bg 
+				$(this).parent().addClass("widthon");
+				$(this).addClass("on");
+				control one two three four
+				alert($(this).parent().attr("class"))
+				*/
+				
+				$(".control ."+$(this).parent().attr("class")).addClass("widthon").children("a").addClass("on");
+				/*
+				$("#visual .sh img").before( '<img src="'+ $(this).attr("href") +'" alt=""/>');
+				*/
+
+				if($(this).parents().hasClass("big")){
+					$("#visual .big .sh img").before( '<img src="'+ $(this).attr("href") +'" alt=""/>');
+					$("#visual .sm .sh img").before( '<img src="'+ $(this).attr("href").replace(".jpg", "_sm.jpg") +'" alt=""/>');
+				} else if($(this).parents().hasClass("sm")){
+					$("#visual .big .sh img").before( '<img src="'+ $(this).attr("href").replace("_sm", "") +'" alt=""/>');
+					$("#visual .sm .sh img").before( '<img src="'+ $(this).attr("href") +'" alt=""/>');
+				}
+				$("#visual .big .sh img:last, #visual .sm .sh img:last").fadeOut("2000", function(){
+					$("#visual .big .sh img:not(:first), #visual .sm .sh img:not(:first)").remove();
+				});
+				return false; 
+			});
+
+			//하단  slide부분
+			$(".content3 .train li:last").prependTo(".content3 .train");
+			$(".content3 .train").css({"marginLeft":"-100%"});
+
+			$(".next").click(function(){
+				
+				$(".content3 .train").animate({"marginLeft":"-=100%"} , "fast", function(){
+					$(".content3 .train li:last").prependTo(".content3 .train");
+					$(".content3 .train").css({"marginLeft":"-100%"}); // 한번 움직일때마다 순서 바꾸고 앞으로 기차칸빼기 가동
+				});
+				return false ;
+			});
+			$(".prev").click(function(){
+				$(".content3 .train").animate({"marginLeft":"+=100%"}, "fast", function(){
+					$(".content3 .train li:last").prependTo(".content3 .train");
+					$(".content3 .train").css({"marginLeft":"-100%"});
+				});
+				return false ;
+			});
+			$(".top").hide();
+			$(window).scroll(function(){
+				// console.log( $(this).scrollTop() );
+				if( $(this).scrollTop() > 100){ $(".top").fadeIn();}
+				else{$(".top").fadeOut();}
+			});
+
+			$(".top").click(function(){
+				$("body,html").animate({"scrollTop":"0"}, "500");
+				return false;
+			});
+		});
+	</script>
+	<script>
+		/// function setCookie(cname, cvalue, exdays => setCookie("쿠키이름", "쿠키값", "안보일 일수"))
+			function controlCookies(){
+						if ( $("#subpop").is(":checked") ){ setCookie("subpop", "done", "1"); }
+							 $(".popWrap").hide(); 
+			}
+
+			/// function getCookie(cname)
+			$(function(){
+				if (getCookie("subpop") == "done" )	{ $(".popWrap").hide();	}
+				else{ $(".popWrap").show(); } 
+			});
+				
+	  </script>
+
+ </head>
+
+ <body>
+ 	<ul class="skip_nav">
+		<li><a href="#mainmenu" title="주메뉴바로가기">주메뉴</a></li>
+		<li><a href="#main_first" title="본문바로가기">본문바로가기</a></li>
+	</ul>
+	<div id="wrapper">
+		<header id="header">
+			<div class="headertop">
+				<div class="container">
+					<ul class="section">
+						<li><h1 class="hidden">FINDEN BRAND</h1><a href="index.html" title="FINDEN BRAND"><img src="images/top_section01_on.gif" alt="핀덴메인"/></a></li>
+						<li><p class="hidden">FINDEN SHOWPPINGMALL</p><a href="#" title="FINDEN SHOP"><img src="images/top_section02_off.gif" alt="핀덴쇼핑몰"/></a></li>
+					</ul><!--.section END-->
+					<ul class="sns">
+						<li><a href="https://www.facebook.com/findenkr/" title="facebook"><img src="images/utill_sns_facebook.png" alt="facebook"/></a></li>
+						<li><a href="https://story.kakao.com/ch/finden" title="kakaostory"><img src="images/utill_sns_kakaostory.png" alt="kakaostory"/></a></li>
+						<li><a href="https://www.instagram.com/p/BFyK6Fdlioh/" title="instagram"><img src="images/utill_sns_instagram.png" alt="instagram"/></a></li>
+					</ul><!--sns END-->
+					<ul class="top-utill">
+						<li><a href="login.html" title="로그인 바로가기">로그인</a></li>
+						<li><a href="join.html" title="회원가입 바로가기">회원가입</a></li>
+						<li><a href="findid.html" title="ID찾기 바로가기">ID찾기</a></li>
+						<li><a href="findpass.html" title="PW찾기 바로가기">PW찾기</a></li>
+						<li><a href="qna.html" title="고객센터 바로가기">고객센터</a></li>
+					</ul><!--top-utill END-->
+				</div><!--container END-->
+			</div><!--headertop END-->
+			<div class="headerbottom">
+				<div class="container">
+					<h2 class="logo"><a href="index.html" title="FINDEN LOGO"><img src="images/logo.png" alt=""/>FINDEN BRAND</a></h2>
+					<h3 class="hidden">메인메뉴</h3>
+					<p class="menubutton"><a href="#" title="메뉴옵션열기"><img src="images/menubutton.png" alt="메뉴옵션버튼"/></a></p>
+					<nav class="gnb">
+						<h2 class="hidden">주메뉴</h2>
+						<ul>
+							<li><a href="brandintro.html" title="브랜드소개 바로가기" id="mainmenu">브랜드 소개</a>
+								<ul class="s5">
+									<li><a href="brandintro.html" title="핀덴이야기 바로가기">핀덴이야기</a></li>
+								</ul>
+							</li>
+							<li><a href="submain.html" title="제품소개 바로가기">제품소개</a>
+								<ul class="s5">
+									<li><a href="submain.html" title="제품소개 바로가기">교재/교구</a></li>
+									<li><a href="submain.html" title="제품소개 바로가기">생활환경</a></li>
+									<li><a href="submain.html" title="제품소개 바로가기">스킨베베</a></li>
+									<li><a href="submain.html" title="제품소개 바로가기">체험단리뷰</a></li>
+								</ul>							
+							</li>
+							<li><a href="event.html" title="이벤트 바로가기">이벤트</a>
+								<ul class="s5">
+									<li><a href="event.html" title="이벤트 바로가기">무료샘플</a></li>
+									<li><a href="event.html" title="이벤트 바로가기">체험단</a></li>
+									<li><a href="event.html" title="이벤트 바로가기">캠페인</a></li>
+								</ul>								
+							</li>
+							<li><a href="gallery.html" title="홍보소식 바로가기">홍보&amp;소식</a>
+								<ul class="s5">
+									<li><a href="gallery.html" title="홍보소식 바로가기">공지사항</a></li>
+									<li><a href="gallery.html" title="홍보소식 바로가기">보도자료</a></li>
+									<li><a href="gallery.html" title="홍보소식 바로가기">광고 갤러리</a></li>
+								</ul>	
+							</li>
+							<li><a href="qna.html" title="고객서비스 바로가기">고객서비스</a>
+								<ul class="s5">
+									<li><a href="qna.html" title="고객서비스 바로가기">핀덴사용법</a></li>
+									<li><a href="qna.html" title="고객서비스 바로가기">음원다운로드</a></li>
+									<li><a href="qna.html" title="고객서비스 바로가기">교육상담신청</a></li>
+								</ul>								
+							</li>
+						</ul>
+					</nav><!-- gnb END-->
+				</div><!--container END-->
+				<nav class="gnb_navi">
+					<h3 class="hidden">상세메뉴</h3>
+					<div class="bg1"></div>
+					<div class="bg2"></div>
+					<div class="container cform navi">
+						<div class="a1"><a href="#" title=""><img src="images/gnb_banner.jpg" alt=""></a></div><!-- END-->
+					</div><!--container cform gnb-navi END-->
+				</nav><!--gnb_navi END-->
+				<nav class="menubar">
+					<h3 class="hidden">보조메뉴</h3>
+					<ul class="mb_header">
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="qna.html">고객센터</a></li>
+					</ul>
+					<ul class="mb_main">
+						<li><a href="brandintro.html">브랜드소개</a></li>
+						<li><a href="submain.html">제품소개</a></li>
+						<li><a href="event.html">이벤트</a></li>
+						<li><a href="gallery.html">홍보&amp;소식</a></li>
+						<li><a href="qna.html">고객서비스</a></li>
+					</ul><!-- menubar END-->
+				</nav>
+			</div><!--headerbottom END-->
+		</header><!--header END-->
+		<article id="visual">
+			<div class="visualimg">
+				<div class="sliding">
+					<h3>슬라이딩 배너</h3>
+					<div class="tunnel">
+						<ul class="train big">
+							<li class="sh show1"><a href="#" title=""><img src="images/sliding1.jpg" alt="슬라이딩 배너"/></a></li>
+						</ul>
+						<ul class="train sm">
+							<li class="sh show1"><a href="#" title=""><img src="images/sliding1_sm.jpg" alt="슬라이딩 배너"/></a></li>
+						</ul>
+					</div>
+					<ul class="control big">
+						<li class="one"><a href="images/sliding1.jpg" title="sliding1" >1</a></li>
+						<li class="two"><a href="images/sliding2.jpg" title="sliding2">2</a></li>
+						<li class="three"><a href="images/sliding3.jpg" title="sliding3">3</a></li>
+						<li class="four"><a href="images/sliding4.jpg" title="sliding4">4</a></li>
+						<p class="stop"><a href="images/sliding1.jpg" title=""><img src="images/stop.png" alt="stop"/></a></p>
+					</ul>
+					<ul class="control sm">
+						<li class="one"><a href="images/sliding1_sm.jpg" title="sliding_sm1" >1</a></li>
+						<li class="two"><a href="images/sliding2_sm.jpg" title="sliding_sm2">2</a></li>
+						<li class="three"><a href="images/sliding3_sm.jpg" title="sliding_sm3">3</a></li>
+						<li class="four"><a href="images/sliding4_sm.jpg" title="sliding_sm4">4</a></li>
+						<p class="stop"><a href="images/sliding1_sm.jpg" title=""><img src="images/stop.png" alt="stop"/></a></p>
+					</ul>
+					<p class="open_close"><a href="#"></a></p>
+				</div>
+			</div>
+		</article><!--visual END-->
+		<div id="main">
+			<section class="content1">
+				<div class="container">
+					<div class="rowarray" id="main_first">
+						<div class="row r1">
+							<h3 class="hidden">주메뉴</h3>
+							<div class="a4 a41_50"><h4 class="hidden">FINDEN TOKTOK MOVIE</h4><iframe src="https://www.youtube.com/embed/N5Y7g0ytv4s" title="youtube 동영상 링크" allowfullscreen></iframe></div><!--a4 a41_50 END-->
+							<div class="a4 a42">
+								<a href="#" title="">
+									<h4 class="hidden">FINDEN TOKTOK</h4>
+									<p><strong>FINDEN<span>TOKTOK</span></strong><span>아이가 행복해지는</span><span>생각 소통놀이</span></p>
+									<p><img src="images/product_ico_arrow01.png" alt=""/></p>
+								</a>
+							</div><!--a4 a42 END-->
+							<div class="a4 a43">
+								<h4 class="hidden">신청 및 다운로드</h4>
+								<ul>
+									<li class="child1"><a href="#" title="교육상담 신청 바로가기"><span>교육상담 신청</span></a></li>
+									<li class="child2"><a href="#" title="무료샘플 신청 바로가기"><span>무료샘플 신청</span></a></li>
+									<li class="child3"><a href="#" title="음원 다운로드 바로가기"><span>음원 다운로드</span></a></li>
+								</ul>
+							</div><!--a4 a43 END-->
+						</div><!-- row r1 END-->
+						<div class="row r2">
+							<div class="a4 a41">
+								<a href="#" title="">
+									<h4 class="hidden">FINDEN ENGLISH</h4>
+									<p><strong>FINDEN<span>ENGLISH</span></strong><span>즐거운 생활스토리와 노래,</span><span>상황놀이로 영어표현력이 쑥쑥</span></p>
+									<p><img src="images/product_ico_arrow01.png" alt=""/></p>	
+								</a>
+							</div><!--a4 a41 END-->
+							<div class="a4 a42"><img src="images/product_bg02.jpg" alt=""/></div><!--a4 a42 END-->
+							<div class="a4 a43">
+								<h4 class="hidden">FINDEN SKINBEBE</h4>
+								<a href="#" title="">
+									<p><strong>FINDEN<span>SKINBEBE</span></strong></p>
+									<p><img src="images/product_ico_arrow02.png" alt=""/></p>	
+								</a>
+							</div><!--a4 a43 END-->
+							<div class="a4 a44"><img src="images/product_bg06.jpg" alt=""/></div><!--a4 a44 END-->
+						</div><!--row r2 END-->
+						<div class="row r3">
+							<div class="a4 a41">
+								<h4 class="hidden">FINDEN BEBE</h4>
+								<a href="#" title="">
+									<p><strong>FINDEN<span>BEBE</span></strong><span>빛,물,소리,움직임으로</span><span>우리 아기의 잠재력을 깨우다</span></p>
+									<p><img src="images/product_ico_arrow02.png" alt=""/></p>
+								</a>
+							</div><!--a4 a41 END-->
+							<div class="a4 a42"></div><!--a4 a42 END-->
+							<div class="a4 a43">
+								<h4 class="hidden">FINDEN SKINBEBE</h4>
+								<a href="#" title="">	
+									<p><strong>FINDEN<span>SKINBEBE</span></strong><span>북유럽 프리미엄</span><span>영유아 스킨케어</span></p>	
+									<p><img src="images/product_ico_arrow01.png" alt=""/></p>
+								</a>
+							</div><!--a4 a43 END-->
+							<div class="a4 a44"></div><!--a4 a44 END-->
+						</div><!--row r3 END-->
+						<div class="row r4">
+							<div class="a4 a41_50"><img src="images/product_bg05.png" alt=""/>
+							</div><!--v END-->
+							<div class="a4 a42_50">
+								<h4 class="hidden">FINDEN PLAYMAT</h4>
+								<a href="#" title="">
+									<p><strong>FINDEN<span>PLAYMAT</span></strong><span>엄마와 아이가 모두 행복한</span><span>북유럽감각의 hi-quality Playmat</span></p>		
+									<p><img src="images/product_ico_arrow02.png" alt=""/></p>	
+								</a>
+							</div><!--a4 a41_50 END-->
+						</div><!--row r4 END-->
+					</div><!-- rowarray END -->
+				</div><!--container END-->
+			</section><!--content1 END-->
+			<section class="content2">
+				<div class="container">
+					<div class="review">
+						<h3 class="hidden">고객리뷰</h3>
+						<div class="a1">
+							<h4>BEST<span>REVIEW</span></h4>
+							<p><img src="images/tit_bar01.png" alt=""/><span>영아기 아이들이 자연스럽게</span><span>관심을 갖는 흥미요소가 쏙쏙!</span></p>
+						</div><!--a1 END-->
+						<div class="a4 a41">
+							<div class="rcontent"><a href="#" title="핀덴리뷰 바로가기"><img src="images/review1.jpg" alt="핀덴리뷰 핀덴카 스타터팩 외출할때 좋아요"/><p>Finden Bebe<strong>핀덴카 스타터팩 외출할때 좋아요</strong><span>2016.07.06</span></p></a></div><!--rcontent END-->
+							<div class="blank"></div><!--blank END-->
+						</div><!--a4 a41 END-->
+						<div class="a4 a42">
+							<div class="blank"></div><!--blank END-->
+							<div class="rcontent"><a href="#" title="핀덴리뷰 바로가기"><img src="images/review2.jpg" alt="핀덴리뷰 핀덴베베 개봉기, 타 전집과 비교분석!!"/><p>Finden Bebe<strong>핀덴베베 개봉기, 타 전집과 비교분석!!</strong><span>2016.05.25</span></p></a></div><!--rcontent END-->	
+						</div><!--a4 a42 END-->
+						<div class="a4 a43">
+							<div class="rcontent"><a href="#" title="핀덴리뷰 바로가기"><img src="images/review3.jpg" alt="핀덴리뷰 우리 아이를 위한 모든 것이 다 있는 핀덴베베~"/><p>Finden Bebe<strong>우리 아이를 위한 모든 것이 다 있는 핀덴베베~</strong><span>2016.05.25</span></p></a></div><!--rcontent END-->
+							<div class="blank"></div><!--blankEND-->		
+						</div><!--a4 a43 END-->
+						<div class="a4 a44">
+							<div class="blank"></div><!--blankEND-->
+							<div class="rcontent"><a href="#" title="핀덴리뷰 바로가기"><img src="images/review4.jpg" alt="핀덴리뷰 개봉기 27개월,7세 딸들이 종일 핀덴책과 음악과 함께해요"/><p>Finden Bebe<strong>개봉기 27개월,7세 딸들이 종일 핀덴책과 음악과 함께해요</strong><span>2016.05.25</span></p></a></div><!--rcontent END-->
+						</div><!--a4 a44 END-->
+					</div><!--review END-->
+				</div><!--container END-->
+			</section><!--content2 END-->
+			<article class="content3">
+				<div class="container">
+					<div class="rowarray">
+						<div class="row r1">
+							<div class="tunnel">
+							<h3>슬라이딩 배너</h3>
+							<ul class="train"><!-- 2)한칸만 보여주게 칸 만들기 -->
+								<li ><a href="#" title="슬라이딩 배너 광고 바로가기"><img src="images/visual1.jpg" alt="슬라이딩 배너"/></a></li>
+								<li><a href="#" title="슬라이딩 배너 광고 바로가기"><img src="images/visual2.jpg" alt="슬라이딩 배너"/></a></li>
+								<li><a href="#" title="슬라이딩 배너 광고 바로가기"><img src="images/visual3.jpg" alt="슬라이딩 배너"/></a></li>
+							</ul>
+							</div>
+							<p class="control prev"><a href="이전으로">prev</a></p>
+							<p class="control next"><a href="다음이로">next</a></p><!--row r1 control END-->
+						</div><!--row r1 END-->
+						<div class="row r2">
+							<div class="a2 a21">
+							<h3 class="hidden">공지사항</h3>
+								<h4>NEWS</h4>
+								<ul class="ns-menu">
+									<li><a href="#" title="NEWS 바로가기">· [공지사항] 2016년 7월 무이자 할부 EVENT~<span>2016.07.08</span></a></li>
+									<li><a href="#" title="NEWS 바로가기">· [공지사항] 결제시스템 관련 공지<span>2016.07.08</span></a></li>
+									<li><a href="#" title="NEWS 바로가기">· [공지사항] 핀덴 에어매트 이벤트 당첨자 공지<span>2016.6.29</span></a></li>
+									<li><a href="#" title="NEWS 바로가기">· [공지사항] 2016년 6월 무이자 할부 EVENT~<span>2016.05.31</span></a></li>
+								</ul>
+							</div><!--a2 a21 END-->
+							<div class="a2 a22">
+							<h3 class="hidden">FACEBOOK</h3>
+								<h4>FACEBOOK</h4>
+								<ul>
+									<li class="facebook f1"><a href="#" title="FACEBOOK 바로가기"><p><img src="images/ico_facebook01.png" alt=""/><span class="fb-text">엄마, 아빠의 표정과 목소리 톤은 아이에게 영향을 줍니다. 아이에게 다양한 표정을 보여주세..</span><span class="fb-date">2016.08.19</span></p></a>
+									</li>
+									<li class="facebook f2"><a href="#" title="FACEBOOK 바로가기"><p><img src="images/ico_facebook02.png" alt=""/><span class="fb-text">#핀덴 X #조셉앤스테이시 콜라보레이션! 핀덴 스킨베베 런칭 기념으로 조셉앤스테이시에서 한..</span>
+										<span class="fb-date">2016.08.19</span></p></a>
+									</li>
+								</ul>
+							</div><!--a2 a22 END-->
+						</div><!--row r2 END-->
+						<div class="row r3">
+							<h3 class="hidden">이벤트</h3>
+							<div class="a3 a31"><a href="#" title="체험단 신청 바로가기"><h4>체험단 신청</h4></a></div><!--a3 a31 END-->
+							<div class="a3 a32"><a href="#" title="무료샘플 신청 바로가기"><h4>무료샘플 신청</h4></a></div><!--a3 a32 END-->
+							<div class="a3 a33"><a href="#" title="음원 다운로드 바로가기"><h4>음원 다운로드</h4></a></div><!--a3 a33 END-->
+						</div><!--row r3 END-->
+					</div><!--rowarray END-->
+				</div><!--container END-->
+			</article><!--content3 END-->
+			<div class="top"><a href="#" title="맨위로 이동"><img src="images/up-arrow-png-12_01.png" alt="" /></a></div> <!-- top -->
+		</div><!--main END-->
+		<footer id="footer">
+			<div class="footertop">
+				<div class="container">
+					<div class="footer-navi">
+						<ul>
+							<li><a href="#" title="회사소개">회사소개</a></li>
+							<li><a href="#" title="이용약관">이용약관</a></li>
+							<li><a href="#" title="개인정보취급방침">개인정보취급방침</a></li>
+							<li><a href="#" title="이메일무단수집거부">이메일무단수집거부</a></li>
+							<li><a href="#" title="교사채용">교사채용</a></li>
+							<li><a href="#" title="고객센터">고객센터</a></li>
+						</ul>
+					</div><!-- footer-navi END-->
+					<div class="footer-sns">
+						<ul>
+							<li><a href="#" title=""><img src="images/utill_sns_facebook.png" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/utill_sns_instagram.png" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/utill_sns_kakaostory.png" alt=""/></a></li>
+						</ul>
+					</div><!-- sns END-->
+					<div class="familysite">
+					<form action="#" class="f-site-form" >
+						<select name="familysite" size="1" onchange="if(this.value)window.open(this.value);">
+							<option value="hsfamily" selected="selected">핀덴 패밀리 사이트</option>
+							<option value="http://www.eduhansol.com/" >한솔교육 사이트</option>
+							<option value="http://corp.eduhansol.com/" >한솔교육기업소개</option>
+							<option value="http://jd.eduhansol.co.kr/" >한솔주니어디킨스</option>
+							<option value="http://www.brainschool.co.kr/" >멘델스쿨</option>
+							<option value="http://www.rtinkorea.com/" >한국RT센터</option>
+							<option value="http://www.jaeminara.co.kr/" >재미나라</option>
+							<option value="http://www.fingerstudy.com/" >핑거스터디</option>
+							<option value="http://www.brainschool.co.kr/" >브레인스쿨</option>
+							<option value="http://www.hsplus.co.kr/" >한솔 플러스</option>
+							<option value="http://www.wonderspace.co.kr/" >원더 스페이스</option>
+							<option value="http://www.chinaro.com/" >차이나로</option>
+							<option value="http://www.hansolgt.co.kr/" >한솔미래영재교육</option>
+							<option value="http://www.happiners.com/" >해피너스</option>
+							<option value="http://www.hansolhope.or.kr/" >한솔교육 희망재단</option>
+							<option value="http://www.brainschool.com.cn/" >브레인스쿨 중국법인</option>
+							<option value="http://www.thewbrainschool.com/" >브레인스쿨 태국법인</option>
+						</select>
+					</form>
+					</div><!--familysite END-->
+				</div><!--container END-->
+			</div><!--footertop END-->
+			<div class="footerbottom">
+				<div class="container">
+					<h2 class="hidden">FINDEN 주소 및 고객센터</h2>
+					<p class="footerlogo"><img src="images/foot_logo.png" alt=""/></p>
+					<ul class="adress">
+						<li>㈜한솔교육</li>
+						<li>03908 서울특별시 마포구 월드컵북로 361</li>
+						<li>대표이사:변재용</li>
+						<li>사업자등록번호:105-81-48593</li>
+						<li>통신판매신고:제2008-서울마포-0281호</li>
+						<li>개인정보보호책임자:송명식</li>
+						<li>고객센터:1588-1185 / findencc@eduhansol.co.kr</li>
+						<li>COPYRIGHT@HANSOL EDUCATION CORP. ALL RIGHT RESERVED</li>
+					</ul><!--adress END-->
+					<p class="qna">고객센터<strong>1588-1185</strong></p>
+					<div class="footerlink">
+						<ul>
+							<li><a href="#" title=""><img src="images/foot_link01.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link02.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link03.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link04.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link05.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link06.jpg" alt=""/></a></li>
+							<li><a href="#" title=""><img src="images/foot_link07.jpg" alt=""/></a></li>
+						</ul>
+					</div><!--footerlink END-->
+				</div><!--container END-->
+			</div><!--footerbottom END-->
+		</footer><!--footer END-->
+	</div><!--wrapper END-->
+	<div class="popWrap">
+		<h3>NOTICE</h3>
+		<p>
+			<span>본 사이트는 상업적 목적이 아닌</span>
+			<span>개인 포트폴리오 용도로 제작되었으며,</span>
+			<span>홈페이지의 일부 내용과 기타이미지 등은</span>
+			<span>그 출처가 따로 있음을 밝힙니다.</span>
+		</p>
+		<p><img src="images/QRCodeImg.jpg" alt=""/></p>
+		<p>
+			<input type="checkbox" id="subpop" name="subpop" title="오늘 하루동안 이창 열지 않음"  onclick="controlCookies();"/>
+			<label for="subpop">오늘하루동안 이창 열지 않음</label>
+			<a href="#" onclick="controlCookies(); return false;">[닫기]</a>
+		</p>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,67 @@
+   select , select:hover ,select:focus , select:hover option , select:focus option { outline:1px solid #fff; color:#333 ; background-color:#fff; }
+	#main {    height: 1500px;}
+
+	.container.cform  { width:980px; background-color:white; 	 color:#333; }
+	input { border:1px solid #8f8f8f; }
+	.container.cform h3 { color:#333; font-size:220%; letter-spacing:0.2em; padding:50px 0 25px; text-align:center; text-shadow: 1px 1px 2px rgba(255,255,255,0.9);  }
+	.container.cform .h3-sub { border-bottom:1px solid #dcdcdc;  letter-spacing:7px; padding-bottom:30px; text-align:center; font-weight:normal; margin-top: 0;}
+	.container.cform p {text-align: left; margin: 25px auto; padding:10px; font-size:13px; line-height:22px;  font-weight:bold;  }
+	p.hidden { color:#fff; background-color:#333333; }
+	.container.cform.join form p {  margin-left: 150px;} 
+	.container.cform .formdesc { font-size: 13px; text-align: left;  line-height: 0; font-weight:normal;  }
+	.container.cform span { display:inline; }
+	.container.cform .addinfo strong { width: 20%; display:inline-block; }
+	.container.cform form { width:100%;   margin:20px auto 0;  }
+	.container.cform fieldset { border:1px solid #333; position:relative;     margin-top: 20px;     padding: 30px 0; }
+	.container.cform input { width:22%; padding:3px 8px; background-color:#fff; border:1px solid #a19197*; line-height:20px;  }
+	.container.cform .post input[type="text"] {  width: 10%; }
+	.container.cform .post .newline { display:block;    margin-left: 20.5%;    margin-top: 8px; }
+	.container.cform .post .newline input[type="text"] { width:25%;  }
+	.container.cform fieldset .loginbutton { position:absolute; top:80px;right:264px; padding: 0 ; border: 0;}
+	.container.cform legend { position:absolute; left:-9999px; width:1px; height:10px; overflow:hidden; font-size:0; line-height:0;  }
+	.container.cform label { display:inline-block; width:20%; text-transform:uppercase; }
+	.container.cform input[type="submit"] {background-color:#df2121;     border: 1px solid #df2121;   color: white;}
+	.usermobile input[type="text"] {  width: 60px; }
+	.required { color:#800000; }
+	.check {margin-left: 20px;}
+	#job option {  }
+	.container.cform .call { height:100px;  line-height:50px;      text-align: center;}
+	.container.cform.join  form .center { text-align:center;     margin: 31px; }
+	.container.cform .addinfo input[type="radio"]{ width:20px; }
+	.container.cform.join  form .joinp { text-align:center; font-weight:normal;     margin-left: 0; }
+	/*�̵������*/
+		/* pc2 [1600~]*/
+	@media all and (min-width:1600px) { 
+		.container.cform {     width: 1280px;}
+	}
+	/* pc1 [1024~1599] 980, 960, 940*/
+	@media all and (min-width:1024px) and (max-width:1599px) {
+		.container.cform {     width: 980px;}
+	}
+	/* tablet2 [768~1023]*/
+	@media all and (min-width:768px) and (max-width:1023px) {
+		#header {     height: 123px; }
+		.container.cform { width: 740px; }
+	}
+	/* tablet1 [481~767]*/
+	@media all and (min-width:481px) and (max-width:767px) {
+		.container.cform { width: 460px; }
+		.container.cform input {  width: 32%; }
+		.container.cform.join form p { margin-left: 10px;  font-size: 80%; }
+	}
+	/* mobile [~480]*/
+	@media all and (max-width:480px) {
+		.container.cform {    width: 280px; }
+		#main {    height: 1455px; }
+		.container.cform input {  width: 69%; }
+		.container.cform label {  width: 100%; }
+		.container.cform .formdesc {    line-height: 16px; }
+		.container.cform .post .newline {   margin-left: 0; }
+		.usermobile input[type="text"] {  width: 45px; }
+		.container.cform .post input[type="text"] {   width: 23%; }
+		.container.cform .addinfo strong { width: 37%; }
+		.container.cform .job { width:35px; }
+		.container.cform .slabel { width:35px;  }
+		.container.cform.join form p {  margin-left: 0;      margin: 10px auto;}
+		.container.cform fieldset { padding: 0;  }
+	}

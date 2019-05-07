@@ -1,2 +1,0 @@
-# jusstory.github.com
-portfolio

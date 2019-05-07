@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8" />
+  <title> jquery - TMPT </title>
+  <style>
+   *{margin:0; padding:0;}
+	li {list-style-type:none;}	
+	img {border:0 none;}
+
+	body{ background-color:#eee; font-family:'NB Gothic', "Open Sans", "Helvetica Neue", Helvetica, Arial, "Malgun Gothic", sans-serif; color:#000;}
+	a:link, a:visited { color:#000; text-decoration:none;}
+	a:hover, a:focus { color:#f00; text-decoration:none;}
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ </head>
+
+ <body>
+	<div class="basic">
+		<h3>location</h3>
+		<p>
+			<input type="button" value="취소" onclick="window.conform('수수료가 발생합니다. \n정말 취소하겠습니까?')"/>
+		</p>
+		<p>
+			<input type="button" value="네이버로 이동" onclick="goNaver();"/>
+		</p>
+		<script>
+			function goNaver(){
+				var answer = window.confirm('네이버로 이동하겠습니까?');
+				console.log(answer); //true (맞다 ) false(틀리다 )
+				if ( answer ){location.href="http://www.naver.com"; }
+				else{ alert('이동을 취소했습니다.');	}
+				//만약 확인버튼을 눌렀다면 
+				//location.href="http://www."
+				//취소버튼을 누르면 
+				//이동을취소했습니다. 알림창
+			}
+		</script>
+		<h3>[3] navigator</h3>
+		<p>네비게이터 객체는 브라우저에 대한 정보가 포함: 데스크탑/모바일</p>
+		<p><input type="button" value="아이폰인지/pc인지에 따라 주소바꾸기" onclick="goUrl();"/></p>
+		<p><input type="button" value="각종모바일인지/태블릿인지에 따라 주소바꾸기" onclick="goUrl2();"/></p>
+		<script>
+			//for ( var key in navigator ){	document.write(key+" : "+ navigator[key] + "<br/>"); }//브라우저마다 카운트가 다름.
+			//http://www.webapps-online.com/online-tools/user-agent-strings
+			//navigator.userAgent.match(/iPone/i)
+			//	navigator.userAgent[디바이스 종류 파악]
+			//		match(/iPone/i) 1)/패턴/찾기 2)i(ignore)무시하다 => 패턴의 대소문자 무시
+			function goUrl(){
+				if (navigator.userAgent.match(/iPone/i)){ //아이폰이라면 m.naver.com
+					location.href="http://m.naver.com";
+				}else{ //아이폰이 아니라면
+					location.href="http://www.naver.com"; }
+			}
+			function goUrl2(){
+				
+				if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){ // /문자열|문자열/ => 문자열or문자열  
+					location.href="http://m.naver.com";
+				}else{ //아이폰이 아니라면
+					location.href="http://www.naver.com"; }
+			}
+		</script>
+	</div>
+ </body>
+</html>

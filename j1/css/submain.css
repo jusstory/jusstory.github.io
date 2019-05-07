@@ -1,0 +1,42 @@
+	#main { height: 963px; }
+
+	.mainbg .container.cform { width:1280px; height: 100%; position:relative; background-color:transparent; 	  }
+	h3 { color:#333; font-size:220%; letter-spacing:0.2em; padding:50px 0 25px; text-align:center; text-shadow: 1px 1px 2px rgba(255,255,255,0.9);  }
+	.h3-sub { border-bottom:1px solid #dcdcdc;  letter-spacing:7px; padding-bottom:30px; text-align:center; font-weight:normal; font-size: 13px; }
+	.h3-sub span { display:inline; }
+
+	.mainbg { width:100%;  height:790px;  background:url("../images/submain_bg.jpg") no-repeat center;   }
+
+	.mainbg ul { width:1280px;     padding:50px 0; }
+	.mainbg ul li { width:297px; height:460px;  float:left; margin-right:30.6px;  color:white;  position:relative; }
+	.mainbg ul li:nth-child(1) { background:url("../images/submain01_img01.jpg") no-repeat center;   }
+	.mainbg ul li:nth-child(2) { background:url("../images/submain01_img02.jpg") no-repeat center;  }
+	.mainbg ul li:nth-child(3) { background:url("../images/submain01_img03.jpg") no-repeat center;  }
+	.mainbg ul li:nth-child(4) {  background:url("../images/submain01_img04.jpg") no-repeat center;  margin-right:0;  }
+	.mainbg ul li a { display:block;  color:white; text-align:center;       margin-top: 120px; }
+	.mainbg ul li a .mainp { font-size: 160%; font-weight:normal;   }
+	.mainbg ul li a .mainp span { font-weight:bold;  }
+	.mainbg ul li a .subp { font-size:90%;  margin: 20px 0;  }
+	.mainbg ul li .over { position:absolute; top:0; left:0; width:297px; height:460px ; background-color:white;  }
+	.mainbg ul li .over .mp { color:#333; margin-top:20%; margin-left:6%; font-weight:bold; letter-spacing: -1px;  width: 88%;  letter-spacing: -1px;  padding-bottom: 15px; border-bottom: 3px solid #df2121; }
+	.mainbg ul li .over .sp {  color:#939393; font-size: 84%; margin-left: 6%; margin-top: 20px; letter-spacing: -1px; }
+	.mainbg ul li .over .sp strong { color:#df2121;  }
+	.mainbg ul li .over .bt { width: 115px; height: 50px; background-color: #df2121;  text-align: center;  line-height: 50px;  position: absolute;   top: 83%;  left: 30%; }
+	.btn  { position: absolute;   bottom: 15%;   left: 45%;  }
+	.mainbg ul li .over .bt a { display:block; width:100%; height:100%;  margin-top:0; }
+
+ 	/*¹Ìµð¾îÄõ¸®*/
+	/* pc2 [1600~]*/
+	@media all and (min-width:1600px) { 
+		.container.cform {     width: 1280px;}
+	}
+	/* pc1 [1024~1599] 980, 960, 940*/
+	@media all and (min-width:1024px) and (max-width:1599px) {
+		.container.cform {     width: 980px;}
+		.mainbg .container.cform {  width: 980px; }
+		.mainbg ul {width: 980px; }
+		.mainbg ul li , .mainbg ul li .over { width: 214px; }
+		.mainbg ul li .over .mp { margin-top: 10%;  font-size: 85%; }
+		.mainbg ul li .over .sp { margin-right: 6%; font-size: 80%;}
+		.mainbg ul li .over .bt {  left: 23%;}
+	}

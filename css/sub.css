@@ -1,0 +1,132 @@
+/*
+서브 css
+Site : "Juyeon Kim's portfolio"
+Author : "김주연"
+Version : "2019.03"
+*/
+.contentWrap { width:100%; min-height:760px; margin-top:90px; }
+.contentArea { width:100%; }
+.mainTit { width:100%; margin-top:50px; margin-bottom:30px; text-align:center; font-size:45px; font-weight:600; }
+
+/* 테이블 모음 */
+.tableWrap {  }
+  /* 가로형 */
+.table01 { box-sizing:border-box; border:1px solid #bebebe;  }
+.table01 tbody tr { border-bottom:1px solid #fff;  }
+.table01 tbody tr th { font-weight:600; line-height:40px; color:#fff; background-color:#868686; }
+.table01 tbody tr th span {  font-weight:600; line-height:40px; color:#fff;  }
+.table01 tbody tr td { padding-left:5px;box-sizing:border-box; border:1px solid #bebebe; border-left:0; font-size:16px;  }
+
+/* 박스 모음 */
+.box01 { max-width:1200px; margin: 0 auto;}
+.commentWrap { max-width:1200px; margin: 0 auto; }
+
+/* sub01 프로필 */
+.sub01 {  }
+.sub01 .contentArea { width:100%; background-color:#f6f6f6; }
+.content01 { width:90%; max-width:1200px; margin:0 auto; padding-top:80px; padding-bottom:100px;}
+
+.contentArea .tit {margin-top:20px; margin-bottom:5px; font-weight:600; font-size:22px; }
+.contentArea .tit .mb_br { font-weight:600; font-size:22px;  }
+.txtlist {  }
+.txtlist > li { margin-bottom: 5px; text-indent:10px; line-height:28px; background:url("../images/btn/bg_txtlist_dot.png") 0 12px no-repeat; }
+.txtlist .listTit {}
+.txtlist .listTxt { background:none; margin-bottom:10px; }
+.txtlist .listTxt span{ display:block; width:100%; margin-left:10px; font-size:16px; line-height:24px; color:#343434; background:url("../images/btn/bg_listTxt.png") 0 9px no-repeat;}
+.txtlist .btnWrap { margin-bottom:20px; background:none;  }
+.txtlist .subTxt { padding-left:8px;  font-size:16px; line-height:28px; color:#343434; }
+
+/* sub0301 프로젝트 */
+.sub03 {}
+.sub03 .box01 { overflow:hidden; display:table; width: 100%; }
+.projectImg { display:table-cell; width:70%; vertical-align:middle; }
+.projectImg img { width:100%; }
+.projectList { display:table-cell; width:30%; vertical-align:middle; }
+.projectList .tit { margin-top: 20px; margin-bottom: 5px; font-weight: 600; font-size: 18px;}
+.projectList li:first-child { margin-top:0;  }
+.projectList .txt { margin-bottom: 5px; text-indent: 10px; line-height: 28px; background: url(../images/btn/bg_txtlist_dot.png) 0 12px no-repeat;}
+.projectList .subTxt { line-height: 28px; }
+.projectList.row1 { width:100%;  margin-top:0; text-align:center; }
+.projectList.row1 li { display:inline-block; }
+.sub03 .content .projectImg img { width:90%; }
+.sub03 .content { padding:20px; margin-bottom:50px; background-color:#fedee1;  }
+.sub03 .content > .tit { text-align:center;  }
+.sub03 .content.con07 li { margin-top:10px; font-size:20px; vertical-align: top; }
+.sub03 .content.con07 .box01 { margin-bottom:30px; }
+.projectLink { height:auto; text-align: center; }
+.projectLink a { padding: 10px; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; color: #fff; font-weight:600; line-height: 45px;  background-color:#868686; }
+.projectLink a:hover, .projectLink a:focus, .projectLink a:active { background-color:#4b14a6; }
+
+/* sub0302 웹디자인 */
+.galleryWrap { position:relative;  }
+.galleryBig { width:80%; max-width:1000px; height: 588px; margin:0 auto; margin-bottom:20px; line-height: 588px; text-align:center; }
+.galleryBig img { max-width:100%; max-height:588px; }
+.gallerySmall {width:80%; max-width:1000px; margin:0 auto; margin-bottom:20px; text-align: center; }
+.gallerySmall ul {}
+.gallerySmall ul li {display:inline-block; width:101px; height:90px; margin-right: 6px; }
+.gallerySmall ul li:last-child { margin-right:0; }
+.gallerySmall ul li a { overflow: hidden;  display:block; width:100%; height:100%; text-align:center; line-height: 84px; background-color:#ddd; }
+.gallerySmall ul li a img{ max-width:100%;  max-height:100%; }
+.gallerySmall ul li.on a, .gallerySmall ul li a:hover, .gallerySmall ul li a:focus, .gallerySmall ul li a:active { box-sizing: border-box;  border:3px solid #4b14a6;  }
+.galleryPaging { position:relative; width:96%; max-width:1052px; margin:0 auto;  }
+.galleryPaging li { width:60px; height:60px; text-indent:-9999999px;  }
+.galleryPaging .prev { position: absolute; top:264px; left: 0; background:url("../images/btn/tabPrev.png") 50% -90px no-repeat; }
+.galleryPaging .next {position: absolute; top:264px; right: 0; background:url("../images/btn/tabNext.png") 50% -90px no-repeat; }
+.galleryPaging .prev:hover, .galleryPaging .prev:focus, .galleryPaging .prev:active { background:url("../images/btn/tabPrev.png") 50% 0 no-repeat;}
+.galleryPaging .next:hover, .galleryPaging .next:focus, .galleryPaging .next:active { background:url("../images/btn/tabNext.png") 50% 0 no-repeat; }
+
+/* sub0303 편집디자인 */
+.sub0303 .content { padding:20px; margin-bottom:50px; box-sizing:border-box; border:1px solid #bebebe; }
+.sub0303 .content > .tit { margin-bottom: 15px; text-align: center; }
+.sub0303 .box01 { overflow:hidden; margin-bottom:10px;  }
+.designImg { float:left; }
+.designImg img {  width:100%; }
+  /* 각 파트별 이미지 사이즈  */
+.con01 .designImg.img01 { width:33.33%;}
+.con01 .designImg.img02 { width:66.66%;  }
+.con02 .designImg.img01 { width:50%;}
+.con02 .designImg.img02 { width:50%;  }
+.con03 .designImg.img01 { width:66.66%;}
+.con03 .designImg.img02 { width:33.33%;  }
+.con04 .designImg.img01 { width:50%;}
+.con04 .designImg.img02 { width:50%;  }
+.con05 .designImg.img01 { float:none; margin-bottom: 24px;  }
+.con05 .designImg.img01 img { max-width:100%; max-height: 550px;  }
+.con06 .designImg.img01 { float:none; margin-bottom: 103px; }
+.con06 .designImg.img01 img { max-width:100%; max-height: 550px;  }
+.con07 .designImg.img01 {float:none; }
+.con07 .designImg.img01 img { max-width:100%; max-height: 550px;  }
+.con08 .designImg.img01 { width:100%; }
+.con08 .designImg.img01 img { width:100%; }
+
+.sub0303 .con05 { float:left; width:32%; height:860px; margin-right:2%; }
+.sub0303 .con06 { float:left; width:32%; height:860px; margin-right:2%; }
+.sub0303 .con07 { float:left; width:32%; height:860px; }
+.sub0303 .con08 { clear:both;  width:100%;  }
+
+.sub0303 .projectList { display:block; width: 95%; max-width:1200px; margin: 0 auto; }
+
+/* sub0401 제작과정 */
+.sub0401 .mainTit { font-size: 40px; }
+.sub0401 .box01 { display:table;  }
+.sub0401 .content { padding:20px; margin-bottom:50px; box-sizing:border-box; border:1px solid #bebebe; }
+.sub0401 .content > .tit { margin-bottom: 15px; text-align: center; }
+.sub0401 .box01 { overflow:hidden; margin-bottom:20px;  }
+.sub0401 .projectList { width:30%; padding-left:20px;  }
+
+
+/* sub0402 과거포트폴리오 */
+.sub0402 .mainTit { font-size: 40px; }
+.sub0402 .box01 { display:table;  }
+.sub0402 .content { padding:20px; margin-bottom:50px; box-sizing:border-box; border:1px solid #bebebe; }
+.sub0402 .content > .tit { margin-bottom: 15px; text-align: center; }
+.sub0402 .box01 { overflow:hidden; margin-bottom:20px;  }
+.portfolioImg { display:table-cell; width:70%; }
+.portfolioImg img { width:100%; }
+.sub0402 .projectList { width:30%; padding-left:20px;  }
+.projectList .txt.img { padding-left:10px; text-indent:0; }
+.projectList .txt img { width:100%;  }
+.sub0402 .projectList .txt a { font-size:16px; }
+.sub0402 .projectList .txt a:hover, .sub0402 .projectList .txt a:focus, .sub0402 .projectList .txt a:active { color:#4b14a6; font-weight: 600; }
+/* sub0501 과거포트폴리오 */
+.sub05 .contentArea { padding:20px; margin-bottom:50px; background-color:#fedee1; }

@@ -1,0 +1,72 @@
+	#main {height:1600px; }
+
+	.container.cform  { width:980px; background-color:white; 	 color:#333; }
+	input { border:1px solid #8f8f8f; }
+	.container.cform h3 { color:#333; font-size:220%; letter-spacing:0.2em; padding:50px 0 25px; text-align:center; text-shadow: 1px 1px 2px rgba(255,255,255,0.9);  }
+	.container.cform h4 { }
+	.container.cform h4 span { font-size:80%; }
+	.container.cform .slabel { width:70%; font-weight:normal; }
+	.container.cform .h3-sub { border-bottom:1px solid #dcdcdc;  letter-spacing:7px; padding-bottom:30px; text-align:center; font-weight:normal;margin-left: 0; }
+	.container.cform p {text-align: left;  padding:10px; font-size:13px; line-height:22px;  font-weight:bold; margin-left: 37%; }
+	.container.cform .formdesc { font-size: 10px;  text-align: left;  line-height: 0; font-weight:normal;  }
+	.container.cform span { display:inline; }
+	.container.cform .find span { display:block; font-weight:normal; }
+	.container.cform .addinfo strong { width: 20%; display:inline-block; }
+	.container.cform form { width:100%;  margin: 50px auto 0; }
+	.container.cform fieldset { border:1px solid #333;  border-bottom:1px solid #dcdcdc; position:relative;  margin-top: 20px; }
+	.container.cform .find.f4 fieldset { border-bottom:1px solid #333; }
+	.container.cform .find.f2 fieldset, .container.cform .find.f3 fieldset, .container.cform .find.f4 fieldset, .container.cform .find.f2 , .container.cform .find.f3, .container.cform .find.f4 {margin-top:0; border-top: 0 none;}
+	.container.cform input { width:17%; padding:3px 8px; background-color:#fff; border:1px solid #a19197*; line-height:20px;  }
+	.container.cform .post input[type="text"] {  width: 10%; }
+	.container.cform .post .newline { display:block;    margin-left: 20.5%;    margin-top: 8px; }
+	.container.cform .post .newline input[type="text"] { width:25%;  }
+	.container.cform fieldset .loginbutton { position:absolute; top:80px;right:264px; padding: 0 ; border: 0;}
+	.container.cform legend { position:absolute; left:-9999px; width:1px; height:10px; overflow:hidden; font-size:0; line-height:0;  }
+	.container.cform label { display:inline-block; width:20%; text-transform:uppercase; }
+	.container.cform input[type="submit"] {background-color:#df2121; border: 0;     color: white;}
+	.usermobile input[type="text"] {  width: 60px; }
+	.required { color:crimson; }
+
+	.container.cform .center, .container.cform .call { text-align:center;     margin: 31px; }
+	.find h4 {    margin-left:38%;      margin-top: 70px;margin-bottom: 20px;  }
+	.container.cform input[type="radio"] { width: 10px; }
+	.container.cform .usermobile, .container.cform .useremail, .container.cform .find.f3 h4, .container.cform .find.f4 h4 {   margin-bottom: 70px; }
+	.container.cform .find.f4 strong { color:crimson; text-decoration:underline;  }
+	/*¹Ìµð¾îÄõ¸®*/
+		/* pc2 [1600~]*/
+	@media all and (min-width:1600px) { 
+		.container.cform {     width: 1280px;}
+	}
+	/* pc1 [1024~1599] 980, 960, 940*/
+	@media all and (min-width:1024px) and (max-width:1599px) {
+		.container.cform {     width: 980px;}
+		.find h4 {    margin-left: 33%;}
+		.container.cform p {     margin-left: 32%;}
+	}
+	/* tablet2 [768~1023]*/
+	@media all and (min-width:768px) and (max-width:1023px) {
+		#header {     height: 123px; }
+		.container.cform { width: 740px; }
+		.find h4 {    margin-left: 32%;}
+		.container.cform p {     margin-left: 30%;}
+	}
+	/* tablet1 [481~767]*/
+	@media all and (min-width:481px) and (max-width:767px) {
+		.container.cform { width: 460px; }
+		.container.cform input {  width: 35%; }
+		.find h4 {    margin-left: 17%;}
+		.container.cform p {     margin-left: 13%;}
+		.container.cform .usermobile input {  width: 16%; }
+	}
+	/* mobile [~480]*/
+	@media all and (max-width:480px) {
+		.container.cform {    width: 280px; }
+		.container.cform .usermobile input {  width: 16%; }
+		#main {    height: 1800px; }
+		.container.cform input {  width: 69%; }
+		.container.cform label {  width: 100%; }
+		.find h4 {    margin-left: 4%;}
+		.container.cform p {     margin-left:0;}
+		.container.cform .slabel { width: 245px; font-size: 85%; }
+		.container.cform .useremail input {  width: 39%; }
+	}

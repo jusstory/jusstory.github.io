@@ -65,7 +65,7 @@ Version : "2019.03"
 .skillDD_list li .img img { width: 100%; }
 .skillDD_list li .txt { display:block; font-size:18px; font-weight:600; }
 
-.skillDD_list .dd01 .img, .skillDD_list .dd02 .img, .skillDD_list .dd06 .img, .skillDD_list .dd07 .img, .skillDD_list .dd08 .img, .skillDD_list .dd09 .img, .skillDD_list .dd10 .img { max-width: 40%;}
+.skillDD_list .dd01 .img, .skillDD_list .dd02 .img, .skillDD_list .dd06 .img, .skillDD_list .dd07 .img, .skillDD_list .dd08 .img, .skillDD_list .dd09 .img { max-width: 40%;}
 
 /* 섹션 2  */
 .section02 { overflow:hidden; width:100%; height:650px; background:url("../images/content/bg_sec03.jpg") 50% 50% no-repeat; background-size:100%; background-attachment: fixed; }

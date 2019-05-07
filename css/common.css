@@ -37,6 +37,9 @@ table.ui-datepicker-calendar { display:none; }
 /* Form Controls */
 @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+@font-face {font-family:"Nanum Gothic"; font-style:normal; font-weight:400; src:url("../font/NanumGothic.eot"); src:url("../font/NanumGothic.eot?#iefix") format('embedded-opentype'), local("☺"), url("../font/NanumGothic.woff") format("woff"), url("../font/NanumGothic.svg#NanumGothic") format("svg");}
+@font-face {font-family:"Nanum Gothic"; font-style:normal; font-weight:700; src:url("../font/NanumGothicBold.eot"); src:url("../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), local("☺"), url("../font/NanumGothicBold.woff") format("woff"), url("../font/NanumGothicBold.svg#NanumGothicBold") format("svg");}
+@font-face { font-family:"Noto Sans KR"; font-weight: normal; font-style: normal; src: url('../font/NotoSansCJKkr-Bold.eot'); src: url('../font/NotoSansCJKkr-Bold.eot?#iefix') format('embedded-opentype'), local("☺"),  url('../font/NotoSansCJKkr-Bold.woff') format('woff') , url('../font/NotoSansCJKkr-Bold.svg#NotoSansCJKkr-Bold') format('svg'); }
 
 /*base css */
 body {font-family:"Nanum Gothic", "나눔고딕", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", "Baekmuk Dotum", "sans-serif"; background:transparent;}

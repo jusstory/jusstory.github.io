@@ -41,7 +41,11 @@ Version : "2019.03"
   .visualWrap .train { height:935px; }
   .visualWrap .train > li { height:935px; }
   .visualWrap .tit { left: 4%; font-size: 3.2vw; }
+  .visualWrap .train > .li02 .tit { left: 12%; font-size: 4.5vw; }
+  .visualWrap .train > .li02 .tit span {font-size: 4.5vw; }
   .visualWrap .tit .br { font-size: 3.2vw; }
+  .visualWrap .train > .li02 { background-position:31% 50%; }
+
   /* 섹션1 */
   .section01 { height:1024px; }
   .section01 .tit { width:961px; height:80px;  background: url("../images/content/sec01Tit.png") 0 0 no-repeat; background-size:cover; }
@@ -161,8 +165,11 @@ Version : "2019.03"
   .visualWrap .train { height:568px; }
   .visualWrap .train > li { height:568px; }
   .visualWrap .container { width:100%; }
-  .visualWrap .tit { left:0; display:block; width:100%; padding-top: 45px; padding-bottom: 45px; font-size:20px; text-align:center; color:#fff;  background:url("../images/btn/bg_visualTit.png") 0 0 repeat; }
+  .visualWrap .tit { top:37%; left:0; display:block; width:100%; padding-top: 45px; padding-bottom: 45px; font-size:20px; text-align:center; color:#fff;  background:url("../images/btn/bg_visualTit.png") 0 0 repeat; }
   .visualWrap .tit .br { font-size:20px; text-align:center; color:#fff; text-indent:0; }
+  .visualWrap .train > .li02 .tit { top:37%; left:0; font-size:18px; text-align: center;}
+  .visualWrap .train > .li02 .tit span { font-size:18px; }
+  .visualWrap .train > .li03 .tit {  background:url("../images/btn/bg_visualTit.png") 0 0 repeat; }
   .controller { right: calc(50% - 90px);  width: 180px; height: 80px; }
   .controller .vs_num { font-size:18px; }
   .controller .vs_num .num { font-size:18px; }
@@ -189,6 +196,7 @@ Version : "2019.03"
 
   .skillDD_list { width: 95%; height:250px; margin:0 auto; }
   .skillDD_list li .txt { font-size:14px;  }
+  .skillDD_list li .img img { width: 90%; }
 
   /* 섹션2 */
   .section02 { height: auto; }

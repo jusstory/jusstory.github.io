@@ -26,6 +26,7 @@ Version : "2019.03"
   .btn01 { font-size:12px; }
   .nav { display:none; }
   .mb_naviBar { display:block; }
+  .tbNo { display:none; }
 
   /* 헤더 */
   .header01 { height:80px; }
@@ -66,9 +67,10 @@ Version : "2019.03"
   .skillDD_list { float: none; /*display: table;*/ width: calc(100% - 50px); height: 334px; margin: 0 4.8%; }
   .skillDD_list li.active {  display: table; vertical-align: middle; }
   .skillDD_list li .img { display:table-cell;  vertical-align: middle; padding-left: 10px;}
-  .skillDD_list li .img img { width:80%;  }
+  .skillDD_list li .img img { width:80%; margin: 0 auto; }
   .skillDD_list .dd01 .img img , .skillDD_list .dd02 .img img { width:70%;  }
   .skillDD_list li .txt { display:table-cell; width: 60%; vertical-align: middle; font-size: 16px; padding-right: 15px;}
+  .skillDD_list .pcNo { display:block; }
 
   /* 섹션2 */
   .section02 { height:530px; background-size: cover; background-size: cover; background-position: 29%;}
@@ -132,7 +134,7 @@ Version : "2019.03"
   .sub0402 .projectList li:nth-child(7) { width:20%; margin-top:0; }
   .projectList .txt.img { background:none; }
   .projectList .txt img  { width:48%; }
-  .table01 tbody tr th { font-size:16px; }
+  .table01 tbody tr th { font-size:16px; padding: 8px 8px; }
   .table01 tbody tr td { font-size:14px; padding:8px 8px ; }
 
   /* sub0401 제작과정 */
@@ -187,6 +189,7 @@ Version : "2019.03"
 
   .skillDD_list { width: 95%; height:250px; margin:0 auto; }
   .skillDD_list li .txt { font-size:14px;  }
+
   /* 섹션2 */
   .section02 { height: auto; }
   .sec02.box01 { height: auto; margin-top:20px; margin-bottom: 20px;}

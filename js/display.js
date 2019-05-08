@@ -150,7 +150,7 @@ $(document).ready(function(){
 
   /* 디자인 갤러리 작동 */
   $(".gallerySmall li a").click(function(){
-    $(this).parent().siblings("li").removeClass("on");;
+    $(this).parent().siblings("li").removeClass("on");
 		//$(".gallerySmall li").removeClass("on");
 		$(this).parent().addClass("on");
 		var gallerySelect = $(this).children("img").attr("src");

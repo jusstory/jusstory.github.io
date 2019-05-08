@@ -13,9 +13,9 @@ Version : "2019.03"
   /* 가로형 */
 .table01 { box-sizing:border-box; border:1px solid #bebebe;  }
 .table01 tbody tr { border-bottom:1px solid #fff;  }
-.table01 tbody tr th { font-weight:600; line-height:40px; color:#fff; background-color:#868686; }
-.table01 tbody tr th span {  font-weight:600; line-height:40px; color:#fff;  }
-.table01 tbody tr td { padding-left:5px;box-sizing:border-box; border:1px solid #bebebe; border-left:0; font-size:16px;  }
+.table01 tbody tr th { font-weight:600; color:#fff; background-color:#868686; }
+.table01 tbody tr th span {  font-weight:600; color:#fff;  }
+.table01 tbody tr td { padding-left:5px; box-sizing:border-box; border:1px solid #bebebe; border-left:0; font-size:16px;  }
 
 /* 박스 모음 */
 .box01 { max-width:1200px; margin: 0 auto;}
@@ -128,5 +128,6 @@ Version : "2019.03"
 .projectList .txt img { width:100%;  }
 .sub0402 .projectList .txt a { font-size:16px; }
 .sub0402 .projectList .txt a:hover, .sub0402 .projectList .txt a:focus, .sub0402 .projectList .txt a:active { color:#4b14a6; font-weight: 600; }
+
 /* sub0501 과거포트폴리오 */
-.sub05 .contentArea { padding:20px; margin-bottom:50px; background-color:#fedee1; }
+.sub05 .contentArea { padding:20px 0; margin-bottom:50px; text-align:center; background-color:#fedee1; }

@@ -149,6 +149,9 @@ Version : "2019.03"
   /* sub0401 제작과정 */
   .sub0401 .mainTit { font-size: 34px; }
   .sub0401 .box01 { display:block ; }
+  .processList li { font-size:16px; height: 73px; padding-top: 34px; }
+  .processList li:first-child { height: 82px; padding-top: 25px; }
+  .processList li.dash { height:107px; background-size: 15px; }
 
 }
 /* 모바일 */
@@ -288,6 +291,14 @@ Version : "2019.03"
 
   /* sub0401 제작과정 */
   .sub0401 .mainTit { font-size: 22px; }
+  .processList { margin-bottom:20px; }
+  .processList li { width:29%; height: 65px; padding-top: 28px; margin-bottom: 10px; font-size:15px; }
+  .processList li:first-child { height: 73px; padding-top: 20px; }
+  .processList li:nth-child(7) { width:28.33% }
+  .processList li:nth-child(9) { width:28.33% }
+  .processList li:nth-child(11) { width:28.33% }
+  .processList li.dash { width:5%; height:93px;  }
+  .sub0401 .projectList { width:100%; padding-left:0; }
 
   /* 푸터 */
   address { font-size:12px; }

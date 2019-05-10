@@ -109,11 +109,19 @@ Version : "2019.03"
 /* sub0401 제작과정 */
 .sub0401 .mainTit { font-size: 40px; }
 .sub0401 .box01 { display:table;  }
-.sub0401 .content { padding:20px; margin-bottom:50px; box-sizing:border-box; border:1px solid #bebebe; }
+.sub0401 .content { padding:20px; margin-bottom:20px; box-sizing:border-box; border:1px solid #bebebe; }
 .sub0401 .content > .tit { margin-bottom: 15px; text-align: center; }
 .sub0401 .box01 { overflow:hidden; margin-bottom:20px;  }
 .sub0401 .projectList { width:30%; padding-left:20px;  }
-
+.processList { overflow:hidden; max-width: 1200px; margin:30px auto 40px; }
+.processList li { float:left; width:13%; height:88px; padding-top:43px; border-radius:50%; font-weight:bold; text-align:center; color:#fff; background-color:#4b14a6; }
+.processList li:first-child { height:99px; padding-top:32px; background-color:#8c8c8c; }
+.processList li:nth-child(3) { background-color:#807691; }
+.processList li:nth-child(5) { background-color:#725c96; }
+.processList li:nth-child(7) { background-color:#63409c; }
+.processList li:nth-child(9) { background-color:#5627a2; }
+.processList li.dash { width:4.4%; height:131px; padding-top:0; background:url("../images/btn/img_arrow2.png") 50% 50% no-repeat; }
+.sub0401 .scroll { width:100%; height:40px; text-align:center; margin-bottom:15px;}
 
 /* sub0402 과거포트폴리오 */
 .sub0402 .mainTit { font-size: 40px; }
@@ -129,5 +137,6 @@ Version : "2019.03"
 .sub0402 .projectList .txt a { font-size:16px; }
 .sub0402 .projectList .txt a:hover, .sub0402 .projectList .txt a:focus, .sub0402 .projectList .txt a:active { color:#4b14a6; font-weight: 600; }
 
-/* sub0501 과거포트폴리오 */
+/* sub0501 연락처 */
 .sub05 .contentArea { padding:20px 0; margin-bottom:50px; text-align:center; background-color:#fedee1; }
+.sub05 .txtlist > li { background: none; }

@@ -107,6 +107,23 @@ $(document).ready(function(){
 	}
 	arrowL();
 
+    //섹션1 의 화살표
+  var arrowTop = function () {
+      $('.arrow2').animate({
+        'padding-top' : 0
+      }, 800, function () {
+        arrowBottom();
+      });
+    };
+  var arrowBottom = function () {
+    $('.arrow2').animate({
+      'padding-top' : 8
+    }, 800, function () {
+      arrowTop();
+    });
+  }
+  arrowTop();
+
   $( ".skillDT_list li.js_sl a" ).on( "click", function() {
       var $arrowEl = $( ".skillDT_list li.js_sl a .arrow" );
       $( ".skillDT_list li.js_sl a .arrow" ).remove();

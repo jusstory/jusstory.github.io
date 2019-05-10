@@ -13,9 +13,9 @@ Version : "2019.03"
   /* 가로형 */
 .table01 { box-sizing:border-box; border:1px solid #bebebe;  }
 .table01 tbody tr { border-bottom:1px solid #fff;  }
-.table01 tbody tr th { font-weight:600; color:#fff; background-color:#868686; }
+.table01 tbody tr th { padding: 8px 0; font-weight:600; color:#fff; background-color:#868686; }
 .table01 tbody tr th span {  font-weight:600; color:#fff;  }
-.table01 tbody tr td { padding-left:5px; box-sizing:border-box; border:1px solid #bebebe; border-left:0; font-size:16px;  }
+.table01 tbody tr td { padding: 8px 0; padding-left:5px; box-sizing:border-box; border:1px solid #bebebe; border-left:0; font-size:16px;  }
 
 /* 박스 모음 */
 .box01 { max-width:1200px; margin: 0 auto;}

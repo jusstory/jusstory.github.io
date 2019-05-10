@@ -6,12 +6,12 @@ Version : "2019.03"
 */
 
 /* 비주얼 배너 */
-.visualWrap { position:relative; width:100%; height:965px; }
+.visualWrap { position:relative; width:100%; height:969px; }
 .visualWrap .container { position:relative; }
-.visualWrap .tunnel { overflow:hidden; width:100%; height:965px; }
+.visualWrap .tunnel { overflow:hidden; width:100%; height:969px; }
 .visualWrap .tunnel > li { width:100%; }
-.visualWrap .train { width:300%; height:965px; }
-.visualWrap .train > li { position: relative; width:33.333%; height:965px; float:left;  }
+.visualWrap .train { width:300%; height:969px; }
+.visualWrap .train > li { position: relative; width:33.333%; height:969px; float:left;  }
 .visualWrap .train > .li01 { background:url("../images/content/img_visual01.jpg") 50% 50% no-repeat; background-size:cover; }
 .visualWrap .train > .li02 { background:url("../images/content/img_visual02.jpg") 50% 50% no-repeat; background-size:cover; }
 .visualWrap .train > .li03 { background:url("../images/content/img_visual03.jpg") 50% 50% no-repeat; background-size:cover; }

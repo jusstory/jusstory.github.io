@@ -36,10 +36,10 @@ Version : "2019.03"
   .mb_nav { top: 80px; }
 
   /* 비주얼배너 */
-  .visualWrap { height:935px; }
-  .visualWrap .tunnel { height:935px; }
-  .visualWrap .train { height:935px; }
-  .visualWrap .train > li { height:935px; }
+  .visualWrap { height:1000px; }
+  .visualWrap .tunnel { height:1000px; }
+  .visualWrap .train { height:1000px; }
+  .visualWrap .train > li { height:1000px; }
   .visualWrap .tit { left: 4%; font-size: 3.2vw; }
   .visualWrap .tit .br { font-size: 3.2vw; }
   .visualWrap .train > .li02 .tit { left: 12%; font-size: 4.5vw; }

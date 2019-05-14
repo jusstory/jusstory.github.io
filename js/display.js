@@ -5,6 +5,11 @@ $(document).ready(function(){
 	}).mouseleave(function(){
 		$(".gnb .depth02, .navWrap").stop(true,false).slideUp(300);
 	});
+  $(".gnb li, .gnb .depth02, .navWrap").focusin(function() {
+    $(".gnb .depth02, .navWrap").stop(true,false).slideDown(300);
+  }).focusout(function() {
+    $(".gnb .depth02, .navWrap").stop(true,false).slideUp(300);
+  });
 
   /* 모바일 네비 */
   var wrapH = $("#wrap").height()

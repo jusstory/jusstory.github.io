@@ -9,7 +9,6 @@ $(document).ready(function(){
   /* 모바일 네비 */
   var wrapH = $("#wrap").height()
   $(".mb_nav").height(wrapH);
-
   $(".mb_naviBar").click(function(){
     if( $(".mb_gnb").css("right") == "0px" ){
       $(".mb_nav").fadeOut(300);
@@ -21,6 +20,7 @@ $(document).ready(function(){
       $(".btn_close").animate({"right":"60%"}, "1000" );
     }
   });
+
   $(".btn_close").click(function(){
     $(".mb_nav").fadeOut(300);
     $(".mb_gnb").animate({"right":"-100%"}, "800" );
@@ -32,17 +32,15 @@ $(document).ready(function(){
 	}).mouseleave(function(){
 		$(this).removeClass("on");
 	});
+
   $(".mb_gnb > li > a").click(function(){
     var depth02 = $(this).next();
     if( depth02.css("display") == "none" ){
-      console.log("123");
       $(".mb_gnb .depth02").slideUp(300);
       depth02.slideDown(300);
     }else{
-      console.log("sss");
       $(".mb_gnb .depth02").slideUp(300);
     }
-
   });
 
 
@@ -197,5 +195,91 @@ $(document).ready(function(){
 			return false;
 	});
 
+  $("#popup1").click(function(){
+    fnShowLayer('#sec02Popup1');
+  });
+  $("#popup2").click(function(){
+    fnShowLayer('#sec02Popup2');
+  });
+  $("#popup3").click(function(){
+    fnShowLayer('#sec02Popup3');
+  });
 
 });
+/* Layer popup */
+function fnShowLayer(objName, wid) {
+
+	var str = '<div id="lp_dim"></div>';
+	var layerTop = $(document).scrollTop();
+	var layerObj = $(".lp_wrap "+objName);
+	layerObj.attr('tabindex', 0).focus();
+
+	$("#wrap").append(str);
+	$("#lp_dim").stop().fadeIn("fast");
+	$("html, body").addClass("nyScroll");
+
+	layerObj.show().parent().stop().fadeIn("fast");
+	layerObj.focus();
+
+	var rh = realHeight($(".lp_wrap "+objName));
+
+	//console.log("realHeight",rh);
+
+	var rePosition = function(){
+		if(parseInt(rh)<$(window).height()) {
+			layerObj.css({
+				top: (($(window).height()/2) - (rh/2) ) +"px"
+			});
+		}
+		//console.log($(window).height());
+	}
+	rePosition();
+
+	$(layerObj).find(".lp_close").off("click").on("click",function(e){
+		e.preventDefault();
+		hideLayer(layerTop,$(this));
+	});
+
+	$(window).resize(function(){
+		rePosition();
+	});
+  // 팝업창 ESC키로 제어하기
+	$(document).keyup(function(e) {
+	    if ( e.keyCode == 27) {
+	    	e.preventDefault();
+			hideLayer(layerTop,$(this));
+	    }
+	});
+	$(".lp_close").off("click").on("click",function(e){
+		e.preventDefault();
+		hideLayer(layerTop,$(this));
+	});
+	//e.preventDefault();
+}
+function hideLayer(pos, closeObj){
+	var layerObj = $(closeObj).closest('.lp_container');
+
+	$("#lp_dim").stop().fadeOut("fast", 0, function() {$(this).remove();});
+	$(".lp_wrap").scrollTop(0);
+	$("html, body").removeClass("nyScroll");
+	$(".lp_wrap").hide();
+
+	$(layerObj).hide();
+}
+
+
+function realHeight(obj){
+	var clone = obj.clone();
+	$('body').append(clone);
+	var height = clone.outerHeight();
+	clone.remove();
+	return height;
+}
+
+function realWidth(obj){
+	var clone = obj.clone();
+	$('body').append(clone);
+	var width = clone.outerWidth();
+	clone.remove();
+	return width;
+}

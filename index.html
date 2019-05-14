@@ -324,19 +324,19 @@
 						<p class="tit">1.Validator(마크업 오류 방지)</p>
 						<img class="sec02Img" src="images/content/img_sec02_01.png" alt="마크업 이미지"  />
 						<p class="txt">Validator, ValidatorCSS</p>
-						<button class="btn01" type="button">자세히보기</button>
+						<button class="btn01" type="button" id="popup1">자세히보기</button>
 					</li>
 					<li>
 						<p class="tit">2.웹접근성 100% 체크</p>
 						<img class="sec02Img" src="images/content/img_sec02_02.png" alt="웹접근성 이미지"  />
 						<p class="txt">k-wah 4.0, OpenWAX</p>
-						<button class="btn01" type="button">자세히보기</button>
+						<button class="btn01" type="button" id="popup2">자세히보기</button>
 					</li>
 					<li>
 						<p class="tit">3.SimaticWeb</p>
 						<img class="sec02Img" src="images/content/img_sec02_03.png" alt="시매틱웹 이미지"  />
 						<p class="txt">Simatic markup</p>
-						<button class="btn01" type="button">자세히보기</button>
+						<button class="btn01" type="button" id="popup3">자세히보기</button>
 					</li>
 				</ul>
 				<!--  boxList end -->
@@ -410,14 +410,68 @@
 			</ul>
 			<!-- sec03 boxList end -->
 		</section><!-- section03 end -->
-		<div id="footer">
+		<footer id="footer">
 			<div class="address">
 				<address>
 				Kim, Juyeon. HP:010-2287-3162. E-Mail:jjoo8829@naver.com
 				<span class="copyright">Copyrightⓒ 2019 by JuyeonKim All pictures cannot be copied without permission.</span>
 				</address>
 			</div>
-		</div><!-- footer end -->
+		</footer><!-- footer end -->
+		<div class="lp_wrap">
+		<!-- lp_container begin -->
+		<div class="lp_container" id="sec02Popup1"><!-- validator 팝업 -->
+			<div class="lp_area">
+				<div class="lp_content">
+					<div class="imgBox">
+						<img class="sec02PopupImg" src="images/content/img_sec02_01.png" alt="마크업 이미지">
+					</div>
+					<ul class="popupList">
+						<li class="tit">1.Validator(마크업 오류 방지)</li>
+						<li class="txt">validator.w3.org, jigsaw.w3.org/css-validator를 사용하여 html과 css의 웹표준 점검하여 100% 맞춤 가능합니다.</li>
+					</ul>
+					<!-- popupList end  -->
+				</div>
+				<button type="button" class="lp_close"><span>닫기</span></button>
+			</div>
+		</div>
+		<!-- // lp_container end -->
+
+		<div class="lp_container" id="sec02Popup2"><!-- 웹접근성 팝업 -->
+			<div class="lp_area">
+				<div class="lp_content">
+					<div class="imgBox">
+						<img class="sec02PopupImg" src="images/content/img_sec02_02.png" alt="웹표준 이미지">
+					</div>
+					<ul class="popupList">
+						<li class="tit">2.웹접근성 100% 체크</li>
+						<li class="txt">k-wah4.0, OpenWAX를 사용하여 웹접근성을 점검, 100% 맞춤 가능합니다.</li>
+					</ul>
+					<!-- popupList end  -->
+				</div>
+				<button type="button" class="lp_close"><span>닫기</span></button>
+			</div>
+		</div>
+		<!-- // lp_container end -->
+
+		<div class="lp_container" id="sec02Popup3"><!-- 시매틱웹 팝업 -->
+			<div class="lp_area">
+				<div class="lp_content">
+					<div class="imgBox">
+						<img class="sec02PopupImg" src="images/content/img_sec02_03.png" alt="시매틱웹 이미지">
+					</div>
+					<ul class="popupList">
+						<li class="tit">3.SimaticWeb</li>
+						<li class="txt">HTML 5 Outliner를 사용하여 html의 문서를 구조화 시켜 웹접근성을 높일 수 있습니다.</li>
+					</ul>
+					<!-- popupList end  -->
+				</div>
+				<button type="button" class="lp_close"><span>닫기</span></button>
+			</div>
+		</div>
+		<!-- // lp_container end -->
+	</div>
+	<!-- // layer popup wrap end -->
 	</div><!-- wrap end -->
 </body>
 </html>

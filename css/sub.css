@@ -49,7 +49,7 @@ Version : "2019.03"
 .projectList.row1 { width:100%;  margin-top:0; text-align:center; }
 .projectList.row1 li { display:inline-block; }
 .sub03 .content .projectImg img { width:90%; }
-.sub03 .content { padding:20px; margin-bottom:50px; background-color:#fedee1;  }
+.sub03 .content { padding:20px; margin-bottom:50px; background-color:#e1e1e1;  }
 .sub03 .content > .tit { text-align:center;  }
 .sub03 .content.con07 li { margin-top:10px; font-size:20px; vertical-align: top; }
 .sub03 .content.con07 .box01 { margin-bottom:30px; }
@@ -65,7 +65,7 @@ Version : "2019.03"
 .gallerySmall ul {}
 .gallerySmall ul li {display:inline-block; width:101px; height:90px; margin-right: 6px; }
 .gallerySmall ul li:last-child { margin-right:0; }
-.gallerySmall ul li a { overflow: hidden;  display:block; width:100%; height:100%; text-align:center; line-height: 84px; background-color:#ddd; }
+.gallerySmall ul li a { overflow: hidden;  display:block; width:100%; height:100%; text-align:center; line-height: 84px; background-color:#fff; }
 .gallerySmall ul li a img{ max-width:100%;  max-height:100%; }
 .gallerySmall ul li.on a, .gallerySmall ul li a:hover, .gallerySmall ul li a:focus, .gallerySmall ul li a:active { box-sizing: border-box;  border:3px solid #4b14a6;  }
 .galleryPaging { position:relative; width:96%; max-width:1052px; margin:0 auto;  }

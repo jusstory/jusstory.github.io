@@ -2,7 +2,7 @@
 메인 css
 Site : "Juyeon Kim's portfolio"
 Author : "김주연"
-Version : "2019.03"
+Version : "2020.04"
 */
 
 /* 비주얼 배너 */
@@ -15,11 +15,8 @@ Version : "2019.03"
 .visualWrap .train > .li01 { background:url("../images/content/img_visual01.jpg") 50% 50% no-repeat; background-size:cover; }
 .visualWrap .train > .li02 { background:url("../images/content/img_visual02.jpg") 50% 50% no-repeat; background-size:cover; }
 .visualWrap .train > .li03 { background:url("../images/content/img_visual03.jpg") 50% 50% no-repeat; background-size:cover; }
-.visualWrap .tit { position:absolute; top:30%; left:6%; font-family:"Noto Sans KR", sans-serif ; font-weight:900; font-size:2.8vw; color:#6e4450; }
-.visualWrap .tit .br { display:block;  font-weight:900; font-family:"Noto Sans KR", sans-serif; font-size:2.8vw; color:#6e4450; text-indent:15px; }
-.visualWrap .train > .li02 .tit {  top: 35%; left: 6%; text-align: right; font-size: 3.5vw; }
-.visualWrap .train > .li02 .tit span { font-size: 3.5vw; }
-.visualWrap .train > .li03 .tit {  display:block;  width:100%; left: 0; top: 37%; width: 100%; padding:50px 0 ; text-align: center;  background:url("../images/btn/bg_navW.png") 0 0 repeat; }
+.visualWrap .tit {display:block; position:absolute; top:50%; transform:translateY(-50%);left:0%;width: 100%; padding:50px 0 ; font-family:"Noto Sans KR", sans-serif ; font-weight:900; font-size:2.3vw; color:#6e4450;text-align: center; background:url("../images/btn/bg_navW.png") 0 0 repeat;}
+.visualWrap .tit .br { display:block;  font-weight:900; font-family:"Noto Sans KR", sans-serif; font-size:2.3vw; color:#6e4450; }
 
 /* 비주얼 배너의 컨트롤러 */
 .controller { position:absolute; right:-1px; bottom:0; display:table; width:230px; height:115px; background-color:#fff; }
@@ -58,14 +55,15 @@ Version : "2019.03"
 .skillDD_list li img { max-width:90%;  margin-top:55px; margin-bottom:30px;  }
 .skillDD_list li .txt { display:block; font-size:20px; font-weight:600; }
 */
-.skillDD_list li { display:none;  width:100%; height:100%; /* margin-left:35px;*/ text-align:center; }
-.skillDD_list li.active { display:block;  }
-.skillDD_list li a {  }
-.skillDD_list li .img { display:block; max-width:80%;  margin:55px auto 30px;  }
+.skillDD_list li { display:none;  width:100%; height:100%;text-align:center; }
+.skillDD_list li.active { display: flex;
+    flex-direction: column;
+    justify-content: center; }
+.skillDD_list li .img { display:block; max-width:60%;  margin:0 auto 30px;  }
 .skillDD_list li .img img { width: 100%; }
-.skillDD_list li .txt { display:block; font-size:18px; font-weight:600; }
+.skillDD_list li .txt { display:table;vertical-align:middle;font-size:16px; font-weight:700;line-height:1.4;}
 
-.skillDD_list .dd01 .img, .skillDD_list .dd02 .img, .skillDD_list .dd06 .img, .skillDD_list .dd07 .img, .skillDD_list .dd08 .img, .skillDD_list .dd09 .img { max-width: 40%;}
+.skillDD_list .dd01 .img, .skillDD_list .dd02 .img, .skillDD_list .dd06 .img, .skillDD_list .dd07 .img, .skillDD_list .dd08 .img, .skillDD_list .dd09 .img { max-width: 33%;}
 
 /* 섹션 2  */
 .section02 { overflow:hidden; width:100%; height:650px; background:url("../images/content/bg_sec03.jpg") 50% 50% no-repeat; background-size:100%; background-attachment: fixed; }

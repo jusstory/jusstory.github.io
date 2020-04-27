@@ -20,7 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 table {width:100%; border-collapse:collapse; border-spacing:0; border:0;}
 ol, ul {list-style:none;}
 img, fieldset, input {border:none; vertical-align:middle;}
-img {/*-ms-interpolation-mode: bicubic;*/}
+/* img {-ms-interpolation-mode: bicubic;} */
 hr, caption {display:none;}
 legend, caption {width:0; height:0; line-height:0; position:absolute; top:-9999px; left:-9999px; overflow:hidden; visibility:hidden;}
 object {outline:none;}
@@ -55,7 +55,6 @@ a:hover, a:focus{text-decoration:none; }
 .pcNo { display:none; }
 
 /* skip */
-.skip_nav { }
 .skip_nav li a { display: block; width: 100%; background-color: rgba(0,0,0,0.5); color: white; text-align: center; padding: 10px 0; font-weight: bold; position: absolute; left: 0; top: -100px; z-index: 1000; }
 .skip_nav li a:focus { top:0px;  }
 
@@ -115,7 +114,6 @@ a:hover, a:focus{text-decoration:none; }
 .mb_nav { display:none; position:absolute; top:90px; left:0; width:100%; height:100%; z-index: 999;}
 .mb_nav:before { content:" "; position:absolute; top:0; left:0;  display:block; width:100%; height:100%; background:url("../images/btn/bg_navB.png") 0 0 repeat;}
 .mb_gnb { position: absolute; top: 0; right: -100%; width:60%;  height:100%; }
-.mb_gnb > li {   }
 .mb_gnb > li.last:after { position: absolute; left: 0; content:" "; display:block; width:100%;  height:100%; background:url("../images/btn/bg_navB.png") 0 0 repeat; }
 .mb_gnb > li > a { display:block; width:100%; height:45px; box-sizing:border-box; border-bottom:1px solid #ddd; text-indent:20px; line-height:45px; font-weight:600; background-color:#fff;  }
 .mb_gnb > li.on > a { background-color:#dccafa; }

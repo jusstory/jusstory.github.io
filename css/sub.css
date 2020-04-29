@@ -19,22 +19,28 @@ Version : "2019.03"
 
 /* 박스 모음 */
 .box01 { max-width:1200px; margin: 0 auto;}
-.commentWrap { max-width:1200px; margin: 0 auto; }
+.commentWrap { max-width:1000px; margin: 0 auto; }
 
 /* sub01 프로필 */
 .sub01 {  }
 .sub01 .contentArea { width:100%; background-color:#f6f6f6; }
-.content01 { width:90%; max-width:1200px; margin:0 auto; padding-top:80px; padding-bottom:100px;}
+.content01 { width:90%; max-width:1000px; margin:0 auto 100px; padding:100px 0;}
 
-.contentArea .tit {margin-top:20px; margin-bottom:5px; font-weight:600; font-size:22px; }
+.contentArea .tit {margin-top:50px; margin-bottom:5px; font-weight:600; font-size:22px; }
+.contentArea .tit:first-child{margin-top:0;}
 .contentArea .tit .mb_br { font-weight:600; font-size:22px;  }
 .txtlist {  }
-.txtlist > li { margin-bottom: 5px; text-indent:10px; line-height:28px; background:url("../images/btn/bg_txtlist_dot.png") 0 12px no-repeat; }
+.txtlist > li {position:relative; margin-bottom: 5px; padding-left:10px;font-size:16px; line-height:28px; }
+.txtlist > li:before{position:absolute;top:11px;left:0;content:'';display:block;width:5px;height:5px;border-radius:50%;background-color:#000;}
 .txtlist .listTit {}
 .txtlist .listTxt { background:none; margin-bottom:10px; }
-.txtlist .listTxt span{ display:block; width:100%; margin-left:10px; font-size:16px; line-height:24px; color:#343434; background:url("../images/btn/bg_listTxt.png") 0 9px no-repeat;}
+.txtlist .listTxt::before{display:none;}
+.txtlist .listTxt span{ position:relative;display:block; width:100%; padding-left:12px; font-size:14px; line-height:24px; color:#666; }
+.txtlist .listTxt span::before{position:absolute;top:11px;left:0;content:'';display:block;width:5px;height:2px;background-color:#666;}
 .txtlist .btnWrap { margin-bottom:20px; background:none;  }
-.txtlist .subTxt { padding-left:8px;  font-size:16px; line-height:28px; color:#343434; }
+.txtlist .btnWrap::before{display:none;}
+.txtlist > li:last-child{margin-bottom:0;}
+.txtlist .subTxt { padding-left:8px;  font-size:14px; line-height:28px; color:#666; }
 
 /* sub0301 프로젝트 */
 .sub03 {}
@@ -42,23 +48,24 @@ Version : "2019.03"
 .projectImg { display:table-cell; width:70%; vertical-align:middle; }
 .projectImg img { width:100%; }
 .projectList { display:table-cell; width:30%; vertical-align:middle; }
-.projectList .tit { margin-top: 20px; margin-bottom: 5px; font-weight: 600; font-size: 18px;}
+.projectList .tit { margin-top: 20px; margin-bottom: 5px; font-weight: 600; font-size: 18px;line-height: 28px;}
 .projectList li:first-child { margin-top:0;  }
-.projectList .txt { margin-bottom: 5px; text-indent: 10px; line-height: 28px; background: url(../images/btn/bg_txtlist_dot.png) 0 12px no-repeat;}
-.projectList .subTxt { line-height: 28px; }
+.projectList .txt {position:relative;margin-bottom: 5px;padding-left: 12px;font-size:16px; line-height: 28px;}
+.projectList .txt:before{position:absolute;top:11px;left:0;content:'';display:block;width:5px;height:5px;border-radius:50%;background-color:#000;}
+.projectList .subTxt { line-height: 28px; font-size:16px;}
 .projectList.row1 { width:100%;  margin-top:0; text-align:center; }
 .projectList.row1 li { display:inline-block; }
 .sub03 .content .projectImg img { width:90%; }
-.sub03 .content { padding:20px; margin-bottom:50px; background-color:#e1e1e1;  }
+.sub03 .content { padding:80px 20px; margin-bottom:50px; background-color:#e1e1e1;  }
 .sub03 .content > .tit { text-align:center;  }
-.sub03 .content.con07 li { margin-top:10px; font-size:20px; vertical-align: top; }
+.sub03 .content.con07 li { margin-top:10px; vertical-align: top; }
 .sub03 .content.con07 .box01 { margin-bottom:30px; }
 .projectLink { height:auto; text-align: center; }
 .projectLink a { padding: 10px; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; color: #fff; font-weight:600; line-height: 45px;  background-color:#868686; }
 .projectLink a:hover, .projectLink a:focus, .projectLink a:active { background-color:#4b14a6; }
 
 /* sub0302 웹디자인 */
-.galleryWrap { position:relative;  }
+.galleryWrap { position:relative; margin-top:30px; }
 .galleryBig { width:80%; max-width:1000px; height: 588px; margin:0 auto; margin-bottom:20px; line-height: 588px; text-align:center; }
 .galleryBig img { max-width:100%; max-height:588px; }
 .gallerySmall {width:80%; max-width:1000px; margin:0 auto; margin-bottom:20px; text-align: center; }

@@ -130,10 +130,10 @@ address { font-style:normal; font-size:14px; color:#707070; }
 
 /* layer Popup */
 .lp_wrap {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:none; z-index:999; overflow-x:hidden; overflow-y:auto;}
-#lp_dim {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:url("../images/btn/layerDimBg.png") repeat center; background-size:contain; z-index:998;}
+#lp_dim {/*display:none;*/ position:fixed; top:0; left:0; width:100%; height:100%; background:url("../images/btn/layerDimBg.png") repeat center; background-size:contain; z-index:998;}
 .lp_container {display:none; position:relative; width:90%; max-width: 1200px; margin: 0 auto; padding:0; background-color:#ffffff; z-index:9002;}
 .lp_container .lp_area {position:relative; width:90%; margin:0 auto; font-size:14px;}
 
 .lp_container .lp_area .lp_content { overflow: hidden; padding:10px 0 30px;}
-.lp_container .lp_area .lp_close {position:absolute; top:1px; right:0px; width:30px; height:30px; background:url("../images/btn/closeBtn.png") no-repeat left top; background-size:contain;}
+.lp_container .lp_area .lp_close {position:absolute; top:1px; right:-5%; width:30px; height:30px; background:url("../images/btn/closeBtn.png") no-repeat left top; background-size:contain;}
 .lp_container .lp_area .lp_close span {display:block; overflow:hidden; text-align:left; text-indent:-10000em;}

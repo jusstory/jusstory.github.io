@@ -12,9 +12,10 @@ $(document).ready(function(){
   });
 
   /* 모바일 네비 */
-  var wrapH = $("#wrap").height()
-  $(".mb_nav").height(wrapH);
   $(".mb_naviBar").click(function(){
+    var wrapH = $("#wrap").height()
+    $(".mb_nav").height(wrapH);
+    console.log(wrapH);
     if( $(".mb_gnb").css("right") == "0px" ){
       $(".mb_nav").fadeOut(300);
       $(".mb_gnb").animate({"right":"-100%"}, "800" );
@@ -219,7 +220,7 @@ function fnShowLayer(objName, wid) {
 	var layerObj = $(".lp_wrap "+objName);
 	layerObj.attr('tabindex', 0).focus();
 
-	$("#wrap").append(str);
+	// $(".lp_wrap").append(str);
 	$("#lp_dim").stop().fadeIn("fast");
 	$("html, body").addClass("nyScroll");
 
@@ -240,10 +241,10 @@ function fnShowLayer(objName, wid) {
 	}
 	rePosition();
 
-	$(layerObj).find(".lp_close").off("click").on("click",function(e){
+	$(layerObj).find(".lp_close, #lp_dim").off("click").on("click",function(e){
 		e.preventDefault();
 		hideLayer(layerTop,$(this));
-	});
+  });
 
 	$(window).resize(function(){
 		rePosition();
@@ -255,7 +256,7 @@ function fnShowLayer(objName, wid) {
 			hideLayer(layerTop,$(this));
 	    }
 	});
-	$(".lp_close").off("click").on("click",function(e){
+	$(".lp_close, #lp_dim").off("click").on("click",function(e){
 		e.preventDefault();
 		hideLayer(layerTop,$(this));
 	});

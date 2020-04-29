@@ -224,7 +224,7 @@ function fnShowLayer(objName, wid) {
 	$("#lp_dim").stop().fadeIn("fast");
 	$("html, body").addClass("nyScroll");
 
-	layerObj.show().parent().stop().fadeIn("fast");
+	layerObj.show().parent().stop().fadeIn("fast").append(str);
 	layerObj.focus();
 
 	var rh = realHeight($(".lp_wrap "+objName));

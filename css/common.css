@@ -53,6 +53,7 @@ a:hover, a:focus{text-decoration:none; }
 .bgNo { background:none !important; }
 .dpBlock { display:block; }
 .pcNo { display:none; }
+.nyScroll{}
 
 /* skip */
 .skip_nav li a { display: block; width: 100%; background-color: rgba(0,0,0,0.5); color: white; text-align: center; padding: 10px 0; font-weight: bold; position: absolute; left: 0; top: -100px; z-index: 1000; }
@@ -125,7 +126,7 @@ a:hover, a:focus{text-decoration:none; }
 /* 푸터 */
 #footer { height:150px; }
 .address { text-align:center; padding-top:80px; }
-address { font-style:normal; font-size:14px; color:#707070; }
+address, address a  { font-style:normal; font-size:14px; color:#707070; }
 .copyright { display:block; width:100%; font-size:14px; color:#707070; }
 
 /* layer Popup */

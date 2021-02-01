@@ -2189,6 +2189,8 @@ input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1p
     }
     .lastSaleBanner_list li {
         height: 216px;
+        background: url(../img/common/bg_lastSaleBanner_list_li.jpg) 0 0 no-repeat;
+        background-size: 100% 100%;
     }
     .lastSaleBanner_list li span {
         font-size: 28px;

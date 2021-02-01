@@ -611,6 +611,7 @@ input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1p
 }
 .whyConents .imgBox img{
     max-width:100%;
+    margin: 0 auto;
 }
 .whyConents .imgBox .subSource{
     text-align:center;
@@ -1341,9 +1342,6 @@ input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1p
 }
 .teacher.type02 .teacher_list li {
     background-color: #fff;
-}
-.teacher.type02 .teacher_list li.full{
-
 }
 .ddazuaPoint .title03{
     margin-top:70px;

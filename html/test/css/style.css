@@ -2322,6 +2322,10 @@ input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1p
         font-size: 16px;
         text-align: center;
     }
+    .visual_banner.lifeStyle .text{
+        width: 95%;
+        margin: 0 auto;
+    }
     .visual_banner .text span{
         display:block;
     }

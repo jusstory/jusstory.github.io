@@ -1,0 +1,3381 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* reset */
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; word-break: keep-all }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button { margin: 0; padding: 0; border: 0; font-size: 100%; font-family:'Noto Sans KR', sans-serif; vertical-align: baseline; font-weight:400;color:#000; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1.2; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+legend, caption {width: 0;height: 0;line-height: 0;position: absolute;top: -9999px;left: -9999px;overflow: hidden;visibility: hidden;}
+button { padding: 0; background: 0; border: 0; cursor: pointer; letter-spacing: -1px; }
+a { text-decoration: none; }
+a:link, a:hover, a:active, a:visited { text-decoration: none; color: initial }
+input[type="checkbox"],
+input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);
+}
+
+/* common */
+.wrap {
+    width:100%;
+}
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:0 auto;
+}
+.bg_gray{
+    background-color: #f5f5f5;
+}
+.pcVer{
+    display: block;
+}
+.tbVer{
+    display: none;
+}
+.pcVer.tbVer{
+    display: block;
+}
+.mbVer{
+    display: none;
+}
+/* //mark : button*/
+.button{
+    display:inline-block;
+    /* padding: 20px 35px; */
+    width:380px;
+    height:70px;
+    line-height:70px;
+}
+.button span{
+    font-size:26px;
+    font-weight:700;
+}
+.button span b{
+    font-weight:700;
+}
+.button.auto{
+    width:auto;
+    padding-left: 30px;
+    padding-right:30px;
+}
+.btn_type_wr{
+    background-color: #fff;
+}
+.btn_type_wr span{
+    color:#ee293e;
+}
+.btn_type_rw{
+    background-color: #ee293e;
+}
+.btn_type_rw span{
+    color:#fff;
+}
+.btn_type_bw{
+    background-color: #4953a0;
+}
+.btn_type_bw span{
+    color:#fff;
+}
+.buttonBox{
+    text-align: center;
+}
+.kakakotalkBtn{
+    display:inline-block;
+    width:380px;
+    height:70px;
+    line-height:70px;
+    background-color: #fee500;
+}
+.kakakotalkBtn span{
+    font-size:26px;
+    font-weight:700;
+    color:rgba(0,0,0,0.85);
+}
+.kakakotalkBtn span img{
+    margin-top: -6px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.callBtn{
+    display:inline-block;
+    width:380px;
+    height:70px;
+    margin-left: 40px;
+    line-height:70px;
+    background-color: #fff;
+}
+.callBtn span{
+    font-size:26px;
+    font-weight:700;
+    color:#ee293e;
+}
+.callBtn span img{
+    margin-top: -8px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.titleBtn{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #fff;
+    background-color: #ee293e;
+}
+
+/* //mark : title , font */
+.red{
+    color:#ee293e !important;
+}
+.blue{
+    color:#424e9c !important;
+}
+.yellow{
+    color:#ffde00 !important;
+}
+.white{
+    color:#fff !important;
+}
+.gray222{
+    color:#222 !important;
+}
+.gray444{
+    color:#444 !important;
+}
+.gray666{
+    color:#666 !important;
+}
+.title48b {
+    font-size:48px !important;
+    font-weight:700  !important;
+}
+.title40b {
+    font-size:40px !important;
+    font-weight:700 !important;
+}
+.title36b {
+    font-size:36px !important;
+    font-weight:700 !important;
+}
+.title32b {
+    font-size:32px !important;
+    font-weight:700 !important;
+}
+.title30b {
+    font-size:30px !important;
+    font-weight:700 !important;
+}
+.title28b {
+    font-size:28px !important;
+    font-weight:700 !important;
+}
+.title24b {
+    font-size:24px !important;
+    font-weight:700 !important;
+}
+.title22b {
+    font-size:22px !important;
+    font-weight:700 !important;
+}
+.title48 {
+    font-size:48px !important;
+    font-weight:500  !important;
+}
+.title40 {
+    font-size:40px !important;
+    font-weight:500 !important;
+}
+.title36 {
+    font-size:36px !important;
+    font-weight:500 !important;
+}
+.title30 {
+    font-size:30px !important;
+    font-weight:500 !important;
+}
+.title28 {
+    font-size:28px !important;
+    font-weight:500 !important;
+}
+.title24 {
+    font-size:24px !important;
+    font-weight:500 !important;
+}
+.title22 {
+    font-size:22px !important;
+    font-weight:500 !important;
+}
+.title16 {
+    font-size:16px !important;
+    font-weight:500 !important;
+}
+/* text */
+.text28 {
+    font-size:28px !important;
+}
+.text24 {
+    font-size:24px !important;
+}
+.text22 {
+    font-size:22px !important;
+}
+.text20 {
+    font-size:20px !important;
+}
+.text18 {
+    font-size:18px !important;
+}
+.subSource{
+    margin-top:10px;
+    font-size:10px;
+    color:#666;
+    text-align:center;
+}
+.subSource.right{
+    text-align:right !important;
+}
+/* //mark : title under line*/
+.lineBR{
+    position:relative;
+    padding-bottom:50px;
+}
+.lineBR::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    display:block;
+    height:5px;
+    width:90px;
+    background-color:#ee293e;
+}
+.lineBB{
+    position:relative;
+    width:auto;
+    margin:0 auto;
+    display:inline-block;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+.lineBB::after{
+    content:'';
+    display:block;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    height:5px;
+    width:85%;
+    background-color:#000;
+}
+.lineBW{
+    position:relative;
+    width:auto;
+    margin:0 auto;
+    display:inline-block;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+.lineBW::after{
+    content:'';
+    display:block;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    height:3px;
+    width:85%;
+    background-color:#fff;
+}
+
+/* //mark : table */
+.table01{
+    width:100%;
+    border:1px solid #ee293e;
+}
+.table01 thead tr th{
+    height:33px;
+    color:#fff;
+    font-size:16px;
+    vertical-align: middle;
+    background-color:#ee293e;
+}
+.table01 thead tr th.first{
+    background-color:#fff;
+}
+.table01 tbody tr th{
+    height:33px;
+    color:#fff;
+    font-size:16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color:#ee293e;
+}
+.table01 tbody tr td{
+    height:33px;
+    font-size:15px;
+    color:#ee293e;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom:1px solid #ee293e;
+}
+
+
+/* content*/
+/* //mark : 상단 visual banner */
+.visual_banner{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:124px 0;
+    background-size:cover;
+}
+.visual_banner.gameProgram{
+    background:url(../img/common/visualBanner_game.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.visual_banner.designTool{
+    background:url(../img/common/visualBanner_designTool.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.visual_banner.lifeStyle{
+    background:url(../img/common/visualBanner_lifeStyle.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.visual_banner.backend{
+    background:url(../img/common/visualBanner_backend.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+/* .visual_banner .logo{
+
+} */
+.visual_banner .subTitle{
+    font-size:20px;
+    color:#fff;
+    font-weight:700;
+}
+.visual_banner .title{
+    font-size:60px;
+    color:#fff;
+    font-weight:700;
+    line-height: 1.5;
+}
+.visual_banner .text,  .visual_banner .text span{
+    font-size:18px;
+    color:#fff;
+    font-weight:500;    
+    text-align: center;
+}
+.visual_banner .text span{
+    display: block;
+}
+/* //mark : 할인해택 배너 혜택 01 */
+.sale_banner{
+    width:100%;
+    padding:50px;
+    box-sizing: border-box;
+    text-align:center;
+    background: url('../img/common/bg_sale_banner.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.sale_banner .line_box{
+    width:100%;
+    height:100%;
+    border:3px solid #fff;
+}
+.sale_banner .title_btn{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top:50px;
+    border-radius: 25px;
+    font-size: 28px;
+    background-color: #fff;
+}
+.sale_banner .subTitle{
+    margin:40px 0;
+}
+.sale_banner .subTitle span{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+.sale_banner .subTitle strong{
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffde00;
+}
+.sale_banner .button{
+    margin:40px;
+}
+.sale_box{
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+}
+.sale_box .logo{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.sale_box .price_before{
+    text-align: left;
+    font-size: 32px;
+    color: #acacac;
+    text-decoration: line-through;
+}
+.sale_box .price_after{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: right;
+}
+.sale_box .sale_num{
+    width: 80%;
+    max-width: 330px;
+}
+
+/* //mark : 할인해택 배너 혜택 02 */
+.sale_banner02{
+    width:100%;
+    padding:70px 0;
+    box-sizing: border-box;
+    text-align:center;
+}
+.sale_banner02 .title{
+    font-size: 36px;
+    margin: 40px 0;
+}
+.sale_banner02 .title span{
+    font-weight: 700;
+}
+.sale_banner02 .title_btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 28px;
+    color:#fff;
+    background-color: #000;
+}
+.sale_banner02 .illust_list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sale_banner02 .illust_list .li02, .sale_banner02 .illust_list .li04{
+    margin-top:160px;
+}
+.sale_banner02 .illust_list li{
+    width:20%;
+    max-width: 260px;
+}
+.sale_banner02 .illust_list li img{
+    width:100%;
+}
+.sale_banner02 .text{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 60px 0 30px;
+}
+.sale_banner02 .text span{
+    font-size: 24px;
+    font-weight: 500;
+}
+/* //mark : 게임프로그래밍이란? */
+.whatThis{
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.whatThis .title{
+    font-size:30px;
+    font-weight:500;
+}
+.whatThis .title span{
+    display: block;
+}
+.whatThis .text{
+    margin-top:15px;
+    font-size:16px;
+}
+.whatThis .text span{
+    display: block;
+}
+.whatThis .subTitle{
+    margin-top:50px;
+    font-size:22px;
+    font-weight:500;
+}
+.whatThis .whatThis_list{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+.whatThis .whatThis_list.three li{
+    margin-right:50px;
+    width:30%;
+}
+.whatThis .whatThis_list.three .li03{
+    margin-right:0px;
+}
+.whatThis .whatThis_list.four li{
+    width:25%;
+}
+.whatThis .whatThis_list li strong{
+    display: block;
+    margin-bottom:5px;
+    color:#ee293e;
+}
+/* //mark : 게임시장 전망  */
+.lineBox_wrap{
+    width:100%;
+    padding:70px 0;
+    text-align:center;
+}
+.lineBox_wrap .title{
+    margin-bottom:30px;
+}
+.lineBox_wrap .text{
+    margin-bottom:50px;
+}
+.lineBox_list{
+    width:100%;
+}
+.lineBox_list li{
+    width:100%;
+    display:flex;
+    box-sizing: border-box;
+    padding:30px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:70px;
+    box-sizing:border-box;
+    border: 3px solid #ee293e;
+    background-color: #fff;
+}
+.lineBox_list li:last-child{
+    margin-bottom:0;
+}
+.lineBox_list .subtitle{
+    color:#222;
+    font-size:20px;
+    font-weight:400;
+}
+.lineBox_wrap .table01{
+    margin:0 auto;
+}
+.lineBox_list .textBox{
+    width:100%;
+    margin-top:20px;
+}
+.lineBox_list .textBox img{
+    margin-bottom:13px;
+}
+.lineBox_list .textBox span{
+    display:block;
+    line-height:1.5;
+}
+.lineBox_list .imgBox{
+    width: 100%;
+    max-width:1300px;
+}
+.lineBox_list .imgBox img{
+    width:100%;
+}
+.lineBox_list .imgBox .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.lineBox_list .imgBox .flex > div{
+    width:50%;
+}
+/* //mark : 그렇다면 왜? */
+.whyConents{
+    width:100%;
+    padding:70px 0;
+    text-align:center;
+}
+.whyConents .title:first-child{
+    margin-bottom:50px;
+}
+.whyConents .title span{
+    display:block;
+}
+.whyConents .imgBox{
+    width:100%;
+    margin:0 auto;
+    margin-bottom:30px;
+    text-align:center;
+}
+.whyConents .imgBox img{
+    max-width:100%;
+    margin: 0 auto;
+}
+.whyConents .imgBox .subSource{
+    text-align:center;
+}
+/* //mark : 중간배너 */
+.mdBanner{
+    width:100%;
+}
+.mdBanner img{
+    width:100%;
+}
+/* //mark : 사각형 리스트  */
+.squareListBox{
+    padding:70px 0;
+    width:100%;
+}
+.squareListBox .title{
+    text-align: center;
+}
+.squareListBox .title > span{
+    display: block;
+}
+.square_list{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top:70px;
+}
+.square_list.three li{
+    width:280px;
+    padding:30px;
+    box-sizing: border-box;
+    text-align:center;
+    background-color: #ee293e;
+}
+.square_list.three li img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom:15px;
+}
+.square_list.three li span{
+    font-size:24px;
+    font-weight:700;
+    color:#fff;
+    line-height: 1.4;
+}
+/* //mark : 첫단추 3단계 */
+.step3{
+    width:100%;
+    padding:70px 0;
+    text-align:center;
+}
+.step3 .sub_title{
+    margin:20px 0 30px;
+}
+.step3_list{
+    width:100%;
+    margin:0 auto;
+    margin-top:30px;
+}
+.step3_list.designTool{
+    max-width: 1060px;
+}
+.step3_list.designTool2{
+    max-width: 800px;
+}
+.step3_list.lifeStyle{
+    max-width: 1200px;
+}
+.step3_list.game{
+    max-width:1046px
+}
+.step3_list li{
+    height:64px;
+    padding:7.5px;
+    margin-bottom:30px;
+    border-radius: 40px;
+    font-size: 28px;
+    font-weight:500;
+    text-align: left;
+    background-color:#ee293e;
+}
+.step3_list li:last-child{
+    margin-bottom:0;
+}
+.step3_list li span{
+    line-height:65px;
+    color:#fff;
+    font-size:28px;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+.step3_list li .num{
+    display:inline-block;
+    width:65px;
+    height:65px;
+    border-radius: 50%;
+    margin-right:10px;
+    color:#ee293e;
+    font-weight: 500;
+    text-align: center;
+    background-color:#fff;
+}
+.step3_list li.multi{
+    display: flex;
+    height: auto;
+}
+.step3_list li.multi >span{
+    line-height: 1.4;
+    width: calc(100% - 75px);
+}
+.step3_list li.multi .num{
+    width: 65px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.step3_list li.multi .num span{
+    display: block;
+    color: #ee293e;
+    font-weight: 500;
+}
+.step3 .text{
+    margin-top:70px;
+}
+.step3 .text span{
+    display: block;
+}
+.step3_list.backend{
+    max-width: 1010px;
+}
+/* //mark : 패키지 소개 */
+.pakageBox {
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+}
+.pakageBox .title span{
+    display: block;
+}
+.pakageBox .text{
+    margin-top:50px;
+    margin-bottom:40px;
+}
+.pakageBox img{
+    width:90%;
+    max-width: 610px;
+}
+
+/* //mark : 샘플영상 */
+.sampleBox{
+    padding:70px 0;
+    text-align: center;
+}
+.sampleBox .title{
+    margin-bottom:30px;
+}
+.sampleBox .text{
+    margin-bottom:50px;
+}
+.sample{
+    /* width:90%; */
+    max-width:1400px;
+    margin: 0 auto;
+    padding:70px 0;
+    color:#fff;
+    text-align:center;
+}
+.sample p, .sample h2 {
+    color:#fff;
+}
+.sample .subTitle{
+    margin-bottom:10px;
+}
+.sample .title{
+    margin-bottom:50px;
+}
+.sample.red{
+    background-color:#ee293e;
+}
+.sample.black{
+    background-color:#000;
+}
+.sample .lineBox{
+    width:90%;
+    max-width: 831px;
+    margin:0 auto;
+    box-sizing: border-box;
+    padding:40px 30px;
+    border:6px solid #ffde00;
+}
+.sample .lineBox .title{
+    margin-bottom:30px;
+}
+.sample .star{
+    margin-bottom: 10px;
+    color:#ffde00;
+    font-size: 24px;
+    font-weight: 500;
+}
+.sample .video iframe{
+    width:624px;
+    height:350px;
+}
+.sample.black{
+    background-color:#000;
+}
+.sample + .button{
+    margin-top:50px;
+}
+.sample .container + .text{
+    margin-top:50px;
+}
+.sampleBox .text01 span{
+    display: block;
+}
+.sample + .text01{
+    margin-top:50px;
+}
+.sampleBox .text01 + .text02{
+    margin-top:30px;
+}
+/* //mark : 실패를 반복하는 이유 */
+.failReason{
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+}
+.failReason .subTitle{
+    margin-bottom:10px;
+}
+.failReason .title{
+    margin-bottom:40px;
+}
+.failReason .text01 span{
+    display: block;
+}
+.failReason .text02 {
+    margin-top:20px;
+    margin-bottom:35px;
+}
+.failReason_list{
+    display: flex;
+    margin-bottom:50px;
+    justify-content:space-between;
+}
+.failReason_list li{
+    width:280px;
+    height:280px;
+    border-radius: 50%;
+    background-color: #4953a0;
+}
+.failReason_list li .num{
+    display:block;
+    margin-bottom:20px;
+    margin-top:50px;
+    color:#fff;
+    font-size:42px;
+    font-weight: 700;
+}  
+.failReason_list li span{
+    color:#fff;
+    font-weight: 700;
+    font-size:22px;
+}
+/* //mark : 따즈아는 다르다 */
+.differentDD{
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.differentDD .lineBR + .title{
+    margin-top:50px;
+}
+.differentDD .title{
+    margin-bottom:70px;
+}
+.differentDD_list{
+    display:flex;
+    justify-content: space-between;
+}
+.differentDD_list li{
+    width:32%;
+    margin-right:1.5%;
+}
+.differentDD_list li:last-child{
+    margin-right:0;
+}
+.differentDD_list li .title{
+    margin-top:15px;
+    margin-bottom: 0;
+}
+.differentDD_list li .title span{
+    display: block;
+}
+.differentDD_list li .title span:first-child{
+    margin-bottom: 10px;
+}
+/* //mark : 따즈아의 교육철학 */
+.ddazua_edu {
+    display: flex;
+    width: 90%;
+    padding:70px 0;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.ddazua_edu .img{
+    width:50%;
+    line-height: 0;
+}
+.ddazua_edu .img img{
+    width: 100%;
+    height: 100%;
+}
+.ddazua_edu_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    text-align: center;
+    box-sizing: border-box;
+    border:3px solid #222;
+}
+.ddazua_edu_list li{
+    width: 90%;
+    max-width: 500px;;
+}
+.ddazua_edu_list li span{
+    display: block;
+    margin-bottom: 33px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+/* //mark : 이런분에게 추천 */
+.recommend{
+    width:100%;
+    padding:70px 0;
+    margin:0 auto;
+    text-align: center;
+}
+.recommend .title{
+    margin-bottom:50px;
+}
+.recommend_list{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recommend_list.four li{
+    width:25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.recommend_list.four li img{
+    margin-bottom: 20px;
+    max-height: 203px;
+}
+.recommend_list.three li{
+    width:33.33%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.recommend_list.three li img{
+    margin-bottom: 20px;
+    max-height: 200px;
+}
+.recommend_list li p span{
+    display:block;
+}
+.recommend .text01{
+    margin-top:70px;
+}
+.recommend .text02{
+    margin-top:30px;
+}
+
+.recommend .text02 span{
+    display: block;
+}
+
+/* //mark : 핵심목표*/
+.goal{
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+}
+.goal .title{
+    margin-bottom:20px;
+}
+.goal .text span {
+    display: block;
+}
+.goal .text + .text{
+    margin-top:30px;
+}
+.goal_list{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1200px;
+    padding:70px 0;
+    margin:0 auto;
+}
+.goal_list li.point::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: #4953a0;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+.goal_list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    max-width:280px;
+    padding:30px 0;
+    box-sizing: border-box;
+    border:5px solid #4953a0;
+    border-radius: 30px;
+    background-color:#fff;
+}
+.goal_list li img{
+    margin-bottom:20px;
+}
+.goal_list li p{
+    color:#4953a0;
+}
+.goal_list li.point{
+    width:280px;
+    height:280px;
+    border-radius: 50%;
+    background-color:#4953a0;
+}
+.goal_list li.point p{
+    color:#fff;
+}
+.goal_list.designTool .adobe {
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+}
+.goal_list.designTool li p {
+    max-width: 95px;
+}
+.goal_list.designTool li.point p{
+    max-width: unset;
+}
+.goal_list li.adobe img {
+    width: 100%;
+    margin-bottom: 6px;
+}
+.goal_list + .sub_title{
+    margin-bottom: 20px;
+}
+.goal_list.lifeStyle + .sub_title{
+    margin-bottom: 0;
+}
+.goal_list.lifeStyle li:nth-child(2)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: #4953a0;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+.goal_list.lifeStyle.point{
+    justify-content: center;
+    padding-top:20px;
+}
+.goal_list.lifeStyle .point::after{
+    width: 5px;
+    height: 100%;
+    top: -50%;
+}
+.goal.backend{
+    position: relative;
+}
+.goal.backend::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: -22;
+}
+.techTree{
+    width:100%;
+    padding-top:70px;
+}
+.techTree .title{
+    margin-bottom:30px;
+}
+.techTree .subTitle{
+    padding-top:100px;
+    margin-bottom:30px;
+}
+.techTree .subTitle span{
+    display: block;
+}
+.techTree .subText span{
+    display: block;
+}
+.techTree img{
+    width:100%;
+}
+.techTree.game img{
+    max-width: 980px;
+}
+.techTree.designTool img{
+    max-width: 980px;
+}
+.techTree.backend {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.techTree.backend img{
+    max-width: 980px;
+}
+.pointNum{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 97px;
+    background-color: #4953a0;
+}
+.pointNum + .title2{
+    margin-bottom:70px;
+}
+.pointNum + .title2 + .sub_title + .text{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+/*  //mark : 커리큘럼 */
+.curriculum{
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+}
+.curriculum .container > .title{
+    margin-bottom:80px;
+}
+.curriculum .subText{
+    margin-top:70px;
+    margin-bottom:70px;
+}
+.curriculum .subText span{
+    display: block;
+}
+.curriculum_list{
+    width:90%;
+    max-width: 850px;
+    margin:0 auto;
+    margin-bottom: 70px;
+}
+.curriculum.designTool .curriculum_list{
+    width: 95%;
+}
+.curriculum_list li{
+    position: relative;
+    padding-bottom: 30px;
+}
+.curriculum_list li:last-child{
+    padding-bottom:0;
+}
+.curriculum_list li::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.curriculum_list li::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    background: rgba(238,83,93,0.5);
+    z-index: -1;
+}
+.curriculum_list li:last-child::before{
+    display: none;
+}
+.curriculum_list li .num{
+    float:left;
+    display: block;
+    margin-right: 50px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ee293e;
+    font-size: 0;
+}
+.curriculum_list li .title{
+    float:left;
+    margin-right: 50px;
+    line-height: 1;
+    text-align: left;
+}
+.curriculum_list li .title span{
+    display: block;
+    margin-bottom: 15px;
+}
+.curriculum_list li .title img {
+    width:100%;
+}
+.curriculum_list li .text{
+    float:left;
+    text-align: left;
+}
+.curriculum_list li .text span{
+    display: block;
+}
+.curriculum.type02 .sub_title + .text{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.curriculum_list02{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.curriculum_list02 li{
+    width:50%;
+    margin-bottom: 50px;
+}
+.curriculum_list02 .title{
+    margin-bottom: 30px;;
+}
+.curriculum_list02 .title::before{
+    content:'';
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ee293e;
+    font-size: 0;
+}
+.curriculum_list02 li img{
+    width:90%;
+}
+/* //mark : 스킬셋 */
+.skillSet{
+    padding:70px 0;
+    text-align: center;
+    background-color: #4953a0;
+}
+.skillSet .title span{
+    color:#fff;
+    display: block;
+}
+.skill_list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill_list li{
+    width:48%;
+    box-sizing: border-box;
+    margin-top:30px;
+    padding:30px;
+    background-color: #fff;
+}
+.skill_list li:nth-child(1),.skill_list li:nth-child(2){
+    margin-top:0;
+}
+.skill_list li:nth-child(2n){
+    margin-left:2%;
+}
+.skill_list li .list_title span{
+    display: block;
+}
+.skill_list li .list_text{
+    margin-top:30px;
+    text-align: left;
+}
+/* //mark : 핵심설명 , 강사진 */
+.ddazuaPoint{
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    padding:70px 0;
+}
+.ddazuaPoint .logo{
+    margin-bottom:15px;
+}
+.ddazuaPoint .title02{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.ddazuaPoint .text02{
+    margin-top:30px;
+}
+.ddazuaPoint .title02 span, .ddazuaPoint .text01 span, .ddazuaPoint .text02 span{
+    display: block;
+}
+.teacher{
+    padding-top:70px;
+}
+.teacher > .title{    
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 28px;
+    color: #fff;
+    background-color: #ee293e;
+}
+.teacher .title + .subTitle{
+    margin-top:20px;
+}
+.teacher_list{
+    display:flex;
+    justify-content: space-between;
+    margin-top:70px;
+    flex-wrap: wrap;
+}
+.teacher_list li{
+    display: flex;
+    /* width:calc(50% - 20px); */
+    width: 48%;
+    margin:0 auto;
+    margin-bottom: 30px;
+    padding:40px;
+    box-sizing: border-box;
+    border:1px solid #c2c2c2;
+}
+/* .teacher_list li:nth-child(2n){
+    margin-left:20px;
+} */
+.teacher_list li.full{
+    width: 98%;
+}
+.teacher_list .list{
+    margin-left:15px;
+    margin-top:20px;
+    text-align: left;
+}
+.teacher_list .img_teach img{
+    max-width:256px;
+    width:100%;
+}
+.teacher_list .list .title{
+    margin-bottom:10px;
+    font-size:28px;
+    font-weight: 500;
+    color:#ee293e;
+}
+.teacher_list .list .contents span{
+    position: relative;
+    display: block;
+    padding-left:10px;
+    font-size:20px;
+    color:#222;
+    letter-spacing: -2px;
+    line-height: 1.5;
+}
+.teacher_list .list .contents span::before{
+    display: block;
+    content:'-';
+    position: absolute;
+    top:0;
+    left:0;
+}
+.teacher_list .list .contents span.no::before{
+    display: none;
+}
+.teacher_list li.full:nth-child(2n){
+    margin-left:0;
+}
+.teacher_list li.full .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.teacher_list li.full .list .title{
+    width:100%;
+}
+.teacher_list li.full .list .contents{
+    width:48%;
+}
+.teacher.type02{
+    position:relative;
+    background-color: #f5f5f5;
+}
+.teacher.type02 > .title{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.teacher.type02 .teacher_list{
+    width:90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.teacher.type02 .teacher_list li {
+    background-color: #fff;
+}
+.ddazuaPoint .title03{
+    margin-top:70px;
+    margin-bottom:50px;
+}
+.ddazuaPoint .title03 span{
+    display: block;
+}
+.ddazuaPoint .text04{
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.ddazuaPoint .text05{
+    margin-bottom:50px;
+}
+.ddazuaPoint .text04 span, .ddazuaPoint .text05 span{
+    display: block;
+}
+.ddazuaPoint .img img{
+    width:100%;
+}
+.ddazuaPoint.backend .img img{
+    margin-top:70px;
+}
+.ddazuaPoint.backend .step3{
+    padding-bottom:0;
+}
+/* //mark : 후기 */
+.review {
+    width:100%;
+    padding:70px 0;
+    text-align: center;
+    background-color: #ee293e;
+}
+.review .container > .title{
+    margin-bottom: 70px;
+    color: #fff;
+}
+.text_review{
+    width:100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text_review li{
+    position: relative;
+    width:calc(50% - 40px);
+    padding: 30px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.text_review li:nth-child(2n){
+    margin-left:40px;
+}
+.text_review li > img{
+    position: absolute;
+    top:30px;
+    right:30px;
+}
+.text_review .content{
+    letter-spacing: -2px;
+    color: #222;
+    font-size: 24px;
+    text-align: left;
+}
+.text_review .content.noTitle{
+    padding-top:80px
+}
+.text_review .content .subTitle{
+    margin-bottom:30px;
+}
+.text_review .content span{
+    display: block;
+}
+.text_review .content span:last-child{
+    margin-top:20px;
+}
+.text_review + .icon_review{
+    margin-top:50px;
+}
+.review .subText{
+    margin-bottom:40px;
+}
+.review .subText span{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+}
+.icon_review{
+    display: flex;
+    justify-content: space-between;
+}
+.icon_review li{
+    width:calc(33% - 14px);
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.icon_review .titleBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.icon_review .titleBox .title{
+    width:calc(100% - 100px);
+}
+.icon_review .titleBox .title span{
+    display: block;
+}
+.icon_review .titleBox .text{
+    width:200%;
+    margin-top: 30px;
+    text-align: left;
+}
+/* //mark : 얻을 수 있는 효과 */
+.effect{
+    width:100%;
+    padding:70px 0;
+    text-align:center;
+}
+.effect_list{
+    display: flex;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top:70px;
+    justify-content: space-between;
+}
+.effect_list li{
+    width: 33.33%;
+    text-align:center;
+}
+.effect_list p.num{
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    color:#fff;
+    line-height: 97px;
+    background-color: #4953a0;
+}
+.effect_list + .text{
+    margin-top:70px;
+}
+.effect .text span {
+    display: block;
+}
+/* //mark : 마지막 설명 */
+.lastInfo{
+    width:90%;
+    margin: 0 auto;
+    padding:100px 0;
+    text-align: center;
+}
+.lastInfo img{
+    width: 100%;
+    max-width: 840px;
+    margin-bottom: 50px;
+}
+.lastInfo .title:last-child{
+    margin-top:60px;
+}
+.lastInfo .title span{
+    display: block;
+}
+.lastInfo img + .title:last-child{
+    margin-top:0;
+}
+/* //mark : 마지막 행사 배너  */
+.lastSaleBanner{
+    width: 100%;
+    padding:100px 0 90px;
+    text-align: center;
+    background: url('../img/common/bg_last_sale_banner.jpg') 50% 0 no-repeat;
+    background-size: cover;
+}
+.lastSaleBanner .title span{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+.lastSaleBanner .title strong{
+    display: block;
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffde00;
+}
+.lastSaleBanner .subText{
+    margin-top: 25px;
+}
+.lastSaleBanner .subText span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.lastSaleBanner .subText span:last-child{
+    font-size: 15px;
+}
+.lastSaleBanner .text{
+    margin-top:400px;
+    margin-bottom: 70px;
+}
+.lastSaleBanner .text span{
+    display: block;
+    color: #fff;
+}
+.lastSaleBanner.type02{
+    width: 100%;
+    padding: 180px 0 165px;
+    text-align: center;
+    background: url('../img/common/bg_last_sale_banner02.jpg') 50% 0 no-repeat;
+    background-size: cover;
+}
+.lastSaleBanner.type02 .text{
+    margin-top: 50px;
+}
+.lastSaleBanner.type02 .title span{
+    color:#fff090;
+}
+.lastSaleBanner_list{
+    width:80%;
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-bottom: 70px;;
+    display: flex;
+    justify-content: space-between;
+}
+.lastSaleBanner_list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    max-width: 288px;
+    height:278px;
+    background: url('../img/common/bg_lastSaleBanner_list_li.jpg') 0 0 no-repeat;
+    background-size: 100%;
+}
+.lastSaleBanner_list li span{
+    display: block;
+    color:#fff090;
+    font-size:36px;
+    font-weight: 900;
+}
+.photoInfo{
+    padding:70px 0;
+    width:100%;
+    text-align: center;
+}
+.photoInfo .title{
+    margin-bottom:50px;
+}
+.photoInfo img{
+    margin-bottom:50px;
+    width:90%;
+    max-width: 668px;
+}
+.photoInfo .img{
+    width: 100%;
+    max-width: none;
+    margin-bottom:0;
+}
+.photoInfo .text {
+    margin-bottom:30px;
+}
+.photoInfo .text span{
+    display:block;
+}
+.photoInfo .text.title36{
+    margin:50px 0;
+}
+.photoInfo.studio{
+    padding-top:0;
+}
+.ddazuaPoint.type2 + .photoInfo.type2{
+    padding-top:0;
+}
+.photoInfo.type2 .text01 + .text02 {
+    margin-top:50px;
+}
+.photoInfo.studio .text01 span{
+    display: block;
+}
+.studioBox{
+    display:flex;
+    justify-content: space-between;
+}
+.studioBox img{
+    width: 50%;
+    max-width: 668px;
+}
+.photoInfo.studio .sub_title{
+    margin:70px 0 40px;
+}
+.photoInfo.backend .text02{
+    margin-bottom:70px;
+}
+.photoInfo.backend .text02 span{
+    display: block;
+}
+
+/* //mark : tablet ver */
+@media screen and (max-width:1279px){
+    
+    .pcVer{
+        display: none;
+    }
+    .mbVer{
+        display: none;
+    }
+    .tbVer{
+        display: block;
+    }
+    .lineBR {
+        padding-bottom: 30px;
+    }
+    /*button*/
+    .button{
+        height: 55px;
+        line-height: 55px;
+    }
+    .button span{
+        font-size: 20px;
+    }
+    .callBtn{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .buttonBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleBtn{
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    /*font*/
+    .title48b,.title48{
+        font-size: 40px !important;
+    }
+    .title40,.title40b{
+        font-size: 32px !important;
+    }
+    .title36, .title36b{
+        font-size: 32px !important;
+    }
+    .title32b, .title32 {
+        font-size:28px !important;
+        font-weight:700 !important;
+    }
+    .title30,.title30b{
+        font-size: 26px !important;
+    }
+    .title28,.title28b {
+        font-size: 22px !important;
+    }
+    .title24,.title24b{
+        font-size: 22px !important;
+    }
+    .title22,.title22b{
+        font-size: 18px !important;
+    }
+    .title16, .title16b{
+        font-size: 16px !important;
+    }
+    .title16{
+        font-weight: 400 !important;
+    }
+    .text28 {
+        font-size: 22px !important;
+    }
+    .text24 {
+        font-size: 20px !important;
+    }
+    .text22 {
+        font-size: 18px !important;
+    }
+    .text20 {
+        font-size: 18px !important;
+    }
+    .text18 {
+        font-size:16px !important;
+    }
+    .visual_banner{
+        padding:80px 0;
+    }
+    .visual_banner .subTitle{
+        font-weight: 500;
+    }
+    .visual_banner .title{
+        font-size: 40px;
+    }
+    .visual_banner .text, .visual_banner .text span{
+        font-weight: 400;
+    }
+    .visual_banner.gameProgram {
+        background: url(../img/common/visualBanner_game.jpg) 34% 50% no-repeat;
+        background-size: cover;
+    }
+    .visual_banner.lifeStyle {
+        background: url(../img/common/visualBanner_lifeStyle.jpg) 74% 50% no-repeat;
+        background-size: 120% 100%;
+    }
+    .visual_banner.backend {
+        background: url(../img/common/visualBanner_backend.jpg) 88% 50% no-repeat;
+        background-size: cover;
+    }
+    .sale_banner{
+        padding: 40px;
+    }
+    .sale_banner .title_btn{
+        margin-top:40px;
+        font-size:22px;
+    }
+    .sale_banner .subTitle strong{
+        font-size: 32px;;
+    }
+    .sale_box{
+        width: 70%;
+    }
+    .sale_box .sale_num{
+        max-width: 280px;
+    }
+    .sale_box .price_before{
+        font-size: 28px;
+    }
+    .sale_box .price_after{
+        font-size: 50px;
+    }
+    .sale_banner02{
+        padding: 60px 0;
+    }
+    .sale_banner02 .title{
+        font-size: 30px;
+    }
+    .sale_banner02 .title_btn{
+        font-size:22px;
+    }
+    .sale_banner02 .illust_list .li02, .sale_banner02 .illust_list .li04 {
+        margin-top: 130px;
+    }
+    .sale_banner02 .text{
+        margin-top:50px;
+        font-weight: 400;
+    }
+    .sale_banner02 .text span{
+        display:block;
+        font-weight: 400;
+    }
+    .whatThis{
+        padding: 60px 0;
+    }
+    .whatThis .text {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .whatThis .subTitle {
+        font-weight: 400;
+    }
+    .whatThis .whatThis_list{
+        flex-direction: column;
+    }
+    .whatThis .whatThis_list.three li{
+        /* display: flex;
+        align-items: center; */
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .whatThis .whatThis_list.three li:last-child{
+        margin-bottom:0;
+    }
+    .whatThis .whatThis_list.three li img{
+        width:100px;
+    }
+    .whatThis .whatThis_list li .text{
+        margin-top:0;
+        font-size: 20px;
+
+    }
+    .whatThis .whatThis_list li strong{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .whatThis.designTool .whatThis_list{
+        flex-direction: row;
+    }
+    .whatThis .whatThis_list.four li img {
+        width: 90%;
+        max-width:120px;
+    }
+    .whatThis.backend .whatThis_list{
+        flex-direction: row;
+    }
+    .squareListBox{
+        padding: 60px 0;
+    }
+    .square_list{
+        margin-top: 50px;
+    }
+    .square_list.three li{
+        width: 32%;
+    }
+    .square_list.three li span{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .lineBox_wrap{
+        padding:60px 0;
+    }
+    .lineBox_wrap .title {
+        margin-bottom: 20px;
+    }
+    .lineBox_list li{
+        padding: 20px;
+    }
+    .lineBox_list .imgBox{
+        max-width: none;
+        width: 100%;
+    }
+    .lineBox_list .imgBox table{
+        margin-top:10px;
+    }
+    .lineBox_list .textBox{
+        width:100%;
+    }
+    .lineBox_wrap .text {
+        margin-bottom: 40px;
+    }
+    .lineBox_list .imgBox .flex{
+        flex-direction: column;
+    }
+    .lineBox_list .imgBox .flex > div {
+        width: auto;
+    }
+    .whyConents{
+        padding:60px 0;
+    }
+    .step3{
+        padding: 60px 0;
+    }
+    .step3_list li{
+        height: 50px;
+        padding: 5px;
+    }
+    .step3_list li .num{
+        margin-right: 0px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .step3_list li.multi .num {
+        width: 50px;
+        margin-right: 7px;
+    }
+    .step3_list li span{
+        font-size: 20px;
+        line-height: 50px;
+        font-weight: 400;
+    }
+    .step3 .text {
+        margin-top: 40px;
+    }
+    .step3_list.designTool2 {
+        max-width: 560px;
+    }
+    .step3 .text span{
+        font-weight: 500 !important;
+        font-size: 22px !important;
+    }
+    .pakageBox{
+        padding: 60px 0;
+    }
+    .pakageBox .text {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .pakageBox img{
+        max-width: 400px;
+    }
+    .sampleBox{
+        padding: 60px 0;
+    }
+    .sample{
+        padding: 60px 0;
+    }
+    .sample .video iframe {
+        width: 546px;
+        height: 310px;
+    }
+    .sample .title {
+        margin-bottom: 30px;
+    }
+    .sample .lineBox{
+        width: 100%;
+    }
+    .failReason{
+        padding: 60px 0;
+    }
+    .failReason_list{
+        margin-bottom: 30px;
+    }
+    .failReason_list li{
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .failReason_list li .num{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 32px;
+    }
+    .failReason_list li span{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .differentDD{
+        padding: 60px 0;
+    }
+    .differentDD .title.title36b{
+        margin-bottom:40px;
+    }
+    .differentDD_list li .title{
+        margin-bottom: 0;
+    }
+    .differentDD_list img{
+        width:100px;
+    }
+    .differentDD_list li .title span:first-child span{
+        margin-bottom: 0;
+    }
+    .ddazua_edu{
+        padding: 60px 0;
+    }
+    .ddazua_edu_list{
+        padding: 10px 0 5px;
+    }
+    .ddazua_edu_list li span{
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .recommend{
+        padding: 60px 0;
+    }
+    .recommend .title{
+        font-size: 28px !important;
+        margin-bottom:20px;
+    }
+    .recommend_list{
+        flex-wrap: wrap;
+    }
+    .recommend_list.four li{
+        width: 50%;
+        margin-top:20px;
+    }
+    .recommend_list.three li{
+        width: 30%;
+        margin-top:20px;
+    }
+    .recommend_list.three li img{
+        max-height: 145px;
+    }
+    .recommend .text01{
+        margin-top: 40px;
+    }
+    .recommend .text02 {
+        margin-top: 10px;
+    }
+    .goal{
+        padding: 60px 0;
+    }
+    .goal  .title.title48b{
+        font-size: 28px !important;
+    }
+    .goal .text span{
+        font-size: 18px !important;
+    }
+    .goal .text + .text {
+        margin-top: 20px;
+    }
+    .goal_list{
+        padding: 50px 0;
+    }
+    .goal_list li{
+        width: 23%;
+        padding: 30px 10px;
+    }
+    .goal_list li img{
+        width: 80px;
+    }
+    .goal_list li.point{
+        width: 200px;
+        height: 200px;
+    }
+    .goal_list.designTool .adobe{
+        width: 30%;
+        padding: 30px 15px;
+    }
+    .goal_list.designTool li p{
+        width: 46%;
+        max-width: unset;
+    }
+    .goal_list.designTool li p span{
+        font-size: 15px;
+    }
+    .goal_list.lifeStyle.point{
+        padding-top:0;
+    }
+    .goal_list.lifeStyle .title28b{
+        font-weight: 500 !important;
+    }
+    .goal_list.lifeStyle li {
+        width:28%;
+        height:208px;
+    }
+    .goal_list.lifeStyle li.point {
+        width:208px;
+        height:208px;
+    }
+    .techTree{
+        padding-top:60px;
+    }
+    .techTree.backend {
+        margin-bottom: 60px;
+    }
+    .techTree .title.title30{
+        font-size: 20px !important;
+    }
+    .techTree .subTitle {
+        padding-top: 50px;
+    }
+    .techTree .subText span {
+        display: inline;
+    }
+    .curriculum{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+    .curriculum .container > .title {
+        margin-bottom: 50px;
+    }
+    .curriculum_list{        
+        margin-bottom: 50px;
+    }
+    .curriculum_list li .title img {
+        width: 282px;
+    }
+    .designTool .curriculum_list li .title img {
+        width: 250px;
+    }
+    .curriculum .subText {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .pointNum{
+        margin-bottom: 30px;
+    }
+    .pointNum + .title2 {
+        margin-bottom: 40px;
+    }
+    .teacher{
+        padding-top:60px;
+    }
+    .teacher > .title{
+        font-size: 22px;
+    }
+    .teacher_list{
+        margin-top: 50px;
+    }
+    .teacher_list li{
+        width:100%;
+        padding:30px;
+    }
+    .teacher_list li.full{
+        width: 100%;
+    }
+    .teacher_list li:nth-child(2n) {
+        margin-left: 0;
+    }
+    .teacher_list .list .title{
+        font-size: 22px;
+    }
+    .teacher_list .list .contents span{
+        font-size: 18px;
+    }
+    .teacher_list li.full .list .contents{
+        width: 100%;
+    }
+    .teacher.type02 .teacher_list li.full {
+        flex-direction: column;
+    }
+    .teacher.type02 .teacher_list li.full .img_teach{
+        text-align: center;
+    }
+    .skillSet{
+        padding:60px 0;
+    }
+    .skill_list{
+        flex-direction: column;
+    }
+    .skill_list li{
+        width:100%;
+        margin-top: 15px;
+    }
+    .skill_list li:nth-child(1), .skill_list li:nth-child(2) {
+        margin-top: 15px;
+    }
+    .skill_list li:nth-child(2n) {
+        margin-left: 0;
+    }
+    .skill_list li .list_text{
+        margin-top: 20px;
+    }
+    .ddazuaPoint{
+        padding: 60px 0;
+    }
+    .ddazuaPoint .title03{
+        margin-top: 50px;
+        margin-bottom:30px;
+    }
+    .ddazuaPoint.type2 .title02{
+        font-size: 28px !important;
+    }
+    .ddazuaPoint.backend .img img{
+        margin-top:30px;
+    }
+    .review .container > .title{
+        margin-bottom: 50px;
+    }
+    .text_review li {
+        width: calc(50% - 20px);
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .text_review li:nth-child(2n) {
+        margin-left: 20px;
+    }
+    .text_review li > img{
+        width: 150px;
+    }
+    .text_review .content{
+        font-size: 18px;
+    }
+    .text_review .content .subTitle{
+        margin-top: 50px;
+    }
+    .text_review .content.noTitle {
+        padding-top: 50px;
+    }
+    .review{
+        padding: 60px 0;
+    }
+    .review .container > .title span.title48b{
+        font-size: 36px !important;
+    }
+    .icon_review{
+        flex-direction: column;
+    }
+    .icon_review li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .icon_review li:last-child{
+        margin-bottom:0;
+    }
+    .icon_review .titleBox img{
+        height: 80px;
+    }
+    .icon_review .titleBox .text.text20{
+        font-size: 20px !important;
+    }
+    .lastInfo{
+        padding:60px 0;
+    }
+    .lastInfo .title span.title30{
+        font-size: 21px !important;
+        font-weight:400 !important;
+    }
+    .lastInfo .title .title48{
+        font-size: 34px !important;
+    }
+    .lastSaleBanner .text{
+        margin-bottom: 30px;
+    }
+    .lastSaleBanner.type02 .text {
+        margin-top: 30px;
+    }
+    .lastSaleBanner_list{
+        width:90%;
+        margin-bottom: 50px;
+    }
+    .lastSaleBanner_list li {
+        height: 216px;
+        background: url(../img/common/bg_lastSaleBanner_list_li.jpg) 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .lastSaleBanner_list li span {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .effect{
+        width:100%;
+        padding:60px 0;
+    }
+    .effect_list{
+        margin-top: 50px;
+    }
+    .effect_list p.num{
+        margin-bottom: 30px;
+    }
+    .effect_list .text {
+        font-size: 22px !important;
+    }
+    .effect_list + .text {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .photoInfo{
+        padding:60px 0;
+    }
+    .photoInfo .title{
+        margin-bottom:30px;
+    }
+    .photoInfo img{
+        margin-bottom:30px;
+    }
+    .photoInfo .text {
+        margin-bottom:10px;
+    }
+    .photoInfo .text span{
+        display:block;
+    }
+    .photoInfo .text.title36{
+        margin:30px 0;
+    }
+    .photoInfo.type2 .text01 + .text02 {
+        margin-top: 30px;
+    }
+    .lastSaleBanner.type02{
+        padding: 100px 0 100px;
+    }
+    
+}
+/* //mark : mobile ver */
+@media screen and (max-width:767px){
+    
+    .pcVer{
+        display: none;
+    }
+    .tbVer{
+        display: none;
+    }
+    .pcVer.tbVer{
+        display: none;
+    }
+    .mbVer{
+        display: block;
+    }
+    .lineBR {
+        padding-bottom: 20px;
+    }
+    .lineBB::after{
+        width: 50%;
+        height:3px;
+    }
+    .lineBR::after{
+        height:3px;
+    }
+    .lineBW::after{
+        width: 50%;
+    }
+    .button.auto {
+        width: 80%;
+        height: auto;
+        line-height: 1.6;
+        padding: 10px;
+    }
+    .button span {
+        font-size: 18px;
+    }
+    .titleBtn{
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 6px 15px;
+    }
+    .title48b, .title48 {
+        font-size: 24px !important;
+    }
+    .title40, .title40b {
+        font-size: 22px !important;
+    }
+    .title36, .title36b {
+        font-size: 24px !important;
+    }
+    .title32b, .title32 {
+        font-size:22px !important;
+        font-weight:700 !important;
+    }
+    .title30, .title30b {
+        font-size: 20px !important;
+    }
+    .title28, .title28b {
+        font-size: 18px !important;
+    }
+    .title24, .title24b {
+        font-size: 16px !important;
+    }
+    .title22,.title22b{
+        font-size: 16px !important;
+    }
+    .title22b {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+    }
+    .text28 {
+        font-size: 17px !important;
+    }
+    .text24 {
+        font-size: 15px !important;
+    }
+    .text22 {
+        font-size: 15px !important;
+    }
+    .text20 {
+        font-size: 15px !important;
+    }
+    .text18 {
+        font-size:15px !important;
+    }
+    .visual_banner{
+        padding: 40px 0;
+    }
+    .visual_banner{
+        padding: 60px 0;
+        background-position: left;
+    }
+    .visual_banner .subTitle{
+        font-size: 18px;
+    }
+    .visual_banner .title{
+        margin: 10px 0;
+        font-size:28px;
+    }
+    .visual_banner .text, .visual_banner .text span{
+        font-size: 16px;
+        text-align: center;
+    }
+    .visual_banner.lifeStyle .text{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .visual_banner .text span{
+        display:block;
+    }
+    .visual_banner.gameProgram {
+        background: url(../img/common/visualBanner_game.jpg) 8% 50% no-repeat;
+        background-size: cover;
+    }
+    .visual_banner.designTool {
+        background: url(../img/common/visualBanner_designTool.jpg) 93% 50% no-repeat;
+        background-size: cover;
+    }
+    .visual_banner.lifeStyle {
+        background: url(../img/common/visualBanner_lifeStyle.jpg) 0% 50% no-repeat;
+        background-size: cover;
+    }
+    .sale_banner{
+        padding: 10px;
+    }
+    .sale_banner .title {
+        padding: 10px 0;
+    }
+    .sale_banner .subTitle {
+        margin: 10px 0;
+    }
+    .sale_banner .subTitle span{
+        font-size: 16px;
+    }
+    .sale_banner .line_box{
+        border: 2px solid #fff;
+    }
+    .sale_banner .title span{
+        font-size: 24px;
+    }
+    .sale_banner .title_btn{
+        margin-top: 20px;
+        padding: 6px 15px;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+    .sale_banner .subTitle strong{
+        font-size: 24px;
+        margin-top: 8px;
+    }
+    .sale_box{
+        padding: 10px;
+        width: 80%;
+    }
+    .sale_box .logo{
+        position: unset;
+    }
+    .sale_box .logo img{
+        width: 80px;
+    }
+    .sale_box .price_before{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 8px;
+        font-weight: 400;;
+    }
+    .sale_box .price_after{
+        font-size: 32px;
+        text-align: center;
+    }
+    .sale_banner .button{
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 55px;
+        margin: 30px 0;
+    }
+    .sale_banner .button span{
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .sale_banner .subTitle strong {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .sale_banner02{
+        padding: 50px 0;
+    }
+    .sale_banner02 .title_btn{
+        padding: 6px 15px;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+    .sale_banner02 .title{
+        font-size:22px;
+        margin: 30px 0;
+    }
+    .sale_banner02 .illust_list li{
+        width: 45%;
+        max-width: unset;
+    }
+    .sale_banner02 .illust_list .li02, .sale_banner02 .illust_list .li04{
+        margin-top: 0;
+    }
+    .sale_banner02 .illust_list .li02, .sale_banner02 .illust_list .li03, .sale_banner02 .illust_list .li05{
+        display: none;
+    }
+    .sale_banner02 .text{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .sale_banner02 .text span{
+        font-size: 18px;
+    }
+    .btn_type_bw{
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 55px;
+    }
+    .btn_type_bw span{
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .lineBox_wrap {
+        padding: 50px 0;
+    }
+    .lineBox_wrap .text {
+        margin-bottom: 30px;
+    }
+    .lineBox_list .imgBox{
+        overflow-x: auto;
+    }
+    .lineBox_list .textBox img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 13px;
+    }
+    .lineBox_list .textBox span {
+        display: inline;
+        font-size: 15px;
+    }
+    .table01 tbody tr th,
+    .table01 thead tr th{
+        font-size: 15px;
+    }
+    .table01 tbody tr td{
+        font-size: 12px;
+    }
+    .subSource{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .lineBox_list li{
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .lineBox_list .imgBox img {
+        width: 900px;
+    }
+    .lineBox_list.lifeStyle .imgBox img {
+        width: 460px;
+    }
+    .lineBox_list.lifeStyle .li02 .imgBox img{
+        width: 850px;
+    }
+    .lineBox_list .imgBox table{
+        width: 900px;
+    }
+    .whyConents{
+        padding:50px 0;
+    }
+    .step3 {
+        padding: 50px 0;
+    }
+    .step3_list li {
+        height: auto;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    .step3_list li .num{
+        display: block;
+        margin: 0 auto;
+    }
+    .step3_list li span {
+        display: inline-block;
+        font-size: 17px;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+    .step3_list li.multi{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .step3_list li.multi .num {
+        margin-right: auto;
+        height: 50px;
+    }
+    .step3 .sub_title {
+        margin: 10px 0 30px;
+    }
+    .step3 .text span {
+        font-weight: 500 !important;
+        font-size: 16px !important;
+    }
+    .pakageBox {
+        padding: 50px 0;
+    }
+    .whatThis{
+        padding: 50px 0;
+    }
+    .whatThis .title{
+        font-size: 24px;
+    }
+    .whatThis .text{
+        font-size: 15px;
+    }
+    .whatThis .subTitle{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .whatThis .whatThis_list{
+        margin-top: 30px;
+    }
+    .whatThis .whatThis_list.three li{
+        margin-bottom: 30px;
+    }
+    .whatThis .whatThis_list.three li img{
+        width: 80px;
+    }
+    .whatThis .whatThis_list li .text{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .whatThis .whatThis_list li strong{
+        font-size: 18px;
+    }
+    .whatThis.designTool .whatThis_list.four li img{
+        width:80%;
+    }
+    .whatThis.backend .subTitle{
+        margin-bottom: 10px;
+    }
+    .whatThis.backend .whatThis_list{
+        flex-wrap: wrap;
+        margin-top:0;
+    }
+    .whatThis.backend .whatThis_list li{
+        width: 50%;
+        margin-top:20px;
+    }
+    .whatThis.backend .whatThis_list.four li img {
+        max-width: 90px;
+    }
+    .squareListBox{
+        padding: 50px 0;
+    }
+    .squareListBox .title .title30, .squareListBox .title .title30b{
+        font-size: 22px !important;
+    }
+    .square_list {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .square_list.three li {
+        width: 100%;
+        margin-bottom: 30px;
+        padding:15px;
+    }
+    .square_list.three li:last-child{
+        margin-bottom: 0;
+    }
+    .square_list.three li img{
+        width: 30px;
+        margin-bottom: 10px;
+    }
+    .square_list.three li span{
+        font-size: 16px;
+    }
+    .sampleBox{
+        padding: 50px 0;
+    }
+    .sample {
+        padding: 50px 0;
+    }
+    .sample .title24, .sample .title24b{
+        font-size: 15px !important;
+    }
+    .sample .title {
+        margin-bottom: 20px;
+    }
+    .sample .lineBox{
+        padding: 20px 10px;
+    }
+    .sample .lineBox .title{
+        margin-bottom: 20px;
+    }
+    .sample .video iframe{
+        width: 259px;
+        height: 155px;
+    }
+    .skillSet{
+        padding:50px 0;
+    }
+    .failReason {
+        padding: 50px 0;
+    }
+    .failReason .title {
+        margin-bottom: 30px;
+    }
+    .failReason_list{
+        flex-direction: column;
+        margin-bottom:0;
+    }
+    .failReason_list li{
+        width: 100%;
+        height: auto;
+        padding: 12px 20px 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    .failReason_list li .num {
+        margin-top: 0;
+        font-size: 24px;
+    }
+    .failReason_list li span {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .failReason .title36, .failReason .title36b {
+        font-size: 22px !important;
+    }
+    .failReason .text02{
+        margin-bottom:20px;
+    }
+    .differentDD {
+        padding: 50px 0;
+    }
+    .differentDD .title24 {
+        font-size: 20px !important;
+    }
+    .differentDD_list{
+        flex-direction: column;
+    }
+    .differentDD .title.title36b {
+        margin-bottom: 25px;
+    }
+    .differentDD_list li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .differentDD_list li:last-child{
+        margin-bottom:0;
+    }
+    .differentDD_list li .title{
+        margin-top: 8px;
+    }
+    .differentDD_list li .title > span:first-child {
+        margin-bottom: 5px;
+    }
+    .ddazua_edu {
+        padding:50px 0;
+        flex-direction: column;
+    }
+    .ddazua_edu .img{
+        width: 100%;
+    }
+    .ddazua_edu_list{
+        width: 100%;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .ddazua_edu_list li span {
+        font-size: 18px;
+    }
+    .techTree {
+        padding-top: 50px;
+    }
+    .techTree.backend {
+        margin-bottom: 50px;
+    }
+    .techTree .title {
+        margin-bottom: 10px;
+    }
+    .techTree .title.title30 {
+        font-size: 18px !important;
+    }
+    .techTree .subTitle {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .recommend {
+        padding: 50px 0;
+    }
+    .recommend .title {
+        font-size: 24px !important;
+    }
+    .recommend_list.four li{
+        margin-top: 30px;
+    }
+    .recommend_list.four li img{
+        height: 110px;
+    }
+    .recommend_list.three{
+        flex-direction: column;
+    }
+    .recommend_list.three li {
+        width: 100%;
+    }
+    .recommend_list.three li img {
+        max-height: 140px;
+    }
+    .recommend .text01 {
+        margin-top: 30px;
+    }
+    .recommend .text02 {
+        margin-top: 20px;
+    }
+    .goal {
+        padding: 50px 0;
+    }
+    .goal .title.title48b {
+        font-size: 24px !important;
+    }
+    .goal .text + .text {
+        margin-top: 10px;
+    }
+    .goal_list li {
+        width: 26%;
+        padding: 18px 13px;
+        border: 3px solid #4953a0;
+        border-radius: 10px;
+    }
+    .goal_list li img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    .goal_list li.point {
+        width: 110px;
+        height: 120px;
+    }
+    .goal_list li.point::after{
+        height: 3px;
+    }
+    .goal_list li p.title28, .goal_list li p.title28b {
+        font-size: 15px !important;
+        font-weight: 500 !important;
+    }
+    .goal .text span {
+        font-size: 15px !important;
+    }
+    .goal_list.designTool .adobe {
+        padding: 10px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .goal_list.designTool li p{
+        width: 100%;
+    }
+    .goal_list.designTool li p:first-child{
+        margin-bottom: 5px;;
+    }
+    .goal_list li.adobe img{
+        width: 50px;
+        margin-bottom: 0;
+    }
+    .goal_list.lifeStyle {
+        padding: 30px 0;
+    }
+    .goal_list.lifeStyle li {
+        width: 30%;
+        height: 168px;
+    }
+    .goal_list.lifeStyle li.point {
+        width: 150px;
+        height: 160px;
+    }
+    .goal_list.backend li{
+        width: 30%;
+    }
+    .goal_list.backend li.point{
+        width: 110px;
+    }
+    .curriculum {
+        padding-top: 50px;
+        padding-bottom:50px;
+    }
+    .curriculum .container > .title {
+        margin-bottom: 30px;
+    }
+    .curriculum_list{
+        width: 85%;
+        margin-bottom: 30px;
+    }
+    .curriculum_list.gameProgram{
+        max-width: 315px;
+    }
+    .curriculum_list li .num{
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+    }
+    .curriculum_list li::before{
+        left: 4px;
+        width: 2px;
+    }
+    .curriculum_list li .title{
+        margin-right: 0;
+    }
+    .curriculum_list li .title::after{
+        display: block;
+        content:'';
+        clear: both;
+    }
+    .curriculum_list li .text{
+        margin-left: 20px;
+        margin-top:10px;
+        line-height:1.6;
+        width:calc(100% - 20px);
+    }
+    .curriculum_list li .text::before{
+        display:block;
+        content:'';
+        clear: both;
+    }
+    .curriculum_list li .text span::before{
+        display:inline-block;
+        content:'-';
+        margin-right:3px;
+    }
+    .curriculum_list li .title img {
+        width: 270px;
+    }
+    .curriculum .subText {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .curriculum.type02 .sub_title + .text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .curriculum_list02 .title::before {
+        margin-right: 5px;
+        margin-top: 3px;
+        width: 10px;
+        height: 10px;
+    }
+    /* .curriculum_list02 .title span{
+        font-size: 16px !important;
+    } */
+    .curriculum_list02 .title {
+        margin-bottom: 10px;
+    }
+    .curriculum_list02 li {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .pointNum{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .ddazuaPoint {
+        padding: 50px 0;
+    }
+    .ddazuaPoint .title02 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .ddazuaPoint .title02 span{
+        font-size: 18px !important;
+    }
+    .ddazuaPoint.backend .img img{
+        margin-top:10px;
+    }
+    .teacher {
+        padding-top: 50px;
+    }
+    .teacher > .title {
+        font-size: 18px;
+        padding:6px 15px;
+    }
+    .teacher_list {
+        margin-top: 30px;
+    }
+    .teacher_list li{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .teacher_list .list {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .teacher_list .list .title {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .teacher_list .list .contents span {
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+    .teacher_list .img_teach{
+        width: 100%;
+    }
+    .teacher_list .img_teach img{
+        width: 100%;
+        max-width: 300px;
+    }
+    .ddazuaPoint .title03 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .ddazuaPoint .title36{
+        font-size: 20px !important;
+    }
+    .ddazuaPoint .text04 .text28 {
+        font-size: 18px !important;
+    }
+    .ddazuaPoint .text05 {
+        margin-bottom: 30px;
+    }
+    .review {
+        padding: 50px 0;
+    }
+    .review .container > .title {
+        margin-bottom: 30px;
+    }
+    .review .container > .title span{
+        display:block;
+    }
+    .review .container > .title span.title48b {
+        font-size: 24px !important;
+    }
+    .text_review + .icon_review {
+        margin-top: 0;
+    }
+    .text_review li {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .text_review li:nth-child(2n) {
+        margin-left: 0;
+    }
+    .text_review li > img {
+        width: 120px;
+        top: 20px;
+        right: 20px;
+    }
+    .text_review .content.noTitle {
+        padding-top: 35px;
+    }
+    .text_review .content {
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+    .text_review .content span{
+        line-height: 1.4;
+    }
+    .text_review .content .subTitle {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .review .subText {
+        margin-bottom: 20px;
+    }
+    .icon_review li {
+        width: 100%;
+        padding: 20px;
+    }
+    .icon_review .titleBox img {
+        height: 70px;
+    }
+    .icon_review .titleBox .title {
+        width: calc(100% - 70px);
+        margin-left: 10px;
+    }
+    .icon_review .titleBox .text{
+        margin-top: 15px;
+    }
+    .icon_review .titleBox .text .title22b{
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+    .icon_review .titleBox .text.text20{
+        font-size: 16px !important;
+    }
+    .lastInfo {
+        padding: 50px 0;
+    }
+    .lastInfo img{
+        margin-bottom: 30px;
+    }
+    .lastInfo .title:last-child {
+        margin-top: 30px;
+    }
+    .lastInfo .title span.title30 {
+        font-size: 15px !important;
+    }
+    .lastInfo .title .title48 {
+        font-size: 24px !important;
+    }
+    .lastSaleBanner{
+        padding-top: 70px;
+    }
+    .lastSaleBanner .title span{
+        font-size: 22px;
+    }
+    .lastSaleBanner .title strong{
+        font-size: 28px;
+    }
+    .lastSaleBanner .subText {
+        margin-top: 10px;
+        background-color: rgba(0,0,0,.5);
+        width: auto;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    .lastSaleBanner .text{
+        margin-top: 190px;
+    }
+    .lastSaleBanner .text span{
+        font-weight: 500 !important;
+    }
+    .lastSaleBanner .subText span{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .lastSaleBanner .subText span:last-child {
+        font-size: 13px;
+    }
+    .kakakotalkBtn,.callBtn{
+        width: 280px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .kakakotalkBtn span,.callBtn span{
+        font-size: 18px;
+    }
+    .effect {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .effect .title48b, .effect .title48{
+        font-size: 23px !important;
+    }
+    .effect_list{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .effect_list li{
+        width: 100%;;
+    }
+    .effect_list .text {
+        font-size: 18px !important;
+        font-weight: 400 !important;
+    }
+    .effect_list p.num{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .effect_list + .text {
+        margin-top: 30px;
+    }
+    .effect .text span {
+        display: inline;
+    }
+    .photoInfo {
+        padding: 50px 0;
+    }
+    .photoInfo .text.title36, .photoInfo .text.title36 b{
+        margin:0;
+        font-size: 18px !important;
+    }
+    .photoInfo.type2{
+        padding: 50px 0 0px;
+    }
+    .photoInfo.studio .sub_title {
+        margin: 50px 0 40px;
+    }
+    .lastSaleBanner.type02{
+        padding: 70px 0 ;
+    }
+    .lastSaleBanner_list{
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .lastSaleBanner_list li{
+        height: 120px;  
+        background: url(../img/common/bg_lastSaleBanner_list_li.jpg) 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .lastSaleBanner_list li span{
+        font-size: 16px;
+    }
+    .lastSaleBanner.type02 .text{
+        margin-top: 20px;
+    }
+    .lastSaleBanner.type02 .text span.title32b{
+        font-size: 15px !important;
+    }
+}
+/* //mark : fold ver */
+@media screen and (max-width:359px){
+    .curriculum_list {
+        width: 90%;
+    }
+    .curriculum_list li .title img {
+        width: 210px;
+    }
+    .visual_banner .subTitle {
+        font-size: 15px;
+    }
+    .visual_banner .title {
+        font-size: 22px;
+    }
+    .visual_banner .text, .visual_banner .text span {
+        font-size: 15px;
+    }
+    .sale_banner .button span {
+        font-size: 15px;
+    }
+    .sale_box .price_after {
+        font-size: 26px;
+    }
+    .sample .video iframe{
+        width: 195px;
+        height: 220px;
+    }
+    .btn_type_bw span {
+        font-size: 15px;
+    }
+    .goal_list li{
+        width: 28%;
+    }
+    .goal_list li p.title28, .goal_list li p.title28b {
+        font-size: 12px !important;
+    }
+    .goal_list li.point {
+        width: 90px;
+        height: 110px;
+    }
+    .goal_list li img {
+        width: 40px;
+    }
+    .lastSaleBanner .subText span {
+        font-size: 12px;
+    }
+    .lastSaleBanner .subText span:last-child {
+        font-size: 10px;
+    }
+    .lastSaleBanner .text .title24b{
+        font-size: 15px !important;
+    }
+    .kakakotalkBtn, .callBtn {
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .kakakotalkBtn span, .callBtn span {
+        font-size: 15px;
+    }
+    .kakakotalkBtn span img, .callBtn span img{
+        width: 24px;
+    }
+}

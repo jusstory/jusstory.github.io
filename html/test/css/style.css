@@ -3284,8 +3284,13 @@ input[type="radio"] { overflow: hidden; border: 0; position: absolute; width: 1p
         padding: 50px 0;
     }
     .photoInfo .text.title36, .photoInfo .text.title36 b{
-        margin:0;
+        margin:10px 0;
         font-size: 18px !important;
+        font-weight: 400 !important;
+    }
+    .photoInfo .text {
+        font-weight: 400 !important;
+        font-size: 16px !important;
     }
     .photoInfo.type2{
         padding: 50px 0 0px;

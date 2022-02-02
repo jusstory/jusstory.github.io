@@ -12,6 +12,7 @@ Version : "2019.03"
 .visualWrap .train { height:762px; }
 .visualWrap .train > li { height:762px; }
 
+.skillDT_list li a {font-size:16px;}
 .skillDT_list li .arrow { width:20px;  }
 
 .sec03.boxList .liSmall { height:140px; }
@@ -42,14 +43,6 @@ Version : "2019.03"
   .visualWrap .train > li { height:1000px; }
   .visualWrap .tit { left: 4%; font-size: 3.2vw; }
   .visualWrap .tit .br { font-size: 3.2vw; }
-  /* .visualWrap .train > .li02 .tit { left: 12%; font-size: 4.5vw; }
-  .visualWrap .train > .li02 .tit span {font-size: 4.5vw; }
-  .visualWrap .train > .li02 .tit { left: 12%; font-size: 4.5vw; }
-  .visualWrap .train > .li02 .tit span {font-size: 4.5vw; }
-  .visualWrap .train > .li03 .tit { font-size: 4.1vw; }
-  .visualWrap .train > .li03 .tit span {font-size: 4.1vw; } */
-
-
 
   .visualWrap .tit { left:0;top:50%; transform:translateY(-50%); display:block; width:100%; padding-top: 45px; padding-bottom: 45px; font-size:26px; text-align:center; color:#fff;  background:url("../images/btn/bg_visualTit.png") 0 0 repeat; }
   .visualWrap .tit .br { font-size:26px; text-align:center; color:#fff; text-indent:0; }
@@ -62,25 +55,27 @@ Version : "2019.03"
 
   /* 섹션1 */
   .section01 { height:1024px; }
-  .section01 .tit { width:961px; height:80px;  background: url("../images/content/sec01Tit.png") 0 0 no-repeat; background-size:cover; }
+  .section01 .tit { width:961px; height:80px; }
   .sec01.box01 { width: 87%; height:1024px;  }
   .sec01.box02 { width:50%; }
-  .sec01.box03 { left: 0; right: 0; width: 75%; }
+  .sec01.box03 { left: 0; right: 0; width: 75%; height: 570px;}
 
-  .skillDT_list { float: none; width: calc(100% - 50px); height: 125px; padding:8px 0; margin: 25px 4.8%; }
+  .skillDT_list { float: none; width: calc(100% - 50px); height: 147px; padding:8px 0; margin: 25px 4.8%; line-height: 36px; }
   .skillDT_list li:first-child { margin-top:0; }
   .skillDT_list li { float:left; padding-right:0; }
   .skillDT_list li a { display:block; width:100%; height:100%; text-align:center;}
-  .skillDT_list .dt01 { width:17%;}
-  .skillDT_list .dt02 { width:15%;}
-  .skillDT_list .dt03 { width:21%;}
-  .skillDT_list .dt04 { width:47%;}
-  .skillDT_list .dt05 { width:36%;}
-  .skillDT_list .dt06 { width:32%;}
-  .skillDT_list .dt07 { width:32%;}
-  .skillDT_list .dt08 { width:32%;}
-  .skillDT_list .dt09 { width:34%;}
-  .skillDT_list .dt10 { width:33%;}
+  .skillDT_list .dt01 { width:33%;}
+  .skillDT_list .dt02 { width:33%;}
+  .skillDT_list .dt03 { width:33%;}
+
+  .skillDT_list .dt04 { width:29%;}
+  .skillDT_list .dt05 { width:29%;}
+  .skillDT_list .dt06 { width:42%;}
+
+  .skillDT_list .dt07 { width:50%;}
+  .skillDT_list .dt08 { width:50%;}
+  .skillDT_list .dt09 { width:50%;}
+  .skillDT_list .dt10 { width:50%;}
 
   .skillDD_list { float: none; /*display: table;*/ width: calc(100% - 50px); height: 334px; margin: 0 4.8%; }
   .skillDD_list li.active {  display: table; vertical-align: middle; }
@@ -117,10 +112,10 @@ Version : "2019.03"
   .content01 { padding-top:50px; }
   .contentArea .tit {margin-top:15px; font-size:20px; }
   .contentArea .tit .mb_br { font-size:20px;  }
-  .txtlist > li { margin-bottom: 0; font-size: 17px; background-size: 5px 5px; }
-  .txtlist .listTxt span{ background-size: 5px 5px; }
-  .txtlist .subTxt { padding-left:6px;  font-size:15px;  }
-  .txtlist .listTxt span {  font-size:15px;  }
+  .txtlist > li, .skill_list > li { margin-bottom: 0; font-size: 17px; background-size: 5px 5px; }
+  .txtlist .listTxt span, .skill_list .listTxt span{ background-size: 5px 5px; }
+  .txtlist .subTxt ,.skill_list .subTxt { padding-left:6px;  font-size:15px;  }
+  .txtlist .listTxt span, .skill_list .listTxt span {  font-size:15px;  }
 
   /* sub0301 프로젝트 */
   .projectImg { width:70%; }
@@ -207,18 +202,21 @@ Version : "2019.03"
   .sec01.box01 { height: 580px; width: 100%; }
   .sec01.box02 { display: none; }
   .sec01.box03 { top:0; width:100%; height: 470px; padding-top:110px; background-size:100% 100%;  }
-  .skillDT_list {  width: 95%; margin: 25px auto; margin-top: 0; padding: 5px 0 7px; }
-  .skillDT_list li a { font-size:16px; line-height: 32px; }
-  .skillDT_list .dt01 { width:23%;}
-  .skillDT_list .dt02 { width:20%;}
-  .skillDT_list .dt03 { width:29%;}
-  .skillDT_list .dt04 { width:28%;}
-  .skillDT_list .dt05 { width:53%;}
-  .skillDT_list .dt06 { width:47%;}
-  .skillDT_list .dt07 { width:50%;}
-  .skillDT_list .dt08 { width:50%;}
-  .skillDT_list .dt09 { width:52%;}
-  .skillDT_list .dt10 { width:48%;}
+  .skillDT_list {  width: 95%; height: 162px; margin: 25px auto; margin-top: 0; padding: 5px 0 7px; }
+  .skillDT_list li a {  font-size:16px; line-height: 32px; }
+  .skillDT_list .dt01 { width:52%;}
+  .skillDT_list .dt02 { width:40%;}
+
+  .skillDT_list .dt03 { width:36%;}
+  .skillDT_list .dt04 { width:30%;}
+  .skillDT_list .dt05 { width:30%;}
+
+  .skillDT_list .dt06 { width:35%;}
+  .skillDT_list .dt07 { width:45%;}
+
+  .skillDT_list .dt08 { width:100%;}
+  .skillDT_list .dt09 { width:55%;}
+  .skillDT_list .dt10 { width:40%;}
 
   .skillDD_list { width: 95%; height:250px; margin:0 auto; }
   .skillDD_list li .txt { font-size:14px;  }
@@ -249,9 +247,9 @@ Version : "2019.03"
   .content01 { padding-top: 30px; }
   .contentArea .tit { font-size: 18px; }
   .contentArea .tit .mb_br { font-size:18px;  }
-  .txtlist > li { font-size: 15px; }
-  .txtlist .subTxt { display: block; padding-left: 0; font-size: 14px; line-height: 18px; margin-bottom: 5px; }
-  .txtlist .listTxt span { font-size: 14px; margin-left: 0;  line-height: 22px;}
+  .txtlist > li, .skill_list > li { font-size: 15px; }
+  .txtlist .subTxt, .skill_list .subTxt { display: block; padding-left: 0; font-size: 14px; line-height: 18px; margin-bottom: 5px; }
+  .txtlist .listTxt span, .skill_list .listTxt span { font-size: 14px; margin-left: 0;  line-height: 22px;}
   .btn02 {width:170px;  display:block; margin-bottom:10px;  }
   .btn02 a { font-size: 14px; }
 

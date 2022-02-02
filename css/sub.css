@@ -29,10 +29,9 @@ Version : "2019.03"
 .contentArea .tit {margin-top:50px; margin-bottom:5px; font-weight:600; font-size:22px; }
 .contentArea .tit:first-child{margin-top:0;}
 .contentArea .tit .mb_br { font-weight:600; font-size:22px;  }
-.txtlist {  }
-.txtlist > li {position:relative; margin-bottom: 5px; padding-left:10px;font-size:16px; line-height:28px; }
+.txtlist{max-width:700px; margin: 0 auto;}
+.txtlist > li {position:relative; margin-bottom: 10px; padding-left:10px;font-size:18px; line-height:28px; }
 .txtlist > li:before{position:absolute;top:11px;left:0;content:'';display:block;width:5px;height:5px;border-radius:50%;background-color:#000;}
-.txtlist .listTit {}
 .txtlist .listTxt { background:none; margin-bottom:10px; }
 .txtlist .listTxt::before{display:none;}
 .txtlist .listTxt span{ position:relative;display:block; width:100%; padding-left:12px; font-size:14px; line-height:24px; color:#666; }
@@ -41,6 +40,19 @@ Version : "2019.03"
 .txtlist .btnWrap::before{display:none;}
 .txtlist > li:last-child{margin-bottom:0;}
 .txtlist .subTxt { padding-left:8px;  font-size:14px; line-height:28px; color:#666; }
+
+/* sub02 */
+.skill_list{max-width:700px; margin: 0 auto;}
+.skill_list > li {position:relative; margin-bottom: 10px; padding-left:10px;font-size:18px; line-height:28px; }
+.skill_list > li:before{position:absolute;top:11px;left:0;content:'';display:block;width:5px;height:5px;border-radius:50%;background-color:#000;}
+.skill_list .listTxt { background:none; margin-bottom:10px; }
+.skill_list .listTxt::before{display:none;}
+.skill_list .listTxt span{ position:relative;display:block; width:100%; padding-left:12px; font-size:14px; line-height:24px; color:#666; }
+.skill_list .listTxt span::before{position:absolute;top:11px;left:0;content:'';display:block;width:5px;height:2px;background-color:#666;}
+.skill_list .btnWrap { margin-bottom:20px; background:none;  }
+.skill_list .btnWrap::before{display:none;}
+.skill_list > li:last-child{margin-bottom:0;}
+.skill_list .subTxt { padding-left:8px;  font-size:14px; line-height:28px; color:#666; }
 
 /* sub0301 프로젝트 */
 .sub03 {}

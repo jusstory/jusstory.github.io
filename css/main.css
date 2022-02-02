@@ -30,7 +30,7 @@ Version : "2020.04"
 
 /* 섹션 1  */
 .section01 { position:relative; overflow:hidden; width:95%; height:1080px; margin:0 auto; }
-.section01 .tit { position:absolute; top:21.5%; left:80%; transform:translateX(-438px); width:1453px; height:121px; font-size:0; text-indent:-9999px; background:url("../images/content/sec01Tit.png") 0 0 no-repeat; z-index: 93; }
+.section01 .tit { position:absolute; top:21.5%; left:80%; transform:translateX(-438px); width:1453px; height:121px; font-size:100px; font-weight: bold; color: #fff; z-index: 93; }
 /* .section01 .tit_mb { display:none;  position:absolute; top:60px; width:100%; height:40px; color:#fff; font-size:46px; font-weight:600; font-size:0; text-indent:-9999px; z-index: 93; background:url("../images/content/sec01Tit.png") 50% 0 no-repeat; background-size: 90%; } */
 .section01 .tit_mb { display:none;  position:absolute; top:50px; width:100%;  color:#fff; font-size:8vw; font-weight:600; text-align:center; z-index: 93;  }
 .sec01.box01 { position:absolute; top:0; right:0; width:66%; max-width:1187px; height:1080px; background:url("../images/content/img_sec01_box01.jpg") 0 0 no-repeat; z-index: 90; }
@@ -47,7 +47,7 @@ Version : "2020.04"
 .skillDT_list li .arrow { width: 23px; padding-right: 1px; padding-bottom: 4px;  }
 /*.skillDT_list li.active .arrow{ display:inline; }*/
 /* 왼쪽영역 */
-.skillDD_list{  float:left; width:53%; height:480px; margin-top:35px; margin-left:4%;  background:url("../images/content/bg_sec01_dd.png ") 0 0 repeat; }
+.skillDD_list{  float:left; width:53%; height:480px; margin-top:35px; margin-left:4%;  background:rgba(255,255,255,0.8); }
 
 /*
 .skillDD_list li { display:none;  width:100%; height:100%; ext-align:center; }
@@ -63,7 +63,7 @@ Version : "2020.04"
 .skillDD_list li .img img { width: 100%; }
 .skillDD_list li .txt { display:table;vertical-align:middle;font-size:16px; font-weight:700;line-height:1.4;}
 
-.skillDD_list .dd01 .img, .skillDD_list .dd02 .img, .skillDD_list .dd06 .img, .skillDD_list .dd07 .img, .skillDD_list .dd08 .img, .skillDD_list .dd09 .img { max-width: 33%;}
+.skillDD_list .dd02 .img, .skillDD_list .dd03 .img{ max-width: 33%;}
 
 /* 섹션 2  */
 .section02 { overflow:hidden; width:100%; height:650px; background:url("../images/content/bg_sec03.jpg") 50% 50% no-repeat; background-size:100%; background-attachment: fixed; }

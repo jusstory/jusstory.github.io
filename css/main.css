@@ -13,8 +13,8 @@ Version : "2020.04"
 .visualWrap .train { width:300%; height:100%; }
 .visualWrap .train > li { position: relative; width:33.333%; height:100%; float:left;  }
 .visualWrap .train > .li01 { background:url("../images/content/img_visual01.jpg") 50% 50% no-repeat; background-size:cover; }
-.visualWrap .train > .li02 { background:url("../images/content/img_visual02.jpg") 50% 50% no-repeat; background-size:cover; }
-.visualWrap .train > .li03 { background:url("../images/content/img_visual03.jpg") 50% 50% no-repeat; background-size:cover; }
+.visualWrap .train > .li02 { background:url("../images/content/img_visual03.jpg") 50% 50% no-repeat; background-size:cover; }
+.visualWrap .train > .li03 { background:url("../images/content/img_visual02.jpg") 50% 50% no-repeat; background-size:cover; }
 .visualWrap .tit {display:block; position:absolute; top:50%; transform:translateY(-50%);left:0%;width: 100%; padding:50px 0 ; font-family:"Noto Sans KR", sans-serif ; font-weight:900; font-size:2.3vw; color:#6e4450;text-align: center; background:url("../images/btn/bg_navW.png") 0 0 repeat;}
 .visualWrap .tit .br { display:block;  font-weight:900; font-family:"Noto Sans KR", sans-serif; font-size:2.3vw; color:#6e4450; }
 

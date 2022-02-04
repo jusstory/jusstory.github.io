@@ -51,6 +51,7 @@ $(document).ready(function(){
 
 
   /* 비주얼 배너 컨트롤러  */
+  $('.visualWrap .train > li').css({"height":window.innerHeight});
     //맨뒤 한칸 앞으로 빼두기
   $(".visualWrap .train li:last").prependTo(".visualWrap .train");
 	$(".visualWrap .train").css({"marginLeft":"-100%"});

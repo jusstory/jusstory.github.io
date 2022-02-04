@@ -7,10 +7,10 @@ Version : "2019.03"
 */
 /* 노트북 1540px */
 
-.visualWrap { height:762px; }
+/* .visualWrap { height:762px; }
 .visualWrap .tunnel { height:762px; }
 .visualWrap .train { height:762px; }
-.visualWrap .train > li { height:762px; }
+.visualWrap .train > li { height:762px; } */
 
 .skillDT_list li a {font-size:16px;}
 .skillDT_list li .arrow { width:20px;  }
@@ -37,10 +37,10 @@ Version : "2019.03"
   .mb_nav { top: 80px; }
 
   /* 비주얼배너 */
-  .visualWrap { height:1000px; }
+  /* .visualWrap { height:1000px; }
   .visualWrap .tunnel { height:1000px; }
   .visualWrap .train { height:1000px; }
-  .visualWrap .train > li { height:1000px; }
+  .visualWrap .train > li { height:1000px; } */
   .visualWrap .tit { left: 4%; font-size: 3.2vw; }
   .visualWrap .tit .br { font-size: 3.2vw; }
 
@@ -180,10 +180,10 @@ Version : "2019.03"
   .mb_nav { top: 70px; }
 
   /* 비주얼배너 */
-  .visualWrap { height:568px; }
+  /* .visualWrap { height:568px; }
   .visualWrap .tunnel { height:568px; }
   .visualWrap .train { height:568px; }
-  .visualWrap .train > li { height:568px; }
+  .visualWrap .train > li { height:568px; } */
   .visualWrap .container { width:100%; }
   .visualWrap .tit {font-size:20px;}
   .visualWrap .tit .br { font-size:20px;}

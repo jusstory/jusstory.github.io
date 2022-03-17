@@ -159,3 +159,4 @@ Version : "2019.03"
 /* sub0501 연락처 */
 .sub05 .contentArea { padding:20px 0; margin-bottom:50px; text-align:center; background-color:#fedee1; }
 .sub05 .txtlist > li { background: none; }
+.sub05 .txtlist > li:before {display: none;}
